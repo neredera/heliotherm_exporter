@@ -10,6 +10,8 @@ import re
 
 import prometheus_client
 
+from typing import Optional
+from dataclasses import dataclass
 from prometheus_client.core import (
     InfoMetricFamily, GaugeMetricFamily, CounterMetricFamily, StateSetMetricFamily, Counter)
 
@@ -18,6 +20,17 @@ from prometheus_client.core import (
 # TODO: Own User/Group for Service
 
 PROMETHEUS_NAMESPACE = 'heliotherm'
+
+@dataclass
+class DataValue:
+    """Class for data values from the heat pump"""
+    key: str    # e.g. M123, S23
+    name: str   # N
+    promname: str # Name converted to prometheus convention
+    value: Optional[float]
+
+    def data_read_command(self) -> bytes:
+        return bytes(f'{self.key[0]}P,NR={self.key[1:]};', 'utf-8')
 
 class HeliothermCollector(object):
     """Collector for sensor data."""
@@ -28,6 +41,8 @@ class HeliothermCollector(object):
 
     lan_gateway = None
     lan_gateway_port = None
+
+    known_data_values = {}
 
     gathering_errors = Counter('gathering_errors', 'Amount of gathering runs with failures', labelnames=[], namespace=PROMETHEUS_NAMESPACE)
     communication_errors = Counter('communication_errors', 'Amount of communication errors with the heliotherm heat pump', labelnames=[], namespace=PROMETHEUS_NAMESPACE)
@@ -57,16 +72,18 @@ class HeliothermCollector(object):
         data_to_send = data + self.makeCrc(data)
         return data_to_send
 
-    def receiveAndDecode(self, port: serial.Serial, previous_data = b'', timeout = None, accept_no_response = False):
+    def receiveAndDecode(self, port: serial.Serial, previous_data: bytes = b'', timeout = None, accept_no_response = False, expect_one_packet = False):
         """
         Receives and decodes packets.
         Returns the received packet and remaining data for a possible next packet arriving.
         The timeout is the time to wait when no (more) data arrives for a full packet.
+        expect_one_packet: if this is the last/only packet.
         """
-
-        REPLY_COM = b'\x02\xfd\xe0\xd0\x00\x00'  # Reply Commando
+        REPLY_START = b'\x02\xfd\xe0\xd0'
+        REPLY_COM = b'\x02\xfd\xe0\xd0\x00\x00'    # Reply Commando
         REPLY_COM_2 = b'\x02\xfd\xe0\xd0\x04\x00'  # Reply Commando 2 (e.g. for MP,NR=16). With this reply the CRC is 00
         REPLY_COM_3 = b'\x02\xfd\xe0\xd0\x02\x00'  # Reply Commando 3 (for error messages?). With this reply the length is 00 (but there is data and a (invalid?) crc)
+        REPLY_COM_4 = b'\x02\xfd\xe0\xd0\x01\x00'  # Reply Commando 4 (?) With this reply the length is 00.
 
         if timeout is None:
             timeout = self.RESPONSE_TIMEOUT_SEC
@@ -79,11 +96,22 @@ class HeliothermCollector(object):
             if len(undecoded) >= 8:
                 # preamble and size is here
                 size = undecoded[6]
+                if size == 0:
+                    # there are some packets with size 0 (wrongly).
+                    # do we heve the start of a second packet?
+                    if undecoded.find(REPLY_START, 7) > 0:
+                        break
+                    elif expect_one_packet:
+                        # we do not expect another packet. Avoid timeout (with the small risk that we do not have the full packet)
+                        break
+                    else:
+                        # read more or go into timeout to avoid that we cannot correctly detect the end of the packet.
+                        size = 255
                 if len(undecoded)>= size + 6 + 1 + 1:
                     # we have at least one complete packet
                     break
 
-            data = port.read(1014)
+            data = port.read(1024)
             if len(data)>0:
                 wait_time = time.time() + timeout # reset timeout
             undecoded += data
@@ -102,7 +130,7 @@ class HeliothermCollector(object):
             return (None, b'')    # flush likely corrupted data
 
         com = undecoded[:6]
-        if REPLY_COM != com and REPLY_COM_2 != com and REPLY_COM_3 != com:
+        if REPLY_COM != com and REPLY_COM_2 != com and REPLY_COM_3 != com and REPLY_COM_4 != com:
             self.communication_errors.inc()
             logging.info(f'Unexpected preamble in received packet. Received: {com} Expected: {REPLY_COM}  Packet:{undecoded}')
             return (None, b'')    # flush likely corrupted data
@@ -114,29 +142,35 @@ class HeliothermCollector(object):
             return (None, b'')    # flush likely corrupted data
 
         if sent_data_length == 0:
-            if REPLY_COM_3 == com:
-                logging.debug(f'Alternative reply commando (3) received with length 0.')
-                sent_data_length = len(undecoded) - 6 - 1 - 1 #we calculate the lenght assuming we have only one packet
+            if REPLY_COM_3 == com or REPLY_COM_4 == com:
+                logging.debug(f'Alternative reply commando (3 or 4) received with length 0.')
+                next_reply_pos =  undecoded.find(REPLY_START, 7) # look for the start of the next packet
+                if next_reply_pos == -1:
+                    logging.debug(f'Calculated length by accepting the received data (packet received with length 0).')
+                    sent_data_length = len(undecoded) - 6 - 1 - 1 #we calculate the lenght assuming we have only one packet
+                else:
+                    logging.debug(f'Calculated length by looking for next packet (packet received with length 0).')
+                    sent_data_length = next_reply_pos - 6 - 1 - 1
             else:
                 self.communication_errors.inc()
                 logging.info(f'Packet with length=0 received.  Packet:{undecoded}')
                 return (None, b'')    # flush likely corrupted data
 
         sent_crc = undecoded[6 + 1 + sent_data_length]
-        packet_data = undecoded[6 + 1:sent_data_length]
-        calc_crc = self.makeCrc(packet_data)[0]
+        calc_crc = self.makeCrc(undecoded[ : 6+1+ sent_data_length ])[0]
 
         if sent_crc != calc_crc:
             if REPLY_COM_2 == com and sent_crc == 0:
                 logging.debug(f'Alternative reply commando (2) received with CRC 0.')
-            elif REPLY_COM_3 == com and sent_crc == 117:
-                logging.debug(f'Alternative reply commando (3) received with CRC 117.')
+            elif REPLY_COM_3 == com or REPLY_COM_4 == com:
+                logging.debug(f'Alternative reply commando (3 or 4) received with invalid CRC.')
             else:
                 self.communication_errors.inc()
                 logging.info(f'CRC error for received packet. Sent from Device: {sent_crc} Calculated: {calc_crc}  Packet:{undecoded}')
                 return (None, b'')    # flush likely corrupted data
 
-        undecoded = undecoded[6 + 1 + sent_data_length + 1 :]    # remove packet
+        packet_data = undecoded[ 6+1 : 6+1+sent_data_length ]
+        undecoded = undecoded[ 6+1+sent_data_length+1 : ]    # remove packet
 
         if packet_data[0] != self.PREFIX[0]:
             self.communication_errors.inc()
@@ -151,129 +185,84 @@ class HeliothermCollector(object):
 
         return (payload, undecoded)
 
-    def sendBatchQuery(self, query_commands, port: serial.Serial):
-        """
-        Send up to two command next to each other.
-        You can send only commands that return exactly one message.
-        """
-
-        data_to_send = []
-        for command in query_commands:
-            data_to_send.append(self.prepareQuery(command))
-
-        port.write(data_to_send[0])
-        send_index = 1
-
-        while send_index < len(data_to_send):
-            port.write(data_to_send[send_index])
-            send_index += 1
-
-
-        port.write(data_to_send)
-
-        timeout = time.time() + self.RESPONSE_TIMEOUT_SEC
-        read = b''
-        while time.time() <= timeout:
-            read += port.read(1000)
-        
-        read_in_hex = binascii.b2a_hex(read)
-        logging.info(f'Received batch data: {read_in_hex}   {read}')
-
     def sendQuery(self, query_command, port: serial.Serial, timeout = None, accept_no_response = False):
         """
-        Send command und return received data.
+        Send command und return received data (max 1 packet).
         Adds and removes preamble, length, prefix and CRC.
         """
 
-        REPLY_COM = b'\x02\xfd\xe0\xd0\x00\x00'  # Reply Commando
-        REPLY_COM_2 = b'\x02\xfd\xe0\xd0\x04\x00'  # Reply Commando 2 (e.g. for MP,NR=16). With this reply the CRC is 00
-        REPLY_COM_3 = b'\x02\xfd\xe0\xd0\x02\x00'  # Reply Commando 3 (for error messages?). With this reply the length is 00 (but there is data and a (invalid?) crc)
-
-        if timeout is None:
-            timeout = self.RESPONSE_TIMEOUT_SEC
-
         data_to_send = self.prepareQuery(query_command)
-
         logging.debug(f'Sending query: {query_command}')
         logging.debug(f'Sending packet: {binascii.b2a_hex(data_to_send)}   {data_to_send}')
 
         port.write(data_to_send)
 
-        #(payload, undecoded) = self.receiveAndDecode(port, timeout=timeout, accept_no_response=accept_no_response)
+        (payload, undecoded) = self.receiveAndDecode(port, timeout=timeout, accept_no_response=accept_no_response, expect_one_packet=True)
 
-        wait_time = time.time() + timeout
-        read = b''
-        while time.time() <= wait_time:
-            read += port.read(1000)
-            if len(read) >= 7:
-                # preamble and size is here
-                size = read[6]
-                if len(read)>= size + 6 + 1 + 1:
-                    break
-
-        if len(read) > 0:
-            read_in_hex = binascii.b2a_hex(read)
-            logging.debug(f'Received packet: {read_in_hex}   {read}')
-
-            if len(read) < 8:
-                self.communication_errors.inc()
-                logging.info(f'Received packet too short. Packet:{read_in_hex}')
-                return []
-
-            com = read[:6]
-            if REPLY_COM != com and REPLY_COM_2 != com and REPLY_COM_3 != com:
-                self.communication_errors.inc()
-                logging.info(f'Unexpected preamble in received packet. Received: {com} Expected: {REPLY_COM}  Packet:{read_in_hex}')
-                return []
-
-            if read[6] != len(read) - 6 - 1 - 1:
-                if REPLY_COM_3 == com and read[6] == 0:
-                    logging.debug(f'Alternative reply commando (3) received with length 0.')
-                else:
-                    self.communication_errors.inc()
-                    logging.info(f'Unexpected length in received packet. DevicesSays: {read[6]} DataReceived: {len(read) - 6 - 1}  Packet:{read_in_hex}     {read}')
-                    return []
-
-            if read[-1] != self.makeCrc(read[:-1])[0]:
-                if REPLY_COM_2 == com and read[-1] == 0:
-                    logging.debug(f'Alternative reply commando (2) received with CRC 0.')
-                elif REPLY_COM_3 == com and read[-1] == 117:
-                    logging.debug(f'Alternative reply commando (3) received with CRC 117.')
-                else:
-                    self.communication_errors.inc()
-                    logging.info(f'CRC error for received packet. Received: {read[-1]} Expected: {self.makeCrc(read[:-1])[0]}  Packet:{read_in_hex}    {read}')
-                    return []
-
-            if read[7] != self.PREFIX[0]:
-                self.communication_errors.inc()
-                logging.info(f'Unexpected prefix. Received: {read[7]} Expected: {self.PREFIX[0]}  Packet:{read_in_hex}')
-                return []
-            
-            payload = read[8:-1]
-
-            if len(payload)>2 and payload[-2:]==b'\r\n':    #strip CRLF
-                payload = payload[:-2]
-
-            logging.debug(f'Received payload: {binascii.b2a_hex(payload)}   {payload}')
-
-            return payload
-        else:
-            if not accept_no_response:
-                self.communication_errors.inc()
-                logging.info(f'Received no response')
+        if payload is None:
             return []
+
+        return payload
+
+    def sendQueryMultiResults(self, query_command, port: serial.Serial, timeout = None, accept_no_response = False, expected_result_count = None):
+        """
+        Send command und return received data (multiple packets possible).
+        Adds and removes preamble, length, prefix and CRC.
+        """
+
+        data_to_send = self.prepareQuery(query_command)
+        logging.debug(f'Sending query: {query_command}')
+        logging.debug(f'Sending packet: {binascii.b2a_hex(data_to_send)}   {data_to_send}')
+
+        port.write(data_to_send)
+
+        previous_data = b''
+        received_packets = []
+
+        while True:
+            if not expected_result_count is None and len(received_packets) == expected_result_count-1:
+                last_packet = True
+            else:
+                last_packet = False
+
+            (payload, previous_data) = self.receiveAndDecode(port, previous_data=previous_data, expect_one_packet=last_packet)
+            if not payload is None:
+                logging.debug(f'Received packet {len(received_packets)}')
+                received_packets.append(payload)
+
+            if last_packet or payload is None:
+                if (not accept_no_response) and len(received_packets) == 0:
+                    self.communication_errors.inc()
+                    logging.info(f'No packets received. command={query_command}')
+
+                logging.debug('No further response received')
+
+                if not expected_result_count is None:
+                    if len(received_packets) != expected_result_count:
+                        self.communication_errors.inc()
+                        logging.info(f'Unexpected packet count received when reading multiple values with one command: expected={expected_result_count}, received={len(received_packets)}, command={query_command}')
+
+                return received_packets
+
+    def CreatePromMetric(self, data: DataValue):
+        logging.info(f'nr={data.key}, name={data.name}, promname={data.promname}, value={data.value}')
+
+        metric = GaugeMetricFamily(
+            PROMETHEUS_NAMESPACE + '_' + data.promname,
+            data.name)
+        metric.add_metric(
+            labels=[],
+            value=data.value)
+        return metric
 
     def collectHeliothermData(self):
         metrics = []
 
-        label_keys = [
-            ]
-        label_values = [
-            ]
-
-        # Interresting Values
+        # Interesting Values
         VALUES_TO_READ = [
-            'M0', 'M1', 'M2', 'M3', 'M4', 'M5', 'M6', 'M18', 'M19', 'M22', 'M31', 'M47', 'M48', 'M56', 'M63', 'M67', 'M69', 'M71', 'M72', 'M73', 'M74',
+            'M0', 'M1', 'M2', 'M3', 'M4', 'M5', 'M6', 'M8', 'M9', 'M12', 'M13', 'M14', 'M15', 'M18', 'M19',
+            'M20', 'M21', 'M22', 'M23', 'M24', 'M25', 'M29', 'M30', 'M31', 'M32', 'M33', 'M37', 'M38', 'M47', 'M48',
+            'M51', 'M52', 'M54', 'M56', 'M63', 'M65', 'M66', 'M67', 'M68', 'M69', 'M71', 'M72', 'M73', 'M74',
             'S10', 'S11', 'S13', 'S14', 'S69', 'S76', 'S153', 'S155', 'S171', 'S172', 'S173', 'S200', 'S223']
 
         # Test Values (with first invalid values)
@@ -284,7 +273,7 @@ class HeliothermCollector(object):
 
         #port = serial.Serial(self.device, baudrate=38400, timeout=0.0,dsrdtr=True)
         with serial.serial_for_url(f"socket://{self.lan_gateway}:{self.lan_gateway_port}", timeout=0.01) as port:
-            # Protocol description:
+            # Protocol description based on:
             # https://knx-user-forum.de/forum/%C3%B6ffentlicher-bereich/knx-eib-forum/code-schnipsel/40472-kommunikation-mit-heliotherm-w%C3%A4rmepumpe-n
 
             response_success = b'OK;'
@@ -308,12 +297,36 @@ class HeliothermCollector(object):
                     self.gathering_errors.inc()
                     logging.info(f'Login unsucessful')
                     return metrics
+            logging.info(f'Login sucessful')
 
-            #self.sendBatchQuery([b'MP,NR=0;', b'MP,NR=1;', b'SP,NR=11;'], port)
-            #self.sendBatchQuery([b'RS;'], port)
+            #received_packets = self.sendQueryMultiResults(command_mr, port)
 
-            for value in VALUES_TO_READ:
-                command = bytes(f'{value[0]}P,NR={value[1:]};', 'utf-8')
+            # self.sendQuery(b'SP,NR=10;', port)
+            # received_packets = self.sendQueryMultiResults(b'MR,0,1,2,3,4,5,6,8,9,12,13,14,15,18,19,20,21,22,23,24,25,29,30,31,32,33,37,38,47,48,51,52,54,56,63,65,66,67,68,69,71,72,73,74;', port)
+            
+            # if not received_packets is None:
+            #     logging.info(f'Received {len(received_packets)} packets.')
+            #     for packet in received_packets:
+            #         logging.info(f'Packet: {packet}')
+
+            multi_command = b'MR'
+            multi_command_count = 0
+
+            total_values_received = 0
+
+            for value_key in VALUES_TO_READ:
+                value_kind = value_key[0]
+                value_nr = value_key[1:]
+
+                data = self.known_data_values.get(value_key)
+                if value_kind == 'M':
+                    #we can read these with a multi_command if we have the names
+                    if not data is None:
+                        multi_command += b',' + bytes(value_nr, 'utf-8')
+                        multi_command_count += 1
+                        continue
+
+                command = bytes(f'{value_kind}P,NR={value_nr};', 'utf-8')
                 result = self.sendQuery(command, port)
                 if len(result)<1:
                     continue
@@ -321,33 +334,91 @@ class HeliothermCollector(object):
                 logging.debug(f'result={result}')
 
                 if result.startswith('ERR,'):
+                    self.communication_errors.inc()
                     logging.info(f'Error result received: {result}')
                     continue
 
-                nr = float(re.search(',NR=([0-9.-]*),', result).groups()[0])
-                name = re.search(",NAME=([a-zA-Z0-9._():% -/]*),", result).groups()[0]
-                value = float(re.search(',VAL=([0-9.-]*),', result).groups()[0])
+                # example: MP,NR=0,ID=0,NAME=Temp. Aussen,LEN=4,TP=1,BIT=1,VAL=4.8,MAX=40.0,MIN=-20.0,ERF=0,ORV=0.0,ORF=0,TRF=1,TRT=0,TRHV=1.0,TRI=900,TE=31.12.99-11:59:00,OFFV=0.0,RT1=0,RTL=0,WR=1,US=1;
+                try:
+                    nr = result[0] + str(int(re.search(',NR=([0-9.-]*),', result).groups()[0]))
+                    name = re.search(",NAME=([a-zA-Z0-9._():% -/]*),", result).groups()[0]
+                    value = float(re.search(',VAL=([0-9.-]*),', result).groups()[0])
+                except AttributeError:
+                    self.communication_errors.inc()
+                    logging.exception(f"Failed to parse result '{result}'.")
+                    continue
 
-                promname = name.lower().replace(' ', '_').replace('.', '_')
-                promname = promname.replace('(', '_').replace(')', '_')
-                promname = promname.replace(':', '_').replace('-', '_')
-                promname = promname.replace('%', '_prozent_').replace('/', '_pro_')
-                promname = promname.replace('__', '_').replace('__', '_').replace('__', '_').strip('_')
-                logging.info(f'nr={nr}, name={name}, promname={promname}, value={value}')
+                if nr != value_key:
+                    self.communication_errors.inc()
+                    logging.info(f'Different value then expected received: received={nr} expected={value_key}')
+                    continue
 
-                heliotherm_value = GaugeMetricFamily(
-                    PROMETHEUS_NAMESPACE + '_' + promname,
-                    name,
-                    labels=label_keys)
-                heliotherm_value.add_metric(
-                    labels=label_values, 
-                    value=value)
-                metrics.append(heliotherm_value)
+                if data is None:
+                    promname = name.lower().replace(' ', '_').replace('.', '_')
+                    promname = promname.replace('(', '_').replace(')', '_')
+                    promname = promname.replace(':', '_').replace('-', '_')
+                    promname = promname.replace('%', '_prozent_').replace('/', '_pro_')
+                    promname = promname.replace('__', '_').replace('__', '_').replace('__', '_').strip('_')
+
+                    data = DataValue(value_key, name, promname, value)
+                    self.known_data_values[value_key] = data
+                else:
+                    data.value = value
+
+                metrics.append(self.CreatePromMetric(data))
+                total_values_received += 1
+
+            multi_command += b';'
+
+            if multi_command_count>0:
+                logging.debug(f'Reading multiple values with one command: {multi_command}')
+                received_packets = self.sendQueryMultiResults(multi_command, port, expected_result_count = multi_command_count)
+
+                if received_packets is None or len(received_packets)==0:
+                    self.communication_errors.inc()
+                    self.gathering_errors.inc()     # this concerns many values, we consider this a major error
+                    logging.info(f'No packets received when reading multiple values with one command: {multi_command}')
+                    return metrics
+
+                for packet in received_packets:
+                    # example: MA,3,24.1,37;
+                    #          MA,NR,VAL,unknown
+                    packet = packet.decode()
+                    groups = re.search('MA,([0-9]*),([0-9.-]*),', packet).groups()
+                    nr = int(groups[0])
+                    val = float(groups[1])
+                    value_key = "M" + str(nr)
+                    data = self.known_data_values.get(value_key)
+                    if data is None:
+                        self.communication_errors.inc()
+                        logging.info(f'Unexpected received value with no existing data. value_key={value_key}')
+                        continue
+                    data.value = val
+                    metrics.append(self.CreatePromMetric(data))
+                    total_values_received += 1
 
             result_logout = self.sendQuery(command_logout, port)
             if result_logout != response_success:
                 logging.info(f'Logout unsucessful')
-                return metrics
+
+        if len(VALUES_TO_READ) != total_values_received:
+            logging.info(f'Could not read all data values. expected={len(VALUES_TO_READ)}, received={total_values_received}')
+
+        metric_total_values_expected = GaugeMetricFamily(
+            PROMETHEUS_NAMESPACE + '_total_values_expected',
+            "Total values expected in this gathering run.")
+        metric_total_values_expected.add_metric(
+            labels=[],
+            value=len(VALUES_TO_READ))
+        metrics.append(metric_total_values_expected)            
+
+        metric_total_values_received = GaugeMetricFamily(
+            PROMETHEUS_NAMESPACE + '_total_values_received',
+            "Total values received in this gathering run.")
+        metric_total_values_received.add_metric(
+            labels=[],
+            value=total_values_received)
+        metrics.append(metric_total_values_received)            
 
         return metrics
 
@@ -400,30 +471,6 @@ $Command{Betriebsst_HKR}='SP,Nr=172;';
 $Command{Betriebsst_ges}='SP,Nr=173;';
 $Command{MKR2_aktiviert}='SP,Nr=222;';
 $Command{Energiezaehler}='SP,Nr=263;';
-"""
-
-
-"""
-        teslafi_info = InfoMetricFamily(
-            PROMETHEUS_NAMESPACE,
-            'TeslaFi car info (almost never changing)',
-            value={
-                'vin': self.getSetData(teslafi_data, teslafi_data_old, "vin"),
-                'display_name': self.getSetData(teslafi_data, teslafi_data_old, "display_name"),
-                'vehicle_id': self.getSetData(teslafi_data, teslafi_data_old, "vehicle_id"),
-                'option_codes': self.getSetData(teslafi_data, teslafi_data_old, "option_codes"),
-                'exterior_color': self.getSetData(teslafi_data, teslafi_data_old, "exterior_color"),
-                'roof_color': self.getSetData(teslafi_data, teslafi_data_old, "roof_color"),
-                'measure': self.getSetData(teslafi_data, teslafi_data_old, "measure"),
-                'eu_vehicle': self.getSetData(teslafi_data, teslafi_data_old, "eu_vehicle"),
-                'rhd': self.getSetData(teslafi_data, teslafi_data_old, "rhd"),
-                'motorized_charge_port': self.getSetData(teslafi_data, teslafi_data_old, "motorized_charge_port"),
-                'spoiler_type': self.getSetData(teslafi_data, teslafi_data_old, "spoiler_type"),
-                'third_row_seats': self.getSetData(teslafi_data, teslafi_data_old, "third_row_seats"),
-                'car_type': self.getSetData(teslafi_data, teslafi_data_old, "car_type"),
-                'rear_seat_heaters': self.getSetData(teslafi_data, teslafi_data_old, "rear_seat_heaters"),
-                })
-        metrics.append(teslafi_info)
 """
 
 if __name__ == '__main__':
