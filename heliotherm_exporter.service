@@ -1,0 +1,13 @@
+[Unit]
+Description=Prometheus exporter for Heliotherm heat pumps
+After=multi-user.target
+
+[Service]
+Type=simple
+User=heliotherm_exporter
+WorkingDirectory=/root/heliotherm_exporter
+ExecStart=/root/heliotherm_exporter/exporter.py --lan_gateway enter_gateway_ip_or_host_here
+StandardInput=tty-force
+
+[Install]
+WantedBy=multi-user.target

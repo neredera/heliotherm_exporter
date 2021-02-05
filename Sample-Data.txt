@@ -1,0 +1,1051 @@
+
+
+INFO:root:Looking for Heliotherm heat pump on: HelioThermInterface.lalden.malte.ch:4001
+INFO:root:result=MP,NR=0,ID=0,NAME=Temp. Aussen,LEN=4,TP=1,BIT=1,VAL=4.8,MAX=40.0,MIN=-20.0,ERF=0,ORV=0.0,ORF=0,TRF=1,TRT=0,TRHV=1.0,TRI=900,TE=31.12.99-11:59:00,OFFV=0.0,RT1=0,RTL=0,WR=1,US=1;
+INFO:root:name=Temp. Aussen, promname=temp_aussen, value=4.8
+INFO:root:result=MP,NR=1,ID=1,NAME=Temp. Aussen verzoegert,LEN=4,TP=1,BIT=1,VAL=4.6,MAX=40.0,MIN=-20.0,ERF=0,ORV=0.0,ORF=0,TRF=1,TRT=0,TRHV=1.0,TRI=900,TE=31.12.99-11:59:00,OFFV=0.0,RT1=0,RTL=0,WR=0,US=1;
+INFO:root:name=Temp. Aussen verzoegert, promname=temp_aussen_verzoegert, value=4.6
+INFO:root:result=MP,NR=2,ID=2,NAME=Temp. Brauchwasser,LEN=4,TP=1,BIT=1,VAL=42.3,MAX=70.0,MIN=0.0,ERF=0,ORV=0.0,ORF=0,TRF=1,TRT=0,TRHV=2.0,TRI=900,TE=31.12.99-11:59:00,OFFV=0.0,RT1=0,RTL=0,WR=1,US=1;
+INFO:root:name=Temp. Brauchwasser, promname=temp_brauchwasser, value=42.3
+INFO:root:result=MP,NR=3,ID=3,NAME=Temp. Vorlauf,LEN=4,TP=1,BIT=1,VAL=34.0,MAX=70.0,MIN=0.0,ERF=0,ORV=0.0,ORF=0,TRF=0,TRT=0,TRHV=0.5,TRI=900,TE=31.12.99-23:59:00,OFFV=0.0,RT1=0,RTL=0,WR=1,US=1;
+INFO:root:name=Temp. Vorlauf, promname=temp_vorlauf, value=34.0
+INFO:root:result=MP,NR=4,ID=4,NAME=Temp. Ruecklauf,LEN=4,TP=1,BIT=1,VAL=33.7,MAX=70.0,MIN=0.0,ERF=0,ORV=0.0,ORF=0,TRF=0,TRT=0,TRHV=0.5,TRI=900,TE=31.12.99-23:59:00,OFFV=0.0,RT1=0,RTL=0,WR=1,US=1;
+INFO:root:name=Temp. Ruecklauf, promname=temp_ruecklauf, value=33.7
+INFO:root:result=MP,NR=5,ID=5,NAME=Temp. Pufferspeicher,LEN=4,TP=1,BIT=1,VAL=33.7,MAX=70.0,MIN=0.0,ERF=0,ORV=0.0,ORF=0,TRF=1,TRT=0,TRHV=1.0,TRI=900,TE=31.12.99-11:59:00,OFFV=0.0,RT1=0,RTL=0,WR=1,US=1;
+INFO:root:name=Temp. Pufferspeicher, promname=temp_pufferspeicher, value=33.7
+INFO:root:result=MP,NR=6,ID=6,NAME=Temp. EQ_Eintritt,LEN=4,TP=1,BIT=1,VAL=1.6,MAX=30.0,MIN=-20.0,ERF=0,ORV=0.0,ORF=0,TRF=1,TRT=0,TRHV=1.0,TRI=900,TE=31.12.99-11:59:00,OFFV=0.0,RT1=0,RTL=0,WR=1,US=1;
+INFO:root:name=Temp. EQ_Eintritt, promname=temp_eq_eintritt, value=1.6
+INFO:root:result=MP,NR=7,ID=7,NAME=Temp. EQ_Austritt,LEN=4,TP=1,BIT=1,VAL=-50.0,MAX=30.0,MIN=-20.0,ERF=0,ORV=0.0,ORF=0,TRF=0,TRT=0,TRHV=1.0,TRI=900,TE=31.12.99-23:59:00,OFFV=0.0,RT1=0,RTL=0,WR=1,US=0;
+INFO:root:name=Temp. EQ_Austritt, promname=temp_eq_austritt, value=-50.0
+INFO:root:result=MP,NR=8,ID=8,NAME=Temp. Verdichterfuss,LEN=4,TP=1,BIT=1,VAL=54.7,MAX=70.0,MIN=-20.0,ERF=0,ORV=0.0,ORF=0,TRF=0,TRT=0,TRHV=1.0,TRI=900,TE=31.12.99-23:59:00,OFFV=0.0,RT1=0,RTL=0,WR=1,US=1;
+INFO:root:name=Temp. Verdichterfuss, promname=temp_verdichterfuss, value=54.7
+INFO:root:result=MP,NR=9,ID=9,NAME=Temp. Sauggas,LEN=4,TP=1,BIT=1,VAL=12.4,MAX=30.0,MIN=-20.0,ERF=0,ORV=0.0,ORF=0,TRF=0,TRT=0,TRHV=0.5,TRI=900,TE=31.12.99-23:59:00,OFFV=0.0,RT1=0,RTL=0,WR=1,US=1;
+INFO:root:name=Temp. Sauggas, promname=temp_sauggas, value=12.4
+INFO:root:result=MP,NR=10,ID=10,NAME=TF 22,LEN=4,TP=1,BIT=1,VAL=0.0,MAX=8.0,MIN=-8.0,ERF=0,ORV=0.0,ORF=0,TRF=0,TRT=0,TRHV=1.0,TRI=900,TE=31.12.99-23:59:00,OFFV=0.0,RT1=0,RTL=0,WR=1,US=0;
+INFO:root:name=TF 22, promname=tf_22, value=0.0
+INFO:root:result=MP,NR=11,ID=11,NAME=Temp. Frischwasser_Istwert,LEN=4,TP=1,BIT=1,VAL=-50.0,MAX=70.0,MIN=0.0,ERF=0,ORV=0.0,ORF=0,TRF=0,TRT=0,TRHV=1.0,TRI=900,TE=31.12.99-23:59:00,OFFV=0.0,RT1=0,RTL=0,WR=1,US=0;
+INFO:root:name=Temp. Frischwasser_Istwert, promname=temp_frischwasser_istwert, value=-50.0
+INFO:root:result=MP,NR=12,ID=12,NAME=Temp. Verdampfung,LEN=4,TP=1,BIT=1,VAL=0.2,MAX=30.0,MIN=-50.0,ERF=0,ORV=0.0,ORF=0,TRF=0,TRT=0,TRHV=1.0,TRI=900,TE=31.12.99-23:59:00,OFFV=0.0,RT1=0,RTL=0,WR=1,US=1;
+INFO:root:name=Temp. Verdampfung, promname=temp_verdampfung, value=0.2
+INFO:root:result=MP,NR=13,ID=13,NAME=Temp. Kondensation,LEN=4,TP=1,BIT=1,VAL=32.9,MAX=60.0,MIN=-50.0,ERF=0,ORV=0.0,ORF=0,TRF=0,TRT=0,TRHV=1.0,TRI=900,TE=31.12.99-23:59:00,OFFV=0.0,RT1=0,RTL=0,WR=1,US=1;
+INFO:root:name=Temp. Kondensation, promname=temp_kondensation, value=32.9
+INFO:root:result=MP,NR=14,ID=14,NAME=Temp. KM_Unterkuehlung,LEN=4,TP=1,BIT=1,VAL=31.0,MAX=60.0,MIN=0.0,ERF=0,ORV=0.0,ORF=0,TRF=0,TRT=0,TRHV=1.0,TRI=900,TE=31.12.99-23:59:00,OFFV=0.0,RT1=0,RTL=0,WR=1,US=1;
+INFO:root:name=Temp. KM_Unterkuehlung, promname=temp_km_unterkuehlung, value=31.0
+INFO:root:result=MP,NR=15,ID=15,NAME=Temp. Heissgas,LEN=4,TP=1,BIT=1,VAL=37.3,MAX=150.0,MIN=0.0,ERF=0,ORV=0.0,ORF=0,TRF=0,TRT=0,TRHV=1.0,TRI=900,TE=31.12.99-23:59:00,OFFV=0.0,RT1=0,RTL=0,WR=1,US=1;
+INFO:root:name=Temp. Heissgas, promname=temp_heissgas, value=37.3
+INFO:root:Alternative reply commando received with CRC 0.
+INFO:root:result=MP,NR=16,ID=16,NAME=Temp. Raumfuehler1,LEN=4,TP=1,BIT=1,VAL=20.0,MAX=60.0,MIN=0.0,ERF=0,ORV=0.0,ORF=0,TRF=0,TRT=0,TRHV=0.5,TRI=900,TE=31.12.99-23:59:00,OFFV=0.0,WR=1,US=0;
+INFO:root:name=Temp. Raumfuehler1, promname=temp_raumfuehler1, value=20.0
+INFO:root:result=MP,NR=17,ID=17,NAME=Temp. Raumfuehler2,LEN=4,TP=1,BIT=1,VAL=20.0,MAX=60.0,MIN=0.0,ERF=0,ORV=0.0,ORF=0,TRF=0,TRT=0,TRHV=0.5,TRI=900,TE=31.12.99-23:59:00,OFFV=0.0,WR=1,US=0;
+INFO:root:name=Temp. Raumfuehler2, promname=temp_raumfuehler2, value=20.0
+INFO:root:result=MP,NR=18,ID=18,NAME=Temp. Raumfuehler3,LEN=4,TP=1,BIT=1,VAL=21.9,MAX=60.0,MIN=0.0,ERF=0,ORV=0.0,ORF=0,TRF=1,TRT=0,TRHV=1.0,TRI=900,TE=31.12.99-11:59:00,OFFV=-1.5,WR=1,US=1;
+INFO:root:name=Temp. Raumfuehler3, promname=temp_raumfuehler3, value=21.9
+INFO:root:result=MP,NR=19,ID=19,NAME=Temp. Raumfuehler4,LEN=4,TP=1,BIT=1,VAL=22.7,MAX=60.0,MIN=0.0,ERF=0,ORV=0.0,ORF=0,TRF=1,TRT=0,TRHV=1.0,TRI=900,TE=31.12.99-11:59:00,OFFV=-1.5,WR=1,US=1;
+INFO:root:name=Temp. Raumfuehler4, promname=temp_raumfuehler4, value=22.7
+INFO:root:result=MP,NR=20,ID=20,NAME=Niederdruck (bar),LEN=4,TP=1,BIT=1,VAL=7.1,MAX=18.0,MIN=0.0,ERF=0,ORV=0.0,ORF=0,TRF=0,TRT=0,TRHV=0.5,TRI=900,TE=31.12.99-23:59:00,OFFV=0.4,RT1=0,RTL=0,WR=1,US=1;
+INFO:root:name=Niederdruck (bar), promname=niederdruck_bar, value=7.1
+INFO:root:result=MP,NR=21,ID=21,NAME=Hochdruck (bar),LEN=4,TP=1,BIT=1,VAL=19.4,MAX=40.0,MIN=0.0,ERF=0,ORV=0.0,ORF=0,TRF=0,TRT=0,TRHV=1.0,TRI=900,TE=31.12.99-23:59:00,OFFV=0.4,RT1=0,RTL=0,WR=1,US=1;
+INFO:root:name=Hochdruck (bar), promname=hochdruck_bar, value=19.4
+INFO:root:result=MP,NR=22,ID=22,NAME=Heizkreispumpe,LEN=2,TP=0,BIT=1,VAL=0,MAX=1,MIN=0,ERF=0,ORV=0,ORF=0,TRF=0,TRT=1,TRHV=1,TRI=600,TE=31.12.99-23:59:00,OFFV=0,RT1=0,RTL=0,WR=1,US=1;
+INFO:root:name=Heizkreispumpe, promname=heizkreispumpe, value=0.0
+INFO:root:result=MP,NR=23,ID=23,NAME=Pufferladepumpe,LEN=2,TP=0,BIT=2,VAL=0,MAX=1,MIN=0,ERF=0,ORV=0,ORF=0,TRF=0,TRT=1,TRHV=1,TRI=600,TE=31.12.99-23:59:00,OFFV=0,RT1=0,RTL=0,WR=1,US=1;
+INFO:root:name=Pufferladepumpe, promname=pufferladepumpe, value=0.0
+INFO:root:result=MP,NR=24,ID=24,NAME=EQ Pumpe (Ventilator),LEN=2,TP=0,BIT=3,VAL=0,MAX=1,MIN=0,ERF=0,ORV=0,ORF=0,TRF=1,TRT=1,TRHV=0,TRI=600,TE=31.12.99-11:59:00,OFFV=0,RT1=0,RTL=0,WR=1,US=1;
+INFO:root:name=EQ Pumpe (Ventilator), promname=eq_pumpe_ventilator, value=0.0
+INFO:root:result=MP,NR=25,ID=25,NAME=Warmwasservorrang,LEN=2,TP=0,BIT=4,VAL=0,MAX=1,MIN=0,ERF=0,ORV=0,ORF=0,TRF=0,TRT=1,TRHV=1,TRI=600,TE=31.12.99-23:59:00,OFFV=0,RT1=0,RTL=0,WR=1,US=1;
+INFO:root:name=Warmwasservorrang, promname=warmwasservorrang, value=0.0
+INFO:root:result=MP,NR=26,ID=26,NAME=Carterheizung,LEN=2,TP=0,BIT=5,VAL=0,MAX=1,MIN=0,ERF=0,ORV=0,ORF=0,TRF=0,TRT=1,TRHV=1,TRI=600,TE=31.12.99-23:59:00,OFFV=0,RT1=0,RTL=0,WR=1,US=1;
+INFO:root:name=Carterheizung, promname=carterheizung, value=0.0
+INFO:root:result=MP,NR=27,ID=27,NAME=Kuehlen UmV Passiv,LEN=2,TP=0,BIT=6,VAL=0,MAX=1,MIN=0,ERF=0,ORV=0,ORF=0,TRF=0,TRT=1,TRHV=1,TRI=600,TE=31.12.99-23:59:00,OFFV=0,RT1=0,RTL=0,WR=1,US=0;
+INFO:root:name=Kuehlen UmV Passiv, promname=kuehlen_umv_passiv, value=0.0
+INFO:root:result=MP,NR=28,ID=28,NAME=Externe Pumpe,LEN=2,TP=0,BIT=7,VAL=0,MAX=1,MIN=0,ERF=0,ORV=0,ORF=0,TRF=0,TRT=1,TRHV=1,TRI=600,TE=31.12.99-23:59:00,OFFV=0,RT1=0,RTL=0,WR=1,US=0;
+INFO:root:name=Externe Pumpe, promname=externe_pumpe, value=0.0
+INFO:root:result=MP,NR=29,ID=29,NAME=Zirkulationspumpe WW,LEN=2,TP=0,BIT=8,VAL=0,MAX=1,MIN=0,ERF=0,ORV=0,ORF=0,TRF=0,TRT=1,TRHV=1,TRI=600,TE=31.12.99-23:59:00,OFFV=0,RT1=0,RTL=0,WR=1,US=1;
+INFO:root:name=Zirkulationspumpe WW, promname=zirkulationspumpe_ww, value=0.0
+INFO:root:result=MP,NR=30,ID=30,NAME=Verdichter,LEN=2,TP=0,BIT=9,VAL=0,MAX=1,MIN=0,ERF=0,ORV=0,ORF=0,TRF=1,TRT=1,TRHV=0,TRI=900,TE=31.12.99-11:59:00,OFFV=0,RT1=0,RTL=0,WR=1,US=1;
+INFO:root:name=Verdichter, promname=verdichter, value=0.0
+INFO:root:result=MP,NR=31,ID=31,NAME=Stoerung,LEN=2,TP=0,BIT=10,VAL=0,MAX=1,MIN=0,ERF=0,ORV=0,ORF=0,TRF=1,TRT=1,TRHV=0,TRI=600,TE=31.12.99-11:59:00,OFFV=0,RT1=0,RTL=0,WR=1,US=1;
+INFO:root:name=Stoerung, promname=stoerung, value=0.0
+INFO:root:result=MP,NR=32,ID=32,NAME=Vierwegeventil Luft,LEN=2,TP=0,BIT=11,VAL=0,MAX=1,MIN=0,ERF=0,ORV=0,ORF=0,TRF=1,TRT=1,TRHV=0,TRI=600,TE=31.12.99-11:59:00,OFFV=0,RT1=0,RTL=0,WR=1,US=1;
+INFO:root:name=Vierwegeventil Luft, promname=vierwegeventil_luft, value=0.0
+INFO:root:result=MP,NR=33,ID=33,NAME=Hochdruckschalter,LEN=2,TP=0,BIT=16,VAL=1,MAX=1,MIN=0,ERF=0,ORV=0,ORF=0,TRF=0,TRT=1,TRHV=1,TRI=0,TE=31.12.99-23:59:00,OFFV=0,RT1=0,RTL=0,WR=1,US=1;
+INFO:root:name=Hochdruckschalter, promname=hochdruckschalter, value=1.0
+INFO:root:result=MP,NR=34,ID=34,NAME=EQ Motorschutz,LEN=2,TP=0,BIT=15,VAL=1,MAX=1,MIN=0,ERF=0,ORV=0,ORF=0,TRF=0,TRT=1,TRHV=1,TRI=0,TE=31.12.99-23:59:00,OFFV=0,RT1=0,RTL=0,WR=1,US=1;
+INFO:root:name=EQ Motorschutz, promname=eq_motorschutz, value=1.0
+INFO:root:result=MP,NR=35,ID=35,NAME=Externe Anforderung,LEN=2,TP=0,BIT=13,VAL=0,MAX=1,MIN=0,ERF=0,ORV=0,ORF=0,TRF=0,TRT=1,TRHV=1,TRI=0,TE=31.12.99-23:59:00,OFFV=0,RT1=0,RTL=0,WR=1,US=0;
+INFO:root:name=Externe Anforderung, promname=externe_anforderung, value=0.0
+INFO:root:result=MP,NR=36,ID=36,NAME=Hauptschalter,LEN=2,TP=0,BIT=12,VAL=1,MAX=1,MIN=0,ERF=0,ORV=0,ORF=0,TRF=1,TRT=1,TRHV=0,TRI=0,TE=31.12.99-11:59:00,OFFV=0,RT1=0,RTL=0,WR=1,US=1;
+INFO:root:name=Hauptschalter, promname=hauptschalter, value=1.0
+INFO:root:result=MP,NR=37,ID=37,NAME=EVU_Sperre,LEN=2,TP=0,BIT=11,VAL=1,MAX=1,MIN=0,ERF=0,ORV=0,ORF=0,TRF=1,TRT=1,TRHV=0,TRI=0,TE=31.12.99-11:59:00,OFFV=0,RT1=0,RTL=0,WR=1,US=1;
+INFO:root:name=EVU_Sperre, promname=evu_sperre, value=1.0
+INFO:root:result=MP,NR=38,ID=38,NAME=FWS Stroemungsschalter,LEN=2,TP=0,BIT=10,VAL=0,MAX=1,MIN=0,ERF=0,ORV=0,ORF=0,TRF=0,TRT=1,TRHV=1,TRI=0,TE=31.12.99-23:59:00,OFFV=0,RT1=0,RTL=0,WR=1,US=1;
+INFO:root:name=FWS Stroemungsschalter, promname=fws_stroemungsschalter, value=0.0
+INFO:root:result=MP,NR=39,ID=39,NAME=EQ Druckwaechter,LEN=2,TP=0,BIT=8,VAL=1,MAX=1,MIN=0,ERF=0,ORV=0,ORF=0,TRF=0,TRT=1,TRHV=1,TRI=0,TE=31.12.99-23:59:00,OFFV=0,RT1=0,RTL=0,WR=1,US=1;
+INFO:root:name=EQ Druckwaechter, promname=eq_druckwaechter, value=1.0
+INFO:root:result=MP,NR=40,ID=40,NAME=ModStatus,LEN=1,TP=0,BIT=0,VAL=0,MAX=7,MIN=0,ERF=0,ORV=0,ORF=0,TRF=0,TRT=1,TRHV=1,TRI=15,TE=31.12.99-23:59:00,OFFV=0,RT1=0,RTL=0,WR=0,US=1;
+INFO:root:name=ModStatus, promname=modstatus, value=0.0
+INFO:root:result=MP,NR=41,ID=41,NAME=BSZ Verdichter Schaltungen,LEN=4,TP=0,BIT=0,VAL=23707,MAX=100000,MIN=0,ERF=0,ORV=0,ORF=0,TRF=1,TRT=1,TRHV=0,TRI=900,TE=31.12.99-11:59:00,OFFV=0,RT1=0,RTL=0,WR=0,US=1;
+INFO:root:name=BSZ Verdichter Schaltungen, promname=bsz_verdichter_schaltungen, value=23707.0
+INFO:root:result=MP,NR=42,ID=42,NAME=DIP_SW,LEN=2,TP=0,BIT=0,VAL=30,MAX=255,MIN=0,ERF=0,ORV=0,ORF=0,TRF=0,TRT=1,TRHV=1,TRI=15,TE=31.12.99-23:59:00,OFFV=0,RT1=0,RTL=0,WR=0,US=1;
+INFO:root:name=DIP_SW, promname=dip_sw, value=30.0
+INFO:root:result=MP,NR=43,ID=43,NAME=Solar KT1,LEN=4,TP=1,BIT=1,VAL=-50.0,MAX=120.0,MIN=-30.0,ERF=0,ORV=0.0,ORF=0,TRF=0,TRT=0,TRHV=1.0,TRI=15,TE=31.12.99-23:59:00,OFFV=0.0,RT1=0,RTL=0,WR=1,US=0;
+INFO:root:name=Solar KT1, promname=solar_kt1, value=-50.0
+INFO:root:result=MP,NR=44,ID=44,NAME=Ausheizstatus,LEN=1,TP=0,BIT=0,VAL=0,MAX=3,MIN=0,ERF=0,ORV=0,ORF=0,TRF=0,TRT=1,TRHV=1,TRI=15,TE=31.12.99-23:59:00,OFFV=0,RT1=0,RTL=0,WR=0,US=0;
+INFO:root:name=Ausheizstatus, promname=ausheizstatus, value=0.0
+INFO:root:result=MP,NR=45,ID=45,NAME=Solar_Pumpe WW,LEN=1,TP=0,BIT=1,VAL=0,MAX=1,MIN=0,ERF=0,ORV=0,ORF=0,TRF=0,TRT=1,TRHV=1,TRI=0,TE=31.12.99-23:59:00,OFFV=0,RT1=0,RTL=0,WR=1,US=0;
+INFO:root:name=Solar_Pumpe WW, promname=solar_pumpe_ww, value=0.0
+INFO:root:result=MP,NR=46,ID=46,NAME=Solar_Pumpe Puffer,LEN=1,TP=0,BIT=2,VAL=0,MAX=1,MIN=0,ERF=0,ORV=0,ORF=0,TRF=0,TRT=1,TRHV=1,TRI=0,TE=31.12.99-23:59:00,OFFV=0,RT1=0,RTL=0,WR=1,US=0;
+INFO:root:name=Solar_Pumpe Puffer, promname=solar_pumpe_puffer, value=0.0
+INFO:root:result=MP,NR=47,ID=47,NAME=AO1 HKP,LEN=1,TP=0,BIT=0,VAL=0,MAX=100,MIN=0,ERF=0,ORV=0,ORF=0,TRF=0,TRT=0,TRHV=1,TRI=15,TE=31.12.99-23:59:00,OFFV=0,RT1=0,RTL=0,WR=1,US=1;
+INFO:root:name=AO1 HKP, promname=ao1_hkp, value=0.0
+INFO:root:result=MP,NR=48,ID=48,NAME=AO2 Energiequelle,LEN=1,TP=0,BIT=0,VAL=0,MAX=100,MIN=0,ERF=0,ORV=0,ORF=0,TRF=0,TRT=0,TRHV=1,TRI=15,TE=31.12.99-23:59:00,OFFV=0,RT1=0,RTL=0,WR=1,US=1;
+INFO:root:name=AO2 Energiequelle, promname=ao2_energiequelle, value=0.0
+INFO:root:result=MP,NR=49,ID=49,NAME=Anforderung 2.Stufe,LEN=1,TP=0,BIT=0,VAL=0,MAX=100,MIN=0,ERF=0,ORV=0,ORF=0,TRF=0,TRT=0,TRHV=1,TRI=0,TE=31.12.99-23:59:00,OFFV=0,WR=1,US=1;
+INFO:root:name=Anforderung 2.Stufe, promname=anforderung_2_stufe, value=0.0
+INFO:root:result=MP,NR=50,ID=50,NAME=Frischwasserpumpe,LEN=1,TP=0,BIT=0,VAL=0,MAX=100,MIN=0,ERF=0,ORV=0,ORF=0,TRF=0,TRT=0,TRHV=1,TRI=0,TE=31.12.99-23:59:00,OFFV=0,WR=1,US=0;
+INFO:root:name=Frischwasserpumpe, promname=frischwasserpumpe, value=0.0
+INFO:root:result=MP,NR=51,ID=51,NAME=Expansionsventil,LEN=4,TP=1,BIT=1,VAL=0.0,MAX=100.0,MIN=0.0,ERF=0,ORV=0.0,ORF=0,TRF=0,TRT=0,TRHV=1.0,TRI=15,TE=31.12.99-23:59:00,OFFV=0.0,RT1=0,RTL=0,WR=1,US=1;
+INFO:root:name=Expansionsventil, promname=expansionsventil, value=0.0
+INFO:root:result=MP,NR=52,ID=52,NAME=WMZ_Heizung (kWh),LEN=4,TP=1,BIT=2,VAL=0.00,MAX=12157522.00,MIN=0.00,ERF=0,ORV=0.00,ORF=0,TRF=0,TRT=0,TRHV=1.00,TRI=900,TE=31.12.99-23:59:00,OFFV=0.00,RT1=0,RTL=0,WR=1,US=1;
+INFO:root:name=WMZ_Heizung (kWh), promname=wmz_heizung_kwh, value=0.0
+INFO:root:result=MP,NR=53,ID=53,NAME=Stromz_Heizung (kWh),LEN=4,TP=1,BIT=2,VAL=0.00,MAX=12157522.00,MIN=0.00,ERF=0,ORV=0.00,ORF=0,TRF=0,TRT=0,TRHV=1.00,TRI=900,TE=31.12.99-23:59:00,OFFV=0.00,RT1=0,RTL=0,WR=1,US=0;
+INFO:root:name=Stromz_Heizung (kWh), promname=stromz_heizung_kwh, value=0.0
+INFO:root:result=MP,NR=54,ID=54,NAME=WMZ_Brauchwasser (kWh),LEN=4,TP=1,BIT=2,VAL=0.00,MAX=12157522.00,MIN=0.00,ERF=0,ORV=0.00,ORF=0,TRF=0,TRT=0,TRHV=1.00,TRI=15,TE=31.12.99-23:59:00,OFFV=0.00,RT1=0,RTL=0,WR=1,US=1;
+INFO:root:name=WMZ_Brauchwasser (kWh), promname=wmz_brauchwasser_kwh, value=0.0
+INFO:root:result=MP,NR=55,ID=55,NAME=Stromz_Brauchwasser (kWh),LEN=4,TP=1,BIT=2,VAL=0.00,MAX=12157522.00,MIN=0.00,ERF=0,ORV=0.00,ORF=0,TRF=0,TRT=0,TRHV=1.00,TRI=15,TE=31.12.99-23:59:00,OFFV=0.00,RT1=0,RTL=0,WR=1,US=0;
+INFO:root:name=Stromz_Brauchwasser (kWh), promname=stromz_brauchwasser_kwh, value=0.0
+INFO:root:result=MP,NR=56,ID=56,NAME=Verdichteranforderung,LEN=1,TP=0,BIT=0,VAL=0,MAX=5,MIN=0,ERF=0,ORV=0,ORF=0,TRF=1,TRT=1,TRHV=0,TRI=15,TE=31.12.99-11:59:00,OFFV=0,RT1=0,RTL=0,WR=0,US=1;
+INFO:root:name=Verdichteranforderung, promname=verdichteranforderung, value=0.0
+INFO:root:result=MP,NR=57,ID=57,NAME=HKR_Sollwert,LEN=4,TP=1,BIT=1,VAL=34.9,MAX=50.0,MIN=0.0,ERF=0,ORV=0.0,ORF=0,TRF=1,TRT=0,TRHV=1.0,TRI=900,TE=31.12.99-11:59:00,OFFV=0.0,RT1=0,RTL=0,WR=0,US=1;
+INFO:root:name=HKR_Sollwert, promname=hkr_sollwert, value=34.9
+INFO:root:result=MP,NR=58,ID=58,NAME=Heissgassollwert,LEN=4,TP=1,BIT=1,VAL=55.1,MAX=130.0,MIN=0.0,ERF=0,ORV=0.0,ORF=0,TRF=0,TRT=0,TRHV=1.0,TRI=15,TE=31.12.99-23:59:00,OFFV=0.0,RT1=0,RTL=0,WR=0,US=1;
+INFO:root:name=Heissgassollwert, promname=heissgassollwert, value=55.1
+INFO:root:result=MP,NR=59,ID=59,NAME=Druckdifferenz HD_ND,LEN=4,TP=1,BIT=1,VAL=12.3,MAX=50.0,MIN=-10.0,ERF=0,ORV=0.0,ORF=0,TRF=0,TRT=0,TRHV=1.0,TRI=1800,TE=31.12.99-23:59:00,OFFV=0.0,RT1=0,RTL=0,WR=0,US=1;
+INFO:root:name=Druckdifferenz HD_ND, promname=druckdifferenz_hd_nd, value=12.3
+INFO:root:result=MP,NR=60,ID=60,NAME=EQ_Temp.differenz,LEN=4,TP=1,BIT=1,VAL=51.7,MAX=50.0,MIN=-10.0,ERF=0,ORV=0.0,ORF=0,TRF=0,TRT=0,TRHV=1.0,TRI=1800,TE=31.12.99-23:59:00,OFFV=0.0,RT1=0,RTL=0,WR=0,US=0;
+INFO:root:name=EQ_Temp.differenz, promname=eq_temp_differenz, value=51.7
+INFO:root:result=MP,NR=61,ID=61,NAME=Abtau Luftein_Verdampf_diff.,LEN=4,TP=1,BIT=1,VAL=1.5,MAX=50.0,MIN=-20.0,ERF=0,ORV=0.0,ORF=0,TRF=0,TRT=0,TRHV=1.0,TRI=1800,TE=31.12.99-23:59:00,OFFV=0.0,RT1=0,RTL=0,WR=0,US=1;
+INFO:root:name=Abtau Luftein_Verdampf_diff., promname=abtau_luftein_verdampf_diff, value=1.5
+INFO:root:result=MP,NR=62,ID=62,NAME=VL_RL_Temp.diff.,LEN=4,TP=1,BIT=1,VAL=-0.4,MAX=50.0,MIN=-20.0,ERF=0,ORV=0.0,ORF=0,TRF=0,TRT=0,TRHV=1.0,TRI=1800,TE=31.12.99-23:59:00,OFFV=0.0,RT1=0,RTL=0,WR=0,US=1;
+INFO:root:name=VL_RL_Temp.diff., promname=vl_rl_temp_diff, value=-0.4
+INFO:root:result=MP,NR=63,ID=63,NAME=MKR1_Temp. VLT,LEN=4,TP=1,BIT=1,VAL=27.7,MAX=70.0,MIN=0.0,ERF=0,ORV=0.0,ORF=0,TRF=0,TRT=0,TRHV=1.0,TRI=15,TE=31.12.99-23:59:00,OFFV=0.0,RT1=0,RTL=0,WR=1,US=1;
+INFO:root:name=MKR1_Temp. VLT, promname=mkr1_temp_vlt, value=27.7
+INFO:root:result=MP,NR=64,ID=64,NAME=MKR1_Temp. RLT,LEN=4,TP=1,BIT=1,VAL=-50.0,MAX=70.0,MIN=0.0,ERF=0,ORV=0.0,ORF=0,TRF=0,TRT=0,TRHV=1.0,TRI=15,TE=31.12.99-23:59:00,OFFV=0.0,RT1=0,RTL=0,WR=1,US=0;
+INFO:root:name=MKR1_Temp. RLT, promname=mkr1_temp_rlt, value=-50.0
+INFO:root:result=MP,NR=65,ID=65,NAME=MKR1_Pumpe,LEN=1,TP=0,BIT=5,VAL=1,MAX=1,MIN=0,ERF=0,ORV=1,ORF=0,TRF=0,TRT=1,TRHV=1,TRI=0,TE=31.12.99-23:59:00,OFFV=0,RT1=0,RTL=0,WR=1,US=1;
+INFO:root:name=MKR1_Pumpe, promname=mkr1_pumpe, value=1.0
+INFO:root:result=MP,NR=66,ID=66,NAME=MKR1_Sollwert,LEN=4,TP=1,BIT=1,VAL=20.2,MAX=60.0,MIN=0.0,ERF=0,ORV=0.0,ORF=0,TRF=0,TRT=0,TRHV=1.0,TRI=1,TE=31.12.99-23:59:00,OFFV=0.0,RT1=0,RTL=0,WR=0,US=1;
+INFO:root:name=MKR1_Sollwert, promname=mkr1_sollwert, value=20.2
+INFO:root:result=MP,NR=67,ID=67,NAME=MKR1_Stellposition,LEN=4,TP=1,BIT=1,VAL=5.0,MAX=100.0,MIN=0.0,ERF=0,ORV=0.0,ORF=0,TRF=0,TRT=0,TRHV=1.0,TRI=1,TE=31.12.99-23:59:00,OFFV=0.0,RT1=0,RTL=0,WR=0,US=1;
+INFO:root:name=MKR1_Stellposition, promname=mkr1_stellposition, value=5.0
+INFO:root:result=MP,NR=68,ID=68,NAME=MKR1_StellSollPos,LEN=4,TP=1,BIT=0,VAL=4,MAX=100,MIN=0,ERF=0,ORV=100,ORF=0,TRF=0,TRT=0,TRHV=1,TRI=1,TE=31.12.99-23:59:00,OFFV=0,RT1=0,RTL=0,WR=1,US=1;
+INFO:root:name=MKR1_StellSollPos, promname=mkr1_stellsollpos, value=4.0
+INFO:root:result=MP,NR=69,ID=69,NAME=MKR2_Temp. VLT,LEN=4,TP=1,BIT=1,VAL=31.6,MAX=70.0,MIN=0.0,ERF=0,ORV=0.0,ORF=0,TRF=0,TRT=0,TRHV=1.0,TRI=15,TE=31.12.99-23:59:00,OFFV=0.0,RT1=0,RTL=0,WR=1,US=1;
+INFO:root:name=MKR2_Temp. VLT, promname=mkr2_temp_vlt, value=31.6
+INFO:root:result=MP,NR=70,ID=70,NAME=MKR2_Temp. RLT,LEN=4,TP=1,BIT=1,VAL=-50.0,MAX=70.0,MIN=0.0,ERF=0,ORV=0.0,ORF=0,TRF=0,TRT=0,TRHV=1.0,TRI=15,TE=31.12.99-23:59:00,OFFV=0.0,RT1=0,RTL=0,WR=1,US=0;
+INFO:root:name=MKR2_Temp. RLT, promname=mkr2_temp_rlt, value=-50.0
+INFO:root:result=MP,NR=71,ID=71,NAME=MKR2_Pumpe,LEN=1,TP=0,BIT=5,VAL=1,MAX=1,MIN=0,ERF=0,ORV=1,ORF=0,TRF=0,TRT=1,TRHV=1,TRI=0,TE=31.12.99-23:59:00,OFFV=0,RT1=0,RTL=0,WR=1,US=1;
+INFO:root:name=MKR2_Pumpe, promname=mkr2_pumpe, value=1.0
+INFO:root:result=MP,NR=72,ID=72,NAME=MKR2_Sollwert,LEN=4,TP=1,BIT=1,VAL=25.8,MAX=60.0,MIN=0.0,ERF=0,ORV=0.0,ORF=0,TRF=0,TRT=0,TRHV=1.0,TRI=1,TE=31.12.99-23:59:00,OFFV=0.0,RT1=0,RTL=0,WR=0,US=1;
+INFO:root:name=MKR2_Sollwert, promname=mkr2_sollwert, value=25.8
+INFO:root:result=MP,NR=73,ID=73,NAME=MKR2_Stellposition,LEN=4,TP=1,BIT=1,VAL=50.0,MAX=100.0,MIN=0.0,ERF=0,ORV=0.0,ORF=0,TRF=0,TRT=0,TRHV=1.0,TRI=1,TE=31.12.99-23:59:00,OFFV=0.0,RT1=0,RTL=0,WR=0,US=1;
+INFO:root:name=MKR2_Stellposition, promname=mkr2_stellposition, value=50.0
+INFO:root:result=MP,NR=74,ID=74,NAME=MKR2_StellSollPos,LEN=4,TP=1,BIT=0,VAL=50,MAX=100,MIN=0,ERF=0,ORV=100,ORF=0,TRF=0,TRT=0,TRHV=1,TRI=1,TE=31.12.99-23:59:00,OFFV=0,RT1=0,RTL=0,WR=1,US=1;
+INFO:root:name=MKR2_StellSollPos, promname=mkr2_stellsollpos, value=50.0
+INFO:root:result=MP,NR=75,ID=75,NAME=Stromz_Gesamt (kWh):,LEN=4,TP=1,BIT=1,VAL=0.0,MAX=141006544.0,MIN=0.0,ERF=0,ORV=0.0,ORF=0,TRF=0,TRT=0,TRHV=1.0,TRI=1,TE=31.12.99-23:59:00,OFFV=0.0,RT1=0,RTL=0,WR=1,US=0;
+INFO:root:name=Stromz_Gesamt (kWh):, promname=stromz_gesamt_kwh, value=0.0
+INFO:root:result=MP,NR=76,ID=76,NAME=Volt L1-N:,LEN=4,TP=1,BIT=1,VAL=0.0,MAX=250.0,MIN=0.0,ERF=0,ORV=0.0,ORF=0,TRF=0,TRT=0,TRHV=1.0,TRI=1,TE=31.12.99-23:59:00,OFFV=0.0,RT1=0,RTL=0,WR=0,US=0;
+INFO:root:name=Volt L1-N:, promname=volt_l1_n, value=0.0
+INFO:root:result=MP,NR=77,ID=77,NAME=Volt L2-N:,LEN=4,TP=1,BIT=1,VAL=0.0,MAX=250.0,MIN=0.0,ERF=0,ORV=0.0,ORF=0,TRF=0,TRT=0,TRHV=1.0,TRI=1,TE=31.12.99-23:59:00,OFFV=0.0,RT1=0,RTL=0,WR=0,US=0;
+INFO:root:name=Volt L2-N:, promname=volt_l2_n, value=0.0
+INFO:root:result=MP,NR=78,ID=78,NAME=Volt L3-N:,LEN=4,TP=1,BIT=1,VAL=0.0,MAX=250.0,MIN=0.0,ERF=0,ORV=0.0,ORF=0,TRF=0,TRT=0,TRHV=1.0,TRI=1,TE=31.12.99-23:59:00,OFFV=0.0,RT1=0,RTL=0,WR=0,US=0;
+INFO:root:name=Volt L3-N:, promname=volt_l3_n, value=0.0
+INFO:root:result=MP,NR=79,ID=79,NAME=Strom L1:,LEN=4,TP=1,BIT=1,VAL=0.0,MAX=100.0,MIN=0.0,ERF=0,ORV=0.0,ORF=0,TRF=0,TRT=0,TRHV=1.0,TRI=1,TE=31.12.99-23:59:00,OFFV=0.0,RT1=0,RTL=0,WR=0,US=0;
+INFO:root:name=Strom L1:, promname=strom_l1, value=0.0
+INFO:root:result=MP,NR=80,ID=80,NAME=Strom L2:,LEN=4,TP=1,BIT=1,VAL=0.0,MAX=100.0,MIN=0.0,ERF=0,ORV=0.0,ORF=0,TRF=0,TRT=0,TRHV=1.0,TRI=1,TE=31.12.99-23:59:00,OFFV=0.0,RT1=0,RTL=0,WR=0,US=0;
+INFO:root:name=Strom L2:, promname=strom_l2, value=0.0
+INFO:root:result=MP,NR=81,ID=81,NAME=Strom L3:,LEN=4,TP=1,BIT=1,VAL=0.0,MAX=100.0,MIN=0.0,ERF=0,ORV=0.0,ORF=0,TRF=0,TRT=0,TRHV=1.0,TRI=1,TE=31.12.99-23:59:00,OFFV=0.0,RT1=0,RTL=0,WR=0,US=0;
+INFO:root:name=Strom L3:, promname=strom_l3, value=0.0
+INFO:root:result=MP,NR=82,ID=82,NAME=Netzfrequenz:,LEN=4,TP=1,BIT=1,VAL=0.0,MAX=60.0,MIN=0.0,ERF=0,ORV=0.0,ORF=0,TRF=0,TRT=0,TRHV=1.0,TRI=1,TE=31.12.99-23:59:00,OFFV=0.0,RT1=0,RTL=0,WR=0,US=0;
+INFO:root:name=Netzfrequenz:, promname=netzfrequenz, value=0.0
+INFO:root:result=MP,NR=83,ID=83,NAME=Stromz_Leistung (W):,LEN=4,TP=1,BIT=1,VAL=0.0,MAX=141006544.0,MIN=0.0,ERF=0,ORV=0.0,ORF=0,TRF=0,TRT=0,TRHV=1.0,TRI=1,TE=31.12.99-23:59:00,OFFV=0.0,RT1=0,RTL=0,WR=0,US=0;
+INFO:root:name=Stromz_Leistung (W):, promname=stromz_leistung_w, value=0.0
+INFO:root:result=MP,NR=84,ID=84,NAME=WMZ_Gesamt (kWh):,LEN=4,TP=1,BIT=1,VAL=0.0,MAX=141006544.0,MIN=0.0,ERF=0,ORV=0.0,ORF=0,TRF=0,TRT=0,TRHV=1.0,TRI=1,TE=31.12.99-23:59:00,OFFV=0.0,RT1=0,RTL=0,WR=1,US=0;
+INFO:root:name=WMZ_Gesamt (kWh):, promname=wmz_gesamt_kwh, value=0.0
+INFO:root:result=MP,NR=85,ID=85,NAME=WMZ_Durchfluss:,LEN=4,TP=1,BIT=0,VAL=0,MAX=1000000000,MIN=0,ERF=0,ORV=0,ORF=0,TRF=0,TRT=0,TRHV=1,TRI=1,TE=31.12.99-23:59:00,OFFV=0,RT1=0,RTL=0,WR=0,US=0;
+INFO:root:name=WMZ_Durchfluss:, promname=wmz_durchfluss, value=0.0
+INFO:root:result=MP,NR=86,ID=86,NAME=WMZ_Temp. Ein.:,LEN=4,TP=1,BIT=2,VAL=0.00,MAX=100.00,MIN=0.00,ERF=0,ORV=0.00,ORF=0,TRF=0,TRT=0,TRHV=1.00,TRI=1,TE=31.12.99-23:59:00,OFFV=0.00,RT1=0,RTL=0,WR=0,US=0;
+INFO:root:name=WMZ_Temp. Ein.:, promname=wmz_temp_ein, value=0.0
+INFO:root:result=MP,NR=87,ID=87,NAME=WMZ_Temp. Aus.:,LEN=4,TP=1,BIT=2,VAL=0.00,MAX=100.00,MIN=0.00,ERF=0,ORV=0.00,ORF=0,TRF=0,TRT=0,TRHV=1.00,TRI=1,TE=31.12.99-23:59:00,OFFV=0.00,RT1=0,RTL=0,WR=0,US=0;
+INFO:root:name=WMZ_Temp. Aus.:, promname=wmz_temp_aus, value=0.0
+INFO:root:result=MP,NR=88,ID=88,NAME=OpFrequenz,LEN=4,TP=1,BIT=2,VAL=0.00,MAX=500.00,MIN=0.00,ERF=0,ORV=0.00,ORF=0,TRF=0,TRT=0,TRHV=1.00,TRI=900,TE=31.12.99-23:59:00,OFFV=0.00,RT1=0,RTL=0,WR=0,US=1;
+INFO:root:name=OpFrequenz, promname=opfrequenz, value=0.0
+INFO:root:result=MP,NR=89,ID=89,NAME=WMZ_Leistung (kW):,LEN=4,TP=1,BIT=1,VAL=0.0,MAX=141006544.0,MIN=0.0,ERF=0,ORV=0.0,ORF=0,TRF=0,TRT=0,TRHV=1.0,TRI=1,TE=31.12.99-23:59:00,OFFV=0.0,RT1=0,RTL=0,WR=0,US=0;
+INFO:root:name=WMZ_Leistung (kW):, promname=wmz_leistung_kw, value=0.0
+INFO:root:result=MP,NR=90,ID=90,NAME=n-Soll Verdichter(%),LEN=2,TP=0,BIT=0,VAL=0,MAX=100,MIN=0,ERF=0,ORV=0,ORF=0,TRF=0,TRT=0,TRHV=1,TRI=15,TE=31.12.99-23:59:00,OFFV=0,RT1=0,RTL=0,WR=0,US=1;
+INFO:root:name=n-Soll Verdichter(%), promname=n_soll_verdichter_prozent, value=0.0
+INFO:root:result=MP,NR=91,ID=91,NAME=OpVerdichter,LEN=1,TP=0,BIT=1,VAL=0,MAX=1,MIN=0,ERF=0,ORV=0,ORF=0,TRF=0,TRT=1,TRHV=1,TRI=0,TE=31.12.99-23:59:00,OFFV=0,RT1=0,RTL=0,WR=0,US=1;
+INFO:root:name=OpVerdichter, promname=opverdichter, value=0.0
+INFO:root:result=MP,NR=92,ID=92,NAME=COP,LEN=4,TP=1,BIT=1,VAL=0.0,MAX=10.0,MIN=0.0,ERF=0,ORV=0.0,ORF=0,TRF=0,TRT=0,TRHV=1.0,TRI=900,TE=31.12.99-23:59:00,OFFV=0.0,RT1=0,RTL=0,WR=0,US=0;
+INFO:root:name=COP, promname=cop, value=0.0
+INFO:root:result=MP,NR=93,ID=93,NAME=OpErrors,LEN=1,TP=0,BIT=0,VAL=0,MAX=23,MIN=0,ERF=0,ORV=0,ORF=0,TRF=0,TRT=0,TRHV=1,TRI=15,TE=31.12.99-23:59:00,OFFV=0,RT1=0,RTL=0,WR=0,US=1;
+INFO:root:name=OpErrors, promname=operrors, value=0.0
+INFO:root:result=MP,NR=94,ID=94,NAME=OpStromabgabe,LEN=4,TP=1,BIT=1,VAL=0.0,MAX=100.0,MIN=0.0,ERF=0,ORV=0.0,ORF=0,TRF=0,TRT=0,TRHV=1.0,TRI=900,TE=31.12.99-23:59:00,OFFV=0.0,RT1=0,RTL=0,WR=0,US=1;
+INFO:root:name=OpStromabgabe, promname=opstromabgabe, value=0.0
+INFO:root:result=MP,NR=95,ID=95,NAME=OpAusgangsspannung,LEN=4,TP=1,BIT=0,VAL=0,MAX=500,MIN=0,ERF=0,ORV=0,ORF=0,TRF=0,TRT=0,TRHV=1,TRI=900,TE=31.12.99-23:59:00,OFFV=0,RT1=0,RTL=0,WR=0,US=1;
+INFO:root:name=OpAusgangsspannung, promname=opausgangsspannung, value=0.0
+INFO:root:result=MP,NR=96,ID=96,NAME=Mdiffn10,LEN=4,TP=1,BIT=1,VAL=0.0,MAX=100.0,MIN=0.0,ERF=0,ORV=0.0,ORF=0,TRF=0,TRT=0,TRHV=1.0,TRI=900,TE=31.12.99-23:59:00,OFFV=0.0,RT1=0,RTL=0,WR=0,US=0;
+INFO:root:name=Mdiffn10, promname=mdiffn10, value=0.0
+INFO:root:result=MP,NR=97,ID=97,NAME=Mdiffp10,LEN=4,TP=1,BIT=1,VAL=0.0,MAX=100.0,MIN=0.0,ERF=0,ORV=0.0,ORF=0,TRF=0,TRT=0,TRHV=1.0,TRI=900,TE=31.12.99-23:59:00,OFFV=0.0,RT1=0,RTL=0,WR=0,US=0;
+INFO:root:name=Mdiffp10, promname=mdiffp10, value=0.0
+INFO:root:Alternative reply commando received with CRC 0.
+INFO:root:result=MP,NR=98,ID=98,NAME=flow_m,LEN=4,TP=1,BIT=1,VAL=0.0,MAX=100.0,MIN=0.0,ERF=0,ORV=0.0,ORF=0,TRF=0,TRT=0,TRHV=1.0,TRI=900,TE=31.12.99-23:59:00,OFFV=0.0,RT1=0,RTL=0,WR=0,US=0;
+INFO:root:name=flow_m, promname=flow_m, value=0.0
+INFO:root:result=MP,NR=99,ID=99,NAME=h11,LEN=4,TP=1,BIT=1,VAL=0.0,MAX=100.0,MIN=0.0,ERF=0,ORV=0.0,ORF=0,TRF=0,TRT=0,TRHV=1.0,TRI=900,TE=31.12.99-23:59:00,OFFV=0.0,RT1=0,RTL=0,WR=0,US=0;
+INFO:root:name=h11, promname=h11, value=0.0
+INFO:root:result=MP,NR=100,ID=100,NAME=h1,LEN=4,TP=1,BIT=1,VAL=0.0,MAX=100.0,MIN=0.0,ERF=0,ORV=0.0,ORF=0,TRF=0,TRT=0,TRHV=1.0,TRI=900,TE=31.12.99-23:59:00,OFFV=0.0,RT1=0,RTL=0,WR=0,US=0;
+INFO:root:name=h1, promname=h1, value=0.0
+INFO:root:result=MP,NR=101,ID=101,NAME=h42,LEN=4,TP=1,BIT=1,VAL=0.0,MAX=100.0,MIN=0.0,ERF=0,ORV=0.0,ORF=0,TRF=0,TRT=0,TRHV=1.0,TRI=900,TE=31.12.99-23:59:00,OFFV=0.0,RT1=0,RTL=0,WR=0,US=0;
+INFO:root:name=h42, promname=h42, value=0.0
+INFO:root:result=MP,NR=102,ID=102,NAME=h4,LEN=4,TP=1,BIT=1,VAL=0.0,MAX=100.0,MIN=0.0,ERF=0,ORV=0.0,ORF=0,TRF=0,TRT=0,TRHV=1.0,TRI=900,TE=31.12.99-23:59:00,OFFV=0.0,RT1=0,RTL=0,WR=0,US=0;
+INFO:root:name=h4, promname=h4, value=0.0
+INFO:root:Unexpected preamble in received packet. Received: b'\x02\xfd\xe0\xd0\x02\x00' Expected: b'\x02\xfd\xe0\xd0\x00\x00'  Packet:b'02fde0d00200007e4552522c494e56414c4944204944583b0d0a75'
+INFO:root:result=SP,NR=0,ID=0,NAME=Language,LEN=1,TP=0,BIT=0,VAL=0,MAX=4,MIN=0,WR=1,US=1;
+INFO:root:name=Language, promname=language, value=0.0
+INFO:root:result=SP,NR=1,ID=1,NAME=TBF_BIT,LEN=1,TP=0,BIT=2,VAL=0,MAX=1,MIN=0,WR=1,US=1;
+INFO:root:name=TBF_BIT, promname=tbf_bit, value=0.0
+INFO:root:result=SP,NR=2,ID=2,NAME=Rueckruferlaubnis,LEN=1,TP=0,BIT=1,VAL=1,MAX=1,MIN=0,WR=1,US=1;
+INFO:root:name=Rueckruferlaubnis, promname=rueckruferlaubnis, value=1.0
+INFO:root:result=SP,NR=3,ID=3,NAME=Liegenschaft,LEN=4,TP=0,BIT=0,VAL=XXXXXX,MAX=2147483647,MIN=0,WR=1,US=1;
+INFO:root:name=Liegenschaft, promname=liegenschaft, value=XXXXXX.0
+INFO:root:result=SP,NR=4,ID=4,NAME=WP_System,LEN=1,TP=0,BIT=0,VAL=2,MAX=2,MIN=1,WR=1,US=0;
+INFO:root:name=WP_System, promname=wp_system, value=2.0
+INFO:root:result=SP,NR=5,ID=5,NAME=WW Type,LEN=1,TP=0,BIT=0,VAL=1,MAX=4,MIN=0,WR=1,US=1;
+INFO:root:name=WW Type, promname=ww_type, value=1.0
+INFO:root:result=SP,NR=6,ID=6,NAME=FWS Type,LEN=1,TP=0,BIT=1,VAL=0,MAX=1,MIN=0,WR=1,US=1;
+INFO:root:name=FWS Type, promname=fws_type, value=0.0
+INFO:root:result=SP,NR=7,ID=7,NAME=Puffer Type,LEN=1,TP=0,BIT=1,VAL=1,MAX=1,MIN=0,WR=1,US=1;
+INFO:root:name=Puffer Type, promname=puffer_type, value=1.0
+INFO:root:result=SP,NR=8,ID=8,NAME=Initialisieren,LEN=1,TP=0,BIT=1,VAL=0,MAX=1,MIN=0,WR=1,US=1;
+INFO:root:name=Initialisieren, promname=initialisieren, value=0.0
+INFO:root:result=SP,NR=9,ID=9,NAME=3.0.14,LEN=4,TP=0,BIT=0,VAL=8488,MAX=0,MIN=0,WR=0,US=1;
+INFO:root:name=3.0.14, promname=3_0_14, value=8488.0
+INFO:root:result=SP,NR=10,ID=10,NAME=Verdichter_Status,LEN=1,TP=0,BIT=0,VAL=0,MAX=11,MIN=0,WR=0,US=1;
+INFO:root:name=Verdichter_Status, promname=verdichter_status, value=0.0
+INFO:root:result=SP,NR=11,ID=11,NAME=Verdichter laeuft seit,LEN=4,TP=0,BIT=0,VAL=520,MAX=100000,MIN=10,WR=1,US=1;
+INFO:root:name=Verdichter laeuft seit, promname=verdichter_laeuft_seit, value=520.0
+INFO:root:result=SP,NR=12,ID=12,NAME=Verdichter Einschaltverz.(sec),LEN=2,TP=0,BIT=0,VAL=900,MAX=10800,MIN=0,WR=1,US=1;
+INFO:root:name=Verdichter Einschaltverz.(sec), promname=verdichter_einschaltverz_sec, value=900.0
+INFO:root:result=SP,NR=13,ID=13,NAME=Betriebsart,LEN=1,TP=0,BIT=0,VAL=1,MAX=7,MIN=0,WR=1,US=1;
+INFO:root:name=Betriebsart, promname=betriebsart, value=1.0
+INFO:root:result=SP,NR=14,ID=14,NAME=Entstoerung,LEN=1,TP=0,BIT=2,VAL=0,MAX=1,MIN=0,WR=1,US=1;
+INFO:root:name=Entstoerung, promname=entstoerung, value=0.0
+INFO:root:result=SP,NR=15,ID=15,NAME=EXV HGSoll_diff_max,LEN=1,TP=0,BIT=0,VAL=24,MAX=40,MIN=10,WR=1,US=1;
+INFO:root:name=EXV HGSoll_diff_max, promname=exv_hgsoll_diff_max, value=24.0
+INFO:root:result=SP,NR=16,ID=16,NAME=EXV HGSoll_diff_min,LEN=1,TP=0,BIT=0,VAL=21,MAX=30,MIN=10,WR=1,US=1;
+INFO:root:name=EXV HGSoll_diff_min, promname=exv_hgsoll_diff_min, value=21.0
+INFO:root:result=SP,NR=17,ID=17,NAME=EXV KondTemp_max,LEN=1,TP=0,BIT=0,VAL=50,MAX=60,MIN=30,WR=1,US=1;
+INFO:root:name=EXV KondTemp_max, promname=exv_kondtemp_max, value=50.0
+INFO:root:result=SP,NR=18,ID=18,NAME=EXV KondTemp_min,LEN=1,TP=0,BIT=0,VAL=20,MAX=30,MIN=10,WR=1,US=1;
+INFO:root:name=EXV KondTemp_min, promname=exv_kondtemp_min, value=20.0
+INFO:root:result=SP,NR=19,ID=19,NAME=EXV Regler PID_P_Kp,LEN=2,TP=0,BIT=0,VAL=180,MAX=10000,MIN=0,WR=1,US=1;
+INFO:root:name=EXV Regler PID_P_Kp, promname=exv_regler_pid_p_kp, value=180.0
+INFO:root:result=SP,NR=20,ID=20,NAME=EXV Regler PID_I_Tn,LEN=2,TP=0,BIT=0,VAL=890,MAX=30000,MIN=0,WR=1,US=1;
+INFO:root:name=EXV Regler PID_I_Tn, promname=exv_regler_pid_i_tn, value=890.0
+INFO:root:result=SP,NR=21,ID=21,NAME=EXV Regler PID_D_Tv (sec),LEN=2,TP=0,BIT=0,VAL=42,MAX=1000,MIN=0,WR=1,US=1;
+INFO:root:name=EXV Regler PID_D_Tv (sec), promname=exv_regler_pid_d_tv_sec, value=42.0
+INFO:root:result=SP,NR=22,ID=22,NAME=max_End_Differenzdruck,LEN=1,TP=0,BIT=0,VAL=35,MAX=50,MIN=0,WR=1,US=1;
+INFO:root:name=max_End_Differenzdruck, promname=max_end_differenzdruck, value=35.0
+INFO:root:result=SP,NR=23,ID=23,NAME=EXV Regler PID_min (%),LEN=1,TP=0,BIT=0,VAL=15,MAX=80,MIN=0,WR=1,US=1;
+INFO:root:name=EXV Regler PID_min (%), promname=exv_regler_pid_min_prozent, value=15.0
+INFO:root:result=SP,NR=24,ID=24,NAME=EXV Einspritzzeit (sec),LEN=2,TP=0,BIT=0,VAL=5,MAX=100,MIN=0,WR=1,US=1;
+INFO:root:name=EXV Einspritzzeit (sec), promname=exv_einspritzzeit_sec, value=5.0
+INFO:root:result=SP,NR=25,ID=25,NAME=BSZ seit:,LEN=4,TP=0,BIT=0,VAL=131125,MAX=0,MIN=0,WR=0,US=1;
+INFO:root:name=BSZ seit:, promname=bsz_seit, value=131125.0
+INFO:root:result=SP,NR=26,ID=26,NAME=EXV Vorregelzeit (sec),LEN=2,TP=0,BIT=0,VAL=420,MAX=1000,MIN=60,WR=1,US=1;
+INFO:root:name=EXV Vorregelzeit (sec), promname=exv_vorregelzeit_sec, value=420.0
+INFO:root:result=SP,NR=27,ID=27,NAME=EXV Vorregelwert (%),LEN=1,TP=0,BIT=0,VAL=65,MAX=100,MIN=10,WR=1,US=1;
+INFO:root:name=EXV Vorregelwert (%), promname=exv_vorregelwert_prozent, value=65.0
+INFO:root:result=SP,NR=28,ID=28,NAME=Pu_AbsHysterese,LEN=1,TP=0,BIT=0,VAL=2,MAX=10,MIN=1,WR=1,US=1;
+INFO:root:name=Pu_AbsHysterese, promname=pu_abshysterese, value=2.0
+INFO:root:result=SP,NR=29,ID=29,NAME=Pu_AbsTemp,LEN=1,TP=0,BIT=0,VAL=0,MAX=20,MIN=0,WR=1,US=1;
+INFO:root:name=Pu_AbsTemp, promname=pu_abstemp, value=0.0
+INFO:root:result=SP,NR=30,ID=30,NAME=Wartungslaufdauer alle Pumpen,LEN=2,TP=0,BIT=0,VAL=10,MAX=180,MIN=0,WR=1,US=1;
+INFO:root:name=Wartungslaufdauer alle Pumpen, promname=wartungslaufdauer_alle_pumpen, value=10.0
+INFO:root:result=SP,NR=31,ID=31,NAME=Wartungslauftag alle Pumpen,LEN=1,TP=0,BIT=0,VAL=0,MAX=6,MIN=0,WR=1,US=1;
+INFO:root:name=Wartungslauftag alle Pumpen, promname=wartungslauftag_alle_pumpen, value=0.0
+INFO:root:result=SP,NR=32,ID=32,NAME=Wartungslaufzeit alle Pumpen,LEN=1,TP=0,BIT=0,VAL=12,MAX=23,MIN=0,WR=1,US=1;
+INFO:root:name=Wartungslaufzeit alle Pumpen, promname=wartungslaufzeit_alle_pumpen, value=12.0
+INFO:root:result=SP,NR=33,ID=33,NAME=HKP_Puls_ein (sec),LEN=2,TP=0,BIT=0,VAL=600,MAX=600,MIN=0,WR=1,US=1;
+INFO:root:name=HKP_Puls_ein (sec), promname=hkp_puls_ein_sec, value=600.0
+INFO:root:result=SP,NR=34,ID=34,NAME=HKP_Puls_aus (sec),LEN=2,TP=0,BIT=0,VAL=900,MAX=10800,MIN=0,WR=1,US=1;
+INFO:root:name=HKP_Puls_aus (sec), promname=hkp_puls_aus_sec, value=900.0
+INFO:root:result=SP,NR=35,ID=35,NAME=HKP_Vorlaufzeit (sec),LEN=2,TP=0,BIT=0,VAL=120,MAX=10800,MIN=0,WR=1,US=1;
+INFO:root:name=HKP_Vorlaufzeit (sec), promname=hkp_vorlaufzeit_sec, value=120.0
+INFO:root:result=SP,NR=36,ID=36,NAME=HKP_Nachlaufzeit (Sec),LEN=2,TP=0,BIT=0,VAL=30,MAX=10800,MIN=0,WR=1,US=1;
+INFO:root:name=HKP_Nachlaufzeit (Sec), promname=hkp_nachlaufzeit_sec, value=30.0
+INFO:root:result=SP,NR=37,ID=37,NAME=HKP_Modus,LEN=1,TP=0,BIT=0,VAL=1,MAX=2,MIN=0,WR=1,US=1;
+INFO:root:name=HKP_Modus, promname=hkp_modus, value=1.0
+INFO:root:result=SP,NR=38,ID=38,NAME=WW_Vorrang Vorlaufzeit (Sec),LEN=2,TP=0,BIT=0,VAL=120,MAX=10800,MIN=0,WR=1,US=1;
+INFO:root:name=WW_Vorrang Vorlaufzeit (Sec), promname=ww_vorrang_vorlaufzeit_sec, value=120.0
+INFO:root:result=SP,NR=39,ID=39,NAME=WW_Vorrang Nachlaufzeit (Sec),LEN=2,TP=0,BIT=0,VAL=0,MAX=10800,MIN=0,WR=1,US=1;
+INFO:root:name=WW_Vorrang Nachlaufzeit (Sec), promname=ww_vorrang_nachlaufzeit_sec, value=0.0
+INFO:root:result=SP,NR=40,ID=40,NAME=EQ Vorlaufzeit (Sec),LEN=2,TP=0,BIT=0,VAL=0,MAX=7200,MIN=0,WR=1,US=1;
+INFO:root:name=EQ Vorlaufzeit (Sec), promname=eq_vorlaufzeit_sec, value=0.0
+INFO:root:result=SP,NR=41,ID=41,NAME=EQ Nachlaufzeit (Sec),LEN=2,TP=0,BIT=0,VAL=0,MAX=7200,MIN=0,WR=1,US=1;
+INFO:root:name=EQ Nachlaufzeit (Sec), promname=eq_nachlaufzeit_sec, value=0.0
+INFO:root:result=SP,NR=42,ID=42,NAME=PUP_Vorlaufzeit (Sec),LEN=2,TP=0,BIT=0,VAL=20,MAX=10800,MIN=0,WR=1,US=1;
+INFO:root:name=PUP_Vorlaufzeit (Sec), promname=pup_vorlaufzeit_sec, value=20.0
+INFO:root:result=SP,NR=43,ID=43,NAME=PUP_Nachlaufzeit (Sec),LEN=2,TP=0,BIT=0,VAL=20,MAX=10800,MIN=0,WR=1,US=1;
+INFO:root:name=PUP_Nachlaufzeit (Sec), promname=pup_nachlaufzeit_sec, value=20.0
+INFO:root:result=SP,NR=44,ID=44,NAME=MKP1_Puls_ein (Sec),LEN=2,TP=0,BIT=0,VAL=600,MAX=600,MIN=0,WR=1,US=1;
+INFO:root:name=MKP1_Puls_ein (Sec), promname=mkp1_puls_ein_sec, value=600.0
+INFO:root:result=SP,NR=45,ID=45,NAME=MKP1_Puls_aus (Sec),LEN=2,TP=0,BIT=0,VAL=900,MAX=10800,MIN=0,WR=1,US=1;
+INFO:root:name=MKP1_Puls_aus (Sec), promname=mkp1_puls_aus_sec, value=900.0
+INFO:root:result=SP,NR=46,ID=46,NAME=MKP1_Vorlaufzeit (Sec),LEN=2,TP=0,BIT=0,VAL=0,MAX=10800,MIN=0,WR=1,US=1;
+INFO:root:name=MKP1_Vorlaufzeit (Sec), promname=mkp1_vorlaufzeit_sec, value=0.0
+INFO:root:result=SP,NR=47,ID=47,NAME=MKP1_Nachlaufzeit (Sec),LEN=2,TP=0,BIT=0,VAL=0,MAX=10800,MIN=0,WR=1,US=1;
+INFO:root:name=MKP1_Nachlaufzeit (Sec), promname=mkp1_nachlaufzeit_sec, value=0.0
+INFO:root:result=SP,NR=48,ID=48,NAME=MKP1_Modus,LEN=1,TP=0,BIT=0,VAL=2,MAX=2,MIN=0,WR=1,US=1;
+INFO:root:name=MKP1_Modus, promname=mkp1_modus, value=2.0
+INFO:root:result=SP,NR=49,ID=49,NAME=WW Zirk.Pumpe Sperrzeit (Sec),LEN=2,TP=0,BIT=0,VAL=300,MAX=900,MIN=0,WR=1,US=1;
+INFO:root:name=WW Zirk.Pumpe Sperrzeit (Sec), promname=ww_zirk_pumpe_sperrzeit_sec, value=300.0
+INFO:root:result=SP,NR=50,ID=50,NAME=WW Zirk.Pumpe Nachl.Zeit (Sec),LEN=2,TP=0,BIT=0,VAL=180,MAX=600,MIN=0,WR=1,US=1;
+INFO:root:name=WW Zirk.Pumpe Nachl.Zeit (Sec), promname=ww_zirk_pumpe_nachl_zeit_sec, value=180.0
+INFO:root:result=SP,NR=51,ID=51,NAME=WW Zirk.Pumpe Schaltuhr,LEN=1,TP=0,BIT=1,VAL=0,MAX=1,MIN=0,WR=1,US=1;
+INFO:root:name=WW Zirk.Pumpe Schaltuhr, promname=ww_zirk_pumpe_schaltuhr, value=0.0
+INFO:root:result=SP,NR=52,ID=52,NAME=2.Stufe bei Stoerung,LEN=1,TP=0,BIT=2,VAL=0,MAX=1,MIN=0,WR=1,US=1;
+INFO:root:name=2.Stufe bei Stoerung, promname=2_stufe_bei_stoerung, value=0.0
+INFO:root:result=SP,NR=53,ID=53,NAME=2.Stufe HKR Betriebsart,LEN=1,TP=0,BIT=0,VAL=0,MAX=3,MIN=0,WR=1,US=1;
+INFO:root:name=2.Stufe HKR Betriebsart, promname=2_stufe_hkr_betriebsart, value=0.0
+INFO:root:result=SP,NR=54,ID=54,NAME=2.Stufe HKR Paralell Gw.AT,LEN=4,TP=1,BIT=0,VAL=1,MAX=40,MIN=-15,WR=1,US=0;
+INFO:root:name=2.Stufe HKR Paralell Gw.AT, promname=2_stufe_hkr_paralell_gw_at, value=1.0
+INFO:root:result=SP,NR=55,ID=55,NAME=2.Stufe HKR Zeitverz. (Sec),LEN=4,TP=0,BIT=0,VAL=3600,MAX=36000,MIN=0,WR=1,US=0;
+INFO:root:name=2.Stufe HKR Zeitverz. (Sec), promname=2_stufe_hkr_zeitverz_sec, value=3600.0
+INFO:root:result=SP,NR=56,ID=56,NAME=2.Stufe HKR Schalthysterese,LEN=1,TP=0,BIT=0,VAL=4,MAX=10,MIN=1,WR=1,US=0;
+INFO:root:name=2.Stufe HKR Schalthysterese, promname=2_stufe_hkr_schalthysterese, value=4.0
+INFO:root:result=SP,NR=57,ID=57,NAME=2.Stufe HKR Solldifferenz,LEN=1,TP=0,BIT=0,VAL=2,MAX=10,MIN=0,WR=1,US=0;
+INFO:root:name=2.Stufe HKR Solldifferenz, promname=2_stufe_hkr_solldifferenz, value=2.0
+INFO:root:result=SP,NR=58,ID=58,NAME=2.Stufe HKR Gesamtdifferenz,LEN=1,TP=0,BIT=0,VAL=6,MAX=0,MIN=0,WR=0,US=0;
+INFO:root:name=2.Stufe HKR Gesamtdifferenz, promname=2_stufe_hkr_gesamtdifferenz, value=6.0
+INFO:root:result=SP,NR=59,ID=59,NAME=2.Stufe HKR AT Hysterese,LEN=1,TP=0,BIT=0,VAL=2,MAX=10,MIN=1,WR=1,US=0;
+INFO:root:name=2.Stufe HKR AT Hysterese, promname=2_stufe_hkr_at_hysterese, value=2.0
+INFO:root:result=SP,NR=60,ID=60,NAME=2.Stufe HKR Alternativ Gw.AT,LEN=4,TP=1,BIT=0,VAL=-5,MAX=40,MIN=-15,WR=1,US=0;
+INFO:root:name=2.Stufe HKR Alternativ Gw.AT, promname=2_stufe_hkr_alternativ_gw_at, value=-5.0
+INFO:root:result=SP,NR=61,ID=61,NAME=2. Stufe WW Betriebsart,LEN=1,TP=0,BIT=0,VAL=0,MAX=3,MIN=0,WR=1,US=1;
+INFO:root:name=2. Stufe WW Betriebsart, promname=2_stufe_ww_betriebsart, value=0.0
+INFO:root:result=SP,NR=62,ID=62,NAME=2. Stufe WW Paralell Gw.AT,LEN=4,TP=1,BIT=0,VAL=1,MAX=40,MIN=-15,WR=1,US=0;
+INFO:root:name=2. Stufe WW Paralell Gw.AT, promname=2_stufe_ww_paralell_gw_at, value=1.0
+INFO:root:result=SP,NR=63,ID=63,NAME=2. Stufe WW Zeitverz. (Sec),LEN=4,TP=0,BIT=0,VAL=3600,MAX=36000,MIN=0,WR=1,US=0;
+INFO:root:name=2. Stufe WW Zeitverz. (Sec), promname=2_stufe_ww_zeitverz_sec, value=3600.0
+INFO:root:result=SP,NR=64,ID=64,NAME=2. Stufe WW Schalthysterese,LEN=1,TP=0,BIT=0,VAL=4,MAX=10,MIN=1,WR=1,US=0;
+INFO:root:name=2. Stufe WW Schalthysterese, promname=2_stufe_ww_schalthysterese, value=4.0
+INFO:root:result=SP,NR=65,ID=65,NAME=2. Stufe WW Solldifferenz,LEN=1,TP=0,BIT=0,VAL=2,MAX=10,MIN=0,WR=1,US=0;
+INFO:root:name=2. Stufe WW Solldifferenz, promname=2_stufe_ww_solldifferenz, value=2.0
+INFO:root:result=SP,NR=66,ID=66,NAME=2. Stufe WW Gesamtdifferenz,LEN=1,TP=0,BIT=0,VAL=6,MAX=0,MIN=0,WR=0,US=0;
+INFO:root:name=2. Stufe WW Gesamtdifferenz, promname=2_stufe_ww_gesamtdifferenz, value=6.0
+INFO:root:result=SP,NR=67,ID=67,NAME=2. Stufe WW AT Hysterese,LEN=1,TP=0,BIT=0,VAL=2,MAX=10,MIN=1,WR=1,US=0;
+INFO:root:name=2. Stufe WW AT Hysterese, promname=2_stufe_ww_at_hysterese, value=2.0
+INFO:root:result=SP,NR=68,ID=68,NAME=2. Stufe WW Alternativ Gw.AT,LEN=4,TP=1,BIT=0,VAL=-5,MAX=40,MIN=-15,WR=1,US=0;
+INFO:root:name=2. Stufe WW Alternativ Gw.AT, promname=2_stufe_ww_alternativ_gw_at, value=-5.0
+INFO:root:result=SP,NR=69,ID=69,NAME=HKR Soll_Raum,LEN=4,TP=1,BIT=1,VAL=23.0,MAX=25.0,MIN=10.0,WR=1,US=1;
+INFO:root:name=HKR Soll_Raum, promname=hkr_soll_raum, value=23.0
+INFO:root:result=SP,NR=70,ID=70,NAME=WW Enthitzung_Hgt_Gw,LEN=1,TP=0,BIT=0,VAL=50,MAX=75,MIN=10,WR=1,US=1;
+INFO:root:name=WW Enthitzung_Hgt_Gw, promname=ww_enthitzung_hgt_gw, value=50.0
+INFO:root:result=SP,NR=71,ID=71,NAME=HKR Aufheiztemp. (K),LEN=4,TP=1,BIT=0,VAL=3,MAX=10,MIN=1,WR=1,US=1;
+INFO:root:name=HKR Aufheiztemp. (K), promname=hkr_aufheiztemp_k, value=3.0
+INFO:root:result=SP,NR=72,ID=72,NAME=HKR Absenktemp. (K),LEN=4,TP=1,BIT=0,VAL=-3,MAX=-1,MIN=-10,WR=1,US=1;
+INFO:root:name=HKR Absenktemp. (K), promname=hkr_absenktemp_k, value=-3.0
+INFO:root:result=SP,NR=73,ID=73,NAME=HKR Soll_RaumVerst,LEN=4,TP=1,BIT=1,VAL=1.5,MAX=5.0,MIN=0.1,WR=1,US=1;
+INFO:root:name=HKR Soll_RaumVerst, promname=hkr_soll_raumverst, value=1.5
+INFO:root:result=SP,NR=74,ID=74,NAME=HKR Soll_Hys_oHG,LEN=1,TP=0,BIT=0,VAL=5,MAX=10,MIN=1,WR=1,US=1;
+INFO:root:name=HKR Soll_Hys_oHG, promname=hkr_soll_hys_ohg, value=5.0
+INFO:root:result=SP,NR=75,ID=75,NAME=HKR Soll_Hys_uHG,LEN=1,TP=0,BIT=0,VAL=4,MAX=9,MIN=1,WR=1,US=1;
+INFO:root:name=HKR Soll_Hys_uHG, promname=hkr_soll_hys_uhg, value=4.0
+INFO:root:result=SP,NR=76,ID=76,NAME=HKR Heizgrenze,LEN=1,TP=0,BIT=0,VAL=18,MAX=45,MIN=0,WR=1,US=1;
+INFO:root:name=HKR Heizgrenze, promname=hkr_heizgrenze, value=18.0
+INFO:root:result=SP,NR=77,ID=77,NAME=HKR AT_Hysterese,LEN=1,TP=0,BIT=0,VAL=1,MAX=10,MIN=1,WR=1,US=1;
+INFO:root:name=HKR AT_Hysterese, promname=hkr_at_hysterese, value=1.0
+INFO:root:result=SP,NR=78,ID=78,NAME=HKR RLT_min,LEN=4,TP=1,BIT=0,VAL=20,MAX=45,MIN=5,WR=1,US=1;
+INFO:root:name=HKR RLT_min, promname=hkr_rlt_min, value=20.0
+INFO:root:result=SP,NR=79,ID=79,NAME=HKR RLT_max,LEN=4,TP=1,BIT=0,VAL=50,MAX=60,MIN=10,WR=1,US=1;
+INFO:root:name=HKR RLT_max, promname=hkr_rlt_max, value=50.0
+INFO:root:result=SP,NR=80,ID=80,NAME=HKR RLT Soll_oHG (Heizkurve),LEN=4,TP=1,BIT=1,VAL=26.0,MAX=40.0,MIN=15.0,WR=1,US=1;
+INFO:root:name=HKR RLT Soll_oHG (Heizkurve), promname=hkr_rlt_soll_ohg_heizkurve, value=26.0
+INFO:root:result=SP,NR=81,ID=81,NAME=HKR RLT Soll_0 (Heizkurve),LEN=4,TP=1,BIT=1,VAL=32.0,MAX=50.0,MIN=20.0,WR=1,US=1;
+INFO:root:name=HKR RLT Soll_0 (Heizkurve), promname=hkr_rlt_soll_0_heizkurve, value=32.0
+INFO:root:result=SP,NR=82,ID=82,NAME=HKR RLT Soll_uHG (Heizkurve),LEN=4,TP=1,BIT=1,VAL=40.0,MAX=60.0,MIN=25.0,WR=1,US=1;
+INFO:root:name=HKR RLT Soll_uHG (Heizkurve), promname=hkr_rlt_soll_uhg_heizkurve, value=40.0
+INFO:root:result=SP,NR=83,ID=83,NAME=WW Normaltemp.,LEN=4,TP=1,BIT=0,VAL=48,MAX=75,MIN=10,WR=1,US=1;
+INFO:root:name=WW Normaltemp., promname=ww_normaltemp, value=48.0
+INFO:root:result=SP,NR=84,ID=84,NAME=WW Hysterese Normaltemp.,LEN=1,TP=0,BIT=0,VAL=7,MAX=10,MIN=1,WR=1,US=1;
+INFO:root:name=WW Hysterese Normaltemp., promname=ww_hysterese_normaltemp, value=7.0
+INFO:root:result=SP,NR=85,ID=85,NAME=WW Minimaltemp.,LEN=4,TP=1,BIT=0,VAL=42,MAX=45,MIN=5,WR=1,US=1;
+INFO:root:name=WW Minimaltemp., promname=ww_minimaltemp, value=42.0
+INFO:root:result=SP,NR=86,ID=86,NAME=WW Hysterese Minimaltemp.,LEN=1,TP=0,BIT=0,VAL=7,MAX=10,MIN=1,WR=1,US=1;
+INFO:root:name=WW Hysterese Minimaltemp., promname=ww_hysterese_minimaltemp, value=7.0
+INFO:root:result=SP,NR=87,ID=87,NAME=FWS Zieltemp,LEN=1,TP=0,BIT=0,VAL=27,MAX=50,MIN=10,WR=1,US=0;
+INFO:root:name=FWS Zieltemp, promname=fws_zieltemp, value=27.0
+INFO:root:result=SP,NR=88,ID=88,NAME=FWS Vorregelwert (%),LEN=1,TP=0,BIT=0,VAL=90,MAX=100,MIN=40,WR=1,US=0;
+INFO:root:name=FWS Vorregelwert (%), promname=fws_vorregelwert_prozent, value=90.0
+INFO:root:result=SP,NR=89,ID=89,NAME=FWS Regler PID_P,LEN=2,TP=0,BIT=0,VAL=500,MAX=10000,MIN=0,WR=1,US=0;
+INFO:root:name=FWS Regler PID_P, promname=fws_regler_pid_p, value=500.0
+INFO:root:result=SP,NR=90,ID=90,NAME=FWS Regler PID_I_Tn (sec),LEN=2,TP=0,BIT=0,VAL=50,MAX=30000,MIN=0,WR=1,US=0;
+INFO:root:name=FWS Regler PID_I_Tn (sec), promname=fws_regler_pid_i_tn_sec, value=50.0
+INFO:root:result=SP,NR=91,ID=91,NAME=FWS Regler PID_D_Tv (sec),LEN=2,TP=0,BIT=0,VAL=0,MAX=1000,MIN=0,WR=1,US=0;
+INFO:root:name=FWS Regler PID_D_Tv (sec), promname=fws_regler_pid_d_tv_sec, value=0.0
+INFO:root:result=SP,NR=92,ID=92,NAME=FWS Min (%),LEN=1,TP=0,BIT=0,VAL=40,MAX=100,MIN=40,WR=1,US=0;
+INFO:root:name=FWS Min (%), promname=fws_min_prozent, value=40.0
+INFO:root:result=SP,NR=93,ID=93,NAME=FWS Max (%),LEN=1,TP=0,BIT=0,VAL=100,MAX=100,MIN=40,WR=1,US=0;
+INFO:root:name=FWS Max (%), promname=fws_max_prozent, value=100.0
+INFO:root:result=SP,NR=94,ID=94,NAME=HDS Anspr.verz.Zeit (sec),LEN=2,TP=0,BIT=0,VAL=1,MAX=300,MIN=0,WR=1,US=1;
+INFO:root:name=HDS Anspr.verz.Zeit (sec), promname=hds_anspr_verz_zeit_sec, value=1.0
+INFO:root:result=SP,NR=95,ID=95,NAME=HDS Einschaltverz. (sec),LEN=2,TP=0,BIT=0,VAL=1800,MAX=10800,MIN=0,WR=1,US=1;
+INFO:root:name=HDS Einschaltverz. (sec), promname=hds_einschaltverz_sec, value=1800.0
+INFO:root:result=SP,NR=96,ID=96,NAME=HDS Fehlerwiederh. (24 h),LEN=1,TP=0,BIT=0,VAL=2,MAX=6,MIN=0,WR=1,US=1;
+INFO:root:name=HDS Fehlerwiederh. (24 h), promname=hds_fehlerwiederh_24_h, value=2.0
+INFO:root:result=SP,NR=97,ID=97,NAME=EQ MS Anspr.verz.Zeit (sec),LEN=2,TP=0,BIT=0,VAL=5,MAX=300,MIN=0,WR=1,US=1;
+INFO:root:name=EQ MS Anspr.verz.Zeit (sec), promname=eq_ms_anspr_verz_zeit_sec, value=5.0
+INFO:root:result=SP,NR=98,ID=98,NAME=EQ MS Einschaltverz. (sec),LEN=2,TP=0,BIT=0,VAL=1800,MAX=10800,MIN=0,WR=1,US=1;
+INFO:root:name=EQ MS Einschaltverz. (sec), promname=eq_ms_einschaltverz_sec, value=1800.0
+INFO:root:result=SP,NR=99,ID=99,NAME=EQ MS Fehlerwiederh. (24 h),LEN=1,TP=0,BIT=0,VAL=2,MAX=6,MIN=0,WR=1,US=1;
+INFO:root:name=EQ MS Fehlerwiederh. (24 h), promname=eq_ms_fehlerwiederh_24_h, value=2.0
+INFO:root:result=SP,NR=100,ID=100,NAME=HD Transm. Grenzwert,LEN=4,TP=1,BIT=0,VAL=38,MAX=45,MIN=5,WR=1,US=1;
+INFO:root:name=HD Transm. Grenzwert, promname=hd_transm_grenzwert, value=38.0
+INFO:root:result=SP,NR=101,ID=101,NAME=HD Transm. Hysterese,LEN=4,TP=1,BIT=1,VAL=2.0,MAX=5.0,MIN=1.0,WR=1,US=1;
+INFO:root:name=HD Transm. Hysterese, promname=hd_transm_hysterese, value=2.0
+INFO:root:result=SP,NR=102,ID=102,NAME=HD Transm.Anspr.verz.Zeit(sec),LEN=2,TP=0,BIT=0,VAL=1,MAX=300,MIN=0,WR=1,US=1;
+INFO:root:name=HD Transm.Anspr.verz.Zeit(sec), promname=hd_transm_anspr_verz_zeit_sec, value=1.0
+INFO:root:result=SP,NR=103,ID=103,NAME=HD Transm.Einschaltverz. (sec),LEN=2,TP=0,BIT=0,VAL=1800,MAX=10800,MIN=0,WR=1,US=1;
+INFO:root:name=HD Transm.Einschaltverz. (sec), promname=hd_transm_einschaltverz_sec, value=1800.0
+INFO:root:result=SP,NR=104,ID=104,NAME=HD Transm.Fehlerwiederh.(24 h),LEN=1,TP=0,BIT=0,VAL=5,MAX=6,MIN=0,WR=1,US=1;
+INFO:root:name=HD Transm.Fehlerwiederh.(24 h), promname=hd_transm_fehlerwiederh_24_h, value=5.0
+INFO:root:result=SP,NR=105,ID=105,NAME=ND Transm. Grenzwert,LEN=4,TP=1,BIT=1,VAL=1.0,MAX=7.0,MIN=1.0,WR=1,US=1;
+INFO:root:name=ND Transm. Grenzwert, promname=nd_transm_grenzwert, value=1.0
+INFO:root:result=SP,NR=106,ID=106,NAME=ND Transm. Hysterese,LEN=4,TP=1,BIT=1,VAL=1.0,MAX=5.0,MIN=1.0,WR=1,US=1;
+INFO:root:name=ND Transm. Hysterese, promname=nd_transm_hysterese, value=1.0
+INFO:root:result=SP,NR=107,ID=107,NAME=ND Transm.Anspr.verz.Zeit(Sec),LEN=2,TP=0,BIT=0,VAL=1,MAX=300,MIN=0,WR=1,US=1;
+INFO:root:name=ND Transm.Anspr.verz.Zeit(Sec), promname=nd_transm_anspr_verz_zeit_sec, value=1.0
+INFO:root:result=SP,NR=108,ID=108,NAME=ND Transm.Einschaltverz.(Sec),LEN=2,TP=0,BIT=0,VAL=1800,MAX=10800,MIN=0,WR=1,US=1;
+INFO:root:name=ND Transm.Einschaltverz.(Sec), promname=nd_transm_einschaltverz_sec, value=1800.0
+INFO:root:result=SP,NR=109,ID=109,NAME=ND Transm.Fehlerwiederh.(24 h),LEN=1,TP=0,BIT=0,VAL=2,MAX=6,MIN=0,WR=1,US=1;
+INFO:root:name=ND Transm.Fehlerwiederh.(24 h), promname=nd_transm_fehlerwiederh_24_h, value=2.0
+INFO:root:result=SP,NR=110,ID=110,NAME=HG Begrenzung Grenzwert,LEN=4,TP=1,BIT=0,VAL=110,MAX=130,MIN=90,WR=1,US=1;
+INFO:root:name=HG Begrenzung Grenzwert, promname=hg_begrenzung_grenzwert, value=110.0
+INFO:root:result=SP,NR=111,ID=111,NAME=HG Begrenzung Hysterese,LEN=4,TP=1,BIT=1,VAL=10.0,MAX=20.0,MIN=1.0,WR=1,US=1;
+INFO:root:name=HG Begrenzung Hysterese, promname=hg_begrenzung_hysterese, value=10.0
+INFO:root:result=SP,NR=112,ID=112,NAME=HG Begr.Anspr.verz.Zeit(Sec),LEN=2,TP=0,BIT=0,VAL=0,MAX=300,MIN=0,WR=1,US=1;
+INFO:root:name=HG Begr.Anspr.verz.Zeit(Sec), promname=hg_begr_anspr_verz_zeit_sec, value=0.0
+INFO:root:result=SP,NR=113,ID=113,NAME=HG Begrenzung EinschVz.(Sec),LEN=2,TP=0,BIT=0,VAL=1800,MAX=10800,MIN=0,WR=1,US=1;
+INFO:root:name=HG Begrenzung EinschVz.(Sec), promname=hg_begrenzung_einschvz_sec, value=1800.0
+INFO:root:result=SP,NR=114,ID=114,NAME=HG Begr. Fehlerwiederh. (24 h),LEN=1,TP=0,BIT=0,VAL=2,MAX=6,MIN=0,WR=1,US=1;
+INFO:root:name=HG Begr. Fehlerwiederh. (24 h), promname=hg_begr_fehlerwiederh_24_h, value=2.0
+INFO:root:result=SP,NR=115,ID=115,NAME=HD_ND Diff. Grenzwert,LEN=4,TP=1,BIT=1,VAL=3.5,MAX=20.0,MIN=-20.0,WR=1,US=1;
+INFO:root:name=HD_ND Diff. Grenzwert, promname=hd_nd_diff_grenzwert, value=3.5
+INFO:root:result=SP,NR=116,ID=116,NAME=HD_ND Diff. Hysterese,LEN=4,TP=1,BIT=1,VAL=1.0,MAX=10.0,MIN=1.0,WR=1,US=1;
+INFO:root:name=HD_ND Diff. Hysterese, promname=hd_nd_diff_hysterese, value=1.0
+INFO:root:result=SP,NR=117,ID=117,NAME=HD_ND Anspr.verz.Zeit (Sec),LEN=2,TP=0,BIT=0,VAL=120,MAX=300,MIN=0,WR=1,US=1;
+INFO:root:name=HD_ND Anspr.verz.Zeit (Sec), promname=hd_nd_anspr_verz_zeit_sec, value=120.0
+INFO:root:result=SP,NR=118,ID=118,NAME=HD_ND Diff.Einschaltverz.(Sec),LEN=2,TP=0,BIT=0,VAL=1800,MAX=10800,MIN=0,WR=1,US=1;
+INFO:root:name=HD_ND Diff.Einschaltverz.(Sec), promname=hd_nd_diff_einschaltverz_sec, value=1800.0
+INFO:root:result=SP,NR=119,ID=119,NAME=HD_ND Fehlerwiederh. (24 h),LEN=1,TP=0,BIT=0,VAL=2,MAX=6,MIN=0,WR=1,US=1;
+INFO:root:name=HD_ND Fehlerwiederh. (24 h), promname=hd_nd_fehlerwiederh_24_h, value=2.0
+INFO:root:result=SP,NR=120,ID=120,NAME=Sauggas Grenzwert,LEN=4,TP=1,BIT=0,VAL=4,MAX=20,MIN=-20,WR=1,US=1;
+INFO:root:name=Sauggas Grenzwert, promname=sauggas_grenzwert, value=4.0
+INFO:root:result=SP,NR=121,ID=121,NAME=Sauggas Hysterese,LEN=4,TP=1,BIT=1,VAL=1.0,MAX=10.0,MIN=1.0,WR=1,US=1;
+INFO:root:name=Sauggas Hysterese, promname=sauggas_hysterese, value=1.0
+INFO:root:result=SP,NR=122,ID=122,NAME=Sauggas Anspr.verz.Zeit(Sec),LEN=2,TP=0,BIT=0,VAL=1,MAX=300,MIN=0,WR=1,US=1;
+INFO:root:name=Sauggas Anspr.verz.Zeit(Sec), promname=sauggas_anspr_verz_zeit_sec, value=1.0
+INFO:root:result=SP,NR=123,ID=123,NAME=Sauggas Einschaltverz. (Sec),LEN=2,TP=0,BIT=0,VAL=1800,MAX=10800,MIN=0,WR=1,US=1;
+INFO:root:name=Sauggas Einschaltverz. (Sec), promname=sauggas_einschaltverz_sec, value=1800.0
+INFO:root:result=SP,NR=124,ID=124,NAME=Sauggas Fehlerwiederh. (24 h),LEN=1,TP=0,BIT=0,VAL=2,MAX=6,MIN=0,WR=1,US=1;
+INFO:root:name=Sauggas Fehlerwiederh. (24 h), promname=sauggas_fehlerwiederh_24_h, value=2.0
+INFO:root:result=SP,NR=125,ID=125,NAME=EQ Diff. Maximaltemp. (K),LEN=4,TP=1,BIT=0,VAL=5,MAX=20,MIN=-10,WR=1,US=0;
+INFO:root:name=EQ Diff. Maximaltemp. (K), promname=eq_diff_maximaltemp_k, value=5.0
+INFO:root:result=SP,NR=126,ID=126,NAME=EQ Diff. Hysterese Max. (K),LEN=4,TP=1,BIT=1,VAL=2.0,MAX=10.0,MIN=1.0,WR=1,US=0;
+INFO:root:name=EQ Diff. Hysterese Max. (K), promname=eq_diff_hysterese_max_k, value=2.0
+INFO:root:result=SP,NR=127,ID=127,NAME=EQ Diff. Anspr.verz.Zeit (Sec),LEN=2,TP=0,BIT=0,VAL=120,MAX=300,MIN=0,WR=1,US=0;
+INFO:root:name=EQ Diff. Anspr.verz.Zeit (Sec), promname=eq_diff_anspr_verz_zeit_sec, value=120.0
+INFO:root:result=SP,NR=128,ID=128,NAME=EQ Diff. Einschaltverz. (Sec),LEN=2,TP=0,BIT=0,VAL=1800,MAX=10800,MIN=0,WR=1,US=0;
+INFO:root:name=EQ Diff. Einschaltverz. (Sec), promname=eq_diff_einschaltverz_sec, value=1800.0
+INFO:root:result=SP,NR=129,ID=129,NAME=EQ Diff. Fehlerwiederh. (24 h),LEN=1,TP=0,BIT=0,VAL=2,MAX=6,MIN=0,WR=1,US=0;
+INFO:root:name=EQ Diff. Fehlerwiederh. (24 h), promname=eq_diff_fehlerwiederh_24_h, value=2.0
+INFO:root:result=SP,NR=130,ID=130,NAME=EQ Aus. Minimaltemp. (K),LEN=4,TP=1,BIT=0,VAL=4,MAX=10,MIN=-10,WR=1,US=0;
+INFO:root:name=EQ Aus. Minimaltemp. (K), promname=eq_aus_minimaltemp_k, value=4.0
+INFO:root:result=SP,NR=131,ID=131,NAME=EQ Aus. Hysterese (K),LEN=4,TP=1,BIT=1,VAL=2.0,MAX=10.0,MIN=1.0,WR=1,US=0;
+INFO:root:name=EQ Aus. Hysterese (K), promname=eq_aus_hysterese_k, value=2.0
+INFO:root:result=SP,NR=132,ID=132,NAME=EQ Aus. Anspr.verz.Zeit (Sec),LEN=2,TP=0,BIT=0,VAL=0,MAX=300,MIN=0,WR=1,US=0;
+INFO:root:name=EQ Aus. Anspr.verz.Zeit (Sec), promname=eq_aus_anspr_verz_zeit_sec, value=0.0
+INFO:root:result=SP,NR=133,ID=133,NAME=EQ Aus. Einschaltverz. (Sec),LEN=2,TP=0,BIT=0,VAL=1800,MAX=10800,MIN=0,WR=1,US=0;
+INFO:root:name=EQ Aus. Einschaltverz. (Sec), promname=eq_aus_einschaltverz_sec, value=1800.0
+INFO:root:result=SP,NR=134,ID=134,NAME=EQ Aus. Fehlerwiederh. (24 h),LEN=1,TP=0,BIT=0,VAL=1,MAX=6,MIN=0,WR=1,US=0;
+INFO:root:name=EQ Aus. Fehlerwiederh. (24 h), promname=eq_aus_fehlerwiederh_24_h, value=1.0
+INFO:root:result=SP,NR=135,ID=135,NAME=KondTemp Grenzwert (C),LEN=4,TP=1,BIT=0,VAL=60,MAX=65,MIN=10,WR=1,US=1;
+INFO:root:name=KondTemp Grenzwert (C), promname=kondtemp_grenzwert_c, value=60.0
+INFO:root:result=SP,NR=136,ID=136,NAME=KondTemp Hysterese (h),LEN=4,TP=1,BIT=1,VAL=5.0,MAX=10.0,MIN=1.0,WR=1,US=1;
+INFO:root:name=KondTemp Hysterese (h), promname=kondtemp_hysterese_h, value=5.0
+INFO:root:result=SP,NR=137,ID=137,NAME=KondTemp Anspr.Verz.Zeit(Sec),LEN=2,TP=0,BIT=0,VAL=0,MAX=300,MIN=0,WR=1,US=1;
+INFO:root:name=KondTemp Anspr.Verz.Zeit(Sec), promname=kondtemp_anspr_verz_zeit_sec, value=0.0
+INFO:root:result=SP,NR=138,ID=138,NAME=KondTemp Einschaltverz.(Sec),LEN=2,TP=0,BIT=0,VAL=1800,MAX=10800,MIN=0,WR=1,US=1;
+INFO:root:name=KondTemp Einschaltverz.(Sec), promname=kondtemp_einschaltverz_sec, value=1800.0
+INFO:root:result=SP,NR=139,ID=139,NAME=KondTemp Fehlerwiederh.(24 h),LEN=1,TP=0,BIT=0,VAL=5,MAX=6,MIN=0,WR=1,US=1;
+INFO:root:name=KondTemp Fehlerwiederh.(24 h), promname=kondtemp_fehlerwiederh_24_h, value=5.0
+INFO:root:result=SP,NR=140,ID=140,NAME=Abtaufreigabetemp. Verdampfung,LEN=2,TP=0,BIT=0,VAL=-5,MAX=5,MIN=-10,WR=1,US=1;
+INFO:root:name=Abtaufreigabetemp. Verdampfung, promname=abtaufreigabetemp_verdampfung, value=-5.0
+INFO:root:result=SP,NR=141,ID=141,NAME=Externe Anforderung VNG,LEN=1,TP=0,BIT=0,VAL=0,MAX=1,MIN=0,WR=1,US=0;
+INFO:root:name=Externe Anforderung VNG, promname=externe_anforderung_vng, value=0.0
+INFO:root:result=SP,NR=142,ID=142,NAME=Abtauzeit maximal,LEN=2,TP=0,BIT=0,VAL=900,MAX=1800,MIN=600,WR=1,US=1;
+INFO:root:name=Abtauzeit maximal, promname=abtauzeit_maximal, value=900.0
+INFO:root:result=SP,NR=143,ID=143,NAME=Abtaufreigabeverz.(Min),LEN=2,TP=0,BIT=0,VAL=60,MAX=120,MIN=1,WR=1,US=1;
+INFO:root:name=Abtaufreigabeverz.(Min), promname=abtaufreigabeverz_min, value=60.0
+INFO:root:result=SP,NR=144,ID=144,NAME=BSZ Abtau aktuelle Laufzeit,LEN=4,TP=0,BIT=0,VAL=0,MAX=100000,MIN=0,WR=0,US=1;
+INFO:root:name=BSZ Abtau aktuelle Laufzeit, promname=bsz_abtau_aktuelle_laufzeit, value=0.0
+INFO:root:result=SP,NR=145,ID=145,NAME=Abtaudiff. Luftein_Verdampf.GW,LEN=4,TP=1,BIT=1,VAL=9.0,MAX=30.0,MIN=1.0,WR=0,US=1;
+INFO:root:name=Abtaudiff. Luftein_Verdampf.GW, promname=abtaudiff_luftein_verdampf_gw, value=9.0
+INFO:root:result=SP,NR=146,ID=146,NAME=Abtauzeit_letzter Vorgang,LEN=4,TP=0,BIT=0,VAL=61,MAX=0,MIN=0,WR=0,US=1;
+INFO:root:name=Abtauzeit_letzter Vorgang, promname=abtauzeit_letzter_vorgang, value=61.0
+INFO:root:result=SP,NR=147,ID=147,NAME=Vollversion,LEN=1,TP=0,BIT=0,VAL=1,MAX=1,MIN=0,WR=1,US=1;
+INFO:root:name=Vollversion, promname=vollversion, value=1.0
+INFO:root:result=SP,NR=148,ID=148,NAME=Abtauendtemp. Kondensation,LEN=1,TP=0,BIT=0,VAL=15,MAX=25,MIN=5,WR=1,US=1;
+INFO:root:name=Abtauendtemp. Kondensation, promname=abtauendtemp_kondensation, value=15.0
+INFO:root:result=SP,NR=149,ID=149,NAME=Z WM_Zaehlung Faktor,LEN=1,TP=0,BIT=0,VAL=3,MAX=6,MIN=0,WR=1,US=0;
+INFO:root:name=Z WM_Zaehlung Faktor, promname=z_wm_zaehlung_faktor, value=3.0
+INFO:root:result=SP,NR=150,ID=150,NAME=Z Stromzaehlung Faktor,LEN=1,TP=0,BIT=0,VAL=3,MAX=6,MIN=0,WR=1,US=0;
+INFO:root:name=Z Stromzaehlung Faktor, promname=z_stromzaehlung_faktor, value=3.0
+INFO:root:result=SP,NR=151,ID=151,NAME=S,LEN=1,TP=0,BIT=0,VAL=43,MAX=0,MIN=0,WR=0,US=1;
+INFO:root:name=S, promname=s, value=43.0
+INFO:root:result=SP,NR=152,ID=152,NAME=Solar KTmin,LEN=1,TP=0,BIT=0,VAL=0,MAX=60,MIN=0,WR=1,US=0;
+INFO:root:name=Solar KTmin, promname=solar_ktmin, value=0.0
+INFO:root:result=SP,NR=153,ID=153,NAME=BSZ HKP Betriebsstunden,LEN=4,TP=0,BIT=0,VAL=22162,MAX=100000,MIN=0,WR=0,US=1;
+INFO:root:name=BSZ HKP Betriebsstunden, promname=bsz_hkp_betriebsstunden, value=22162.0
+INFO:root:result=SP,NR=154,ID=154,NAME=BSZ HKP aktuelle Laufzeit,LEN=4,TP=0,BIT=0,VAL=0,MAX=100000,MIN=0,WR=0,US=1;
+INFO:root:name=BSZ HKP aktuelle Laufzeit, promname=bsz_hkp_aktuelle_laufzeit, value=0.0
+INFO:root:result=SP,NR=155,ID=155,NAME=BSZ HKP Schaltung,LEN=4,TP=0,BIT=0,VAL=51684,MAX=100000,MIN=0,WR=0,US=1;
+INFO:root:name=BSZ HKP Schaltung, promname=bsz_hkp_schaltung, value=51684.0
+INFO:root:result=SP,NR=156,ID=156,NAME=BSZ_PUP Betriebsstunden,LEN=4,TP=0,BIT=0,VAL=19290,MAX=100000,MIN=0,WR=0,US=1;
+INFO:root:name=BSZ_PUP Betriebsstunden, promname=bsz_pup_betriebsstunden, value=19290.0
+INFO:root:result=SP,NR=157,ID=157,NAME=BSZ_PUP aktuelle Laufzeit,LEN=4,TP=0,BIT=0,VAL=652,MAX=100000,MIN=0,WR=0,US=1;
+INFO:root:name=BSZ_PUP aktuelle Laufzeit, promname=bsz_pup_aktuelle_laufzeit, value=652.0
+INFO:root:result=SP,NR=158,ID=158,NAME=BSZ_PUP Schaltung,LEN=4,TP=0,BIT=0,VAL=29089,MAX=100000,MIN=0,WR=0,US=1;
+INFO:root:name=BSZ_PUP Schaltung, promname=bsz_pup_schaltung, value=29089.0
+INFO:root:result=SP,NR=159,ID=159,NAME=BSZ_MKP1 Betriebsstunden,LEN=4,TP=0,BIT=0,VAL=31292,MAX=100000,MIN=0,WR=0,US=1;
+INFO:root:name=BSZ_MKP1 Betriebsstunden, promname=bsz_mkp1_betriebsstunden, value=31292.0
+INFO:root:result=SP,NR=160,ID=160,NAME=BSZ_MKP1 aktuelle Laufzeit,LEN=4,TP=0,BIT=0,VAL=0,MAX=100000,MIN=0,WR=0,US=1;
+INFO:root:name=BSZ_MKP1 aktuelle Laufzeit, promname=bsz_mkp1_aktuelle_laufzeit, value=0.0
+INFO:root:result=SP,NR=161,ID=161,NAME=BSZ_MKP1 Schaltung,LEN=4,TP=0,BIT=0,VAL=3373,MAX=100000,MIN=0,WR=0,US=1;
+INFO:root:name=BSZ_MKP1 Schaltung, promname=bsz_mkp1_schaltung, value=3373.0
+INFO:root:result=SP,NR=162,ID=162,NAME=BSZ EQ Betriebsstunden,LEN=4,TP=0,BIT=0,VAL=18614,MAX=100000,MIN=0,WR=0,US=1;
+INFO:root:name=BSZ EQ Betriebsstunden, promname=bsz_eq_betriebsstunden, value=18614.0
+INFO:root:result=SP,NR=163,ID=163,NAME=BSZ EQ aktuelle Laufzeit,LEN=4,TP=0,BIT=0,VAL=633,MAX=100000,MIN=0,WR=0,US=1;
+INFO:root:name=BSZ EQ aktuelle Laufzeit, promname=bsz_eq_aktuelle_laufzeit, value=633.0
+INFO:root:result=SP,NR=164,ID=164,NAME=BSZ EQ Schaltungen,LEN=4,TP=0,BIT=0,VAL=29634,MAX=100000,MIN=0,WR=0,US=1;
+INFO:root:name=BSZ EQ Schaltungen, promname=bsz_eq_schaltungen, value=29634.0
+INFO:root:result=SP,NR=165,ID=165,NAME=BSZ WWV Betriebsstunden,LEN=4,TP=0,BIT=0,VAL=3078,MAX=100000,MIN=0,WR=0,US=1;
+INFO:root:name=BSZ WWV Betriebsstunden, promname=bsz_wwv_betriebsstunden, value=3078.0
+INFO:root:result=SP,NR=166,ID=166,NAME=BSZ WWV aktuelle Laufzeit,LEN=4,TP=0,BIT=0,VAL=773,MAX=100000,MIN=0,WR=0,US=1;
+INFO:root:name=BSZ WWV aktuelle Laufzeit, promname=bsz_wwv_aktuelle_laufzeit, value=773.0
+INFO:root:result=SP,NR=167,ID=167,NAME=BSZ WWV Schaltungen,LEN=4,TP=0,BIT=0,VAL=4793,MAX=100000,MIN=0,WR=0,US=1;
+INFO:root:name=BSZ WWV Schaltungen, promname=bsz_wwv_schaltungen, value=4793.0
+INFO:root:result=SP,NR=168,ID=168,NAME=BSZ ZIPWW Betriebsstunden,LEN=4,TP=0,BIT=0,VAL=0,MAX=100000,MIN=0,WR=0,US=1;
+INFO:root:name=BSZ ZIPWW Betriebsstunden, promname=bsz_zipww_betriebsstunden, value=0.0
+INFO:root:result=SP,NR=169,ID=169,NAME=BSZ ZIPWW aktuelle Laufzeit,LEN=4,TP=0,BIT=0,VAL=0,MAX=100000,MIN=0,WR=0,US=1;
+INFO:root:name=BSZ ZIPWW aktuelle Laufzeit, promname=bsz_zipww_aktuelle_laufzeit, value=0.0
+INFO:root:result=SP,NR=170,ID=170,NAME=BSZ ZIPWW Schaltungen,LEN=4,TP=0,BIT=0,VAL=335,MAX=100000,MIN=0,WR=0,US=1;
+INFO:root:name=BSZ ZIPWW Schaltungen, promname=bsz_zipww_schaltungen, value=335.0
+INFO:root:result=SP,NR=171,ID=171,NAME=BSZ Verdichter Betriebsst. WW,LEN=4,TP=0,BIT=0,VAL=2941,MAX=100000,MIN=0,WR=0,US=1;
+INFO:root:name=BSZ Verdichter Betriebsst. WW, promname=bsz_verdichter_betriebsst_ww, value=2941.0
+INFO:root:result=SP,NR=172,ID=172,NAME=BSZ Verdichter Betriebsst. HKR,LEN=4,TP=0,BIT=0,VAL=15982,MAX=100000,MIN=0,WR=0,US=1;
+INFO:root:name=BSZ Verdichter Betriebsst. HKR, promname=bsz_verdichter_betriebsst_hkr, value=15982.0
+INFO:root:result=SP,NR=173,ID=173,NAME=BSZ Verdichter Betriebsst. ges,LEN=4,TP=0,BIT=0,VAL=18923,MAX=100000,MIN=0,WR=0,US=1;
+INFO:root:name=BSZ Verdichter Betriebsst. ges, promname=bsz_verdichter_betriebsst_ges, value=18923.0
+INFO:root:result=SP,NR=174,ID=174,NAME=BSZ Verdichter akt. Laufzeit,LEN=4,TP=0,BIT=0,VAL=635,MAX=100000,MIN=0,WR=0,US=1;
+INFO:root:name=BSZ Verdichter akt. Laufzeit, promname=bsz_verdichter_akt_laufzeit, value=635.0
+INFO:root:result=SP,NR=175,ID=175,NAME=Kuehlen RLT min.,LEN=1,TP=0,BIT=0,VAL=17,MAX=25,MIN=5,WR=1,US=0;
+INFO:root:name=Kuehlen RLT min., promname=kuehlen_rlt_min, value=17.0
+INFO:root:result=SP,NR=176,ID=176,NAME=BSZ 2.Stufe Betriebsst. WW,LEN=4,TP=0,BIT=0,VAL=0,MAX=100000,MIN=0,WR=0,US=1;
+INFO:root:name=BSZ 2.Stufe Betriebsst. WW, promname=bsz_2_stufe_betriebsst_ww, value=0.0
+INFO:root:result=SP,NR=177,ID=177,NAME=BSZ 2.Stufe Betriebsst. HKR,LEN=4,TP=0,BIT=0,VAL=0,MAX=100000,MIN=0,WR=0,US=1;
+INFO:root:name=BSZ 2.Stufe Betriebsst. HKR, promname=bsz_2_stufe_betriebsst_hkr, value=0.0
+INFO:root:result=SP,NR=178,ID=178,NAME=BSZ 2.Stufe Betriebsst. ges,LEN=4,TP=0,BIT=0,VAL=0,MAX=100000,MIN=0,WR=0,US=1;
+INFO:root:name=BSZ 2.Stufe Betriebsst. ges, promname=bsz_2_stufe_betriebsst_ges, value=0.0
+INFO:root:result=SP,NR=179,ID=179,NAME=BSZ 2.Stufe akt. Laufzeit,LEN=4,TP=0,BIT=0,VAL=0,MAX=100000,MIN=0,WR=0,US=1;
+INFO:root:name=BSZ 2.Stufe akt. Laufzeit, promname=bsz_2_stufe_akt_laufzeit, value=0.0
+INFO:root:result=SP,NR=180,ID=180,NAME=BSZ 2.Stufe Schaltungen,LEN=4,TP=0,BIT=0,VAL=0,MAX=100000,MIN=0,WR=0,US=1;
+INFO:root:name=BSZ 2.Stufe Schaltungen, promname=bsz_2_stufe_schaltungen, value=0.0
+INFO:root:result=SP,NR=181,ID=181,NAME=Ausheizprog. RL Starttemperatu,LEN=1,TP=0,BIT=0,VAL=19,MAX=25,MIN=10,WR=1,US=0;
+INFO:root:name=Ausheizprog. RL Starttemperatu, promname=ausheizprog_rl_starttemperatu, value=19.0
+INFO:root:result=SP,NR=182,ID=182,NAME=Ausheizprog. RL Zieltemperatur,LEN=1,TP=0,BIT=0,VAL=32,MAX=50,MIN=26,WR=1,US=0;
+INFO:root:name=Ausheizprog. RL Zieltemperatur, promname=ausheizprog_rl_zieltemperatur, value=32.0
+INFO:root:result=SP,NR=183,ID=183,NAME=Ausheizprog. RL Endtemperatur,LEN=1,TP=0,BIT=0,VAL=19,MAX=25,MIN=10,WR=1,US=0;
+INFO:root:name=Ausheizprog. RL Endtemperatur, promname=ausheizprog_rl_endtemperatur, value=19.0
+INFO:root:result=SP,NR=184,ID=184,NAME=Ausheizprog. Aufheiztage,LEN=1,TP=0,BIT=0,VAL=8,MAX=10,MIN=1,WR=1,US=0;
+INFO:root:name=Ausheizprog. Aufheiztage, promname=ausheizprog_aufheiztage, value=8.0
+INFO:root:result=SP,NR=185,ID=185,NAME=Ausheizprog. Haltetage,LEN=1,TP=0,BIT=0,VAL=4,MAX=5,MIN=0,WR=1,US=0;
+INFO:root:name=Ausheizprog. Haltetage, promname=ausheizprog_haltetage, value=4.0
+INFO:root:result=SP,NR=186,ID=186,NAME=Ausheizprog. Absenktage,LEN=1,TP=0,BIT=0,VAL=3,MAX=10,MIN=0,WR=1,US=0;
+INFO:root:name=Ausheizprog. Absenktage, promname=ausheizprog_absenktage, value=3.0
+INFO:root:result=SP,NR=187,ID=187,NAME=Ausheizprog. HKR,LEN=1,TP=0,BIT=0,VAL=0,MAX=3,MIN=0,WR=1,US=1;
+INFO:root:name=Ausheizprog. HKR, promname=ausheizprog_hkr, value=0.0
+INFO:root:result=SP,NR=188,ID=188,NAME=BSZ Abtau Betriebsstunden,LEN=4,TP=0,BIT=0,VAL=378,MAX=100000,MIN=0,WR=0,US=1;
+INFO:root:name=BSZ Abtau Betriebsstunden, promname=bsz_abtau_betriebsstunden, value=378.0
+INFO:root:result=SP,NR=189,ID=189,NAME=BSZ Abtau Schaltungen,LEN=4,TP=0,BIT=0,VAL=22015,MAX=100000,MIN=0,WR=0,US=1;
+INFO:root:name=BSZ Abtau Schaltungen, promname=bsz_abtau_schaltungen, value=22015.0
+INFO:root:result=SP,NR=190,ID=190,NAME=RLVL Diff. Maximaldiff. (K),LEN=4,TP=1,BIT=1,VAL=9.0,MAX=20.0,MIN=1.0,WR=1,US=1;
+INFO:root:name=RLVL Diff. Maximaldiff. (K), promname=rlvl_diff_maximaldiff_k, value=9.0
+INFO:root:result=SP,NR=191,ID=191,NAME=RLVL Diff. Hysterese Max. (K),LEN=4,TP=1,BIT=1,VAL=2.0,MAX=10.0,MIN=1.0,WR=1,US=1;
+INFO:root:name=RLVL Diff. Hysterese Max. (K), promname=rlvl_diff_hysterese_max_k, value=2.0
+INFO:root:result=SP,NR=192,ID=192,NAME=RLVL Diff. Anspr.verz.Zeit (Se,LEN=2,TP=0,BIT=0,VAL=0,MAX=300,MIN=0,WR=1,US=1;
+INFO:root:name=RLVL Diff. Anspr.verz.Zeit (Se, promname=rlvl_diff_anspr_verz_zeit_se, value=0.0
+INFO:root:result=SP,NR=193,ID=193,NAME=RLVL Diff. Einschaltverz. (Sec,LEN=2,TP=0,BIT=0,VAL=1800,MAX=10800,MIN=0,WR=1,US=1;
+INFO:root:name=RLVL Diff. Einschaltverz. (Sec, promname=rlvl_diff_einschaltverz_sec, value=1800.0
+INFO:root:result=SP,NR=194,ID=194,NAME=RLVL Diff. Fehlerwiederh. (24 ,LEN=1,TP=0,BIT=0,VAL=2,MAX=6,MIN=0,WR=1,US=1;
+INFO:root:name=RLVL Diff. Fehlerwiederh. (24 , promname=rlvl_diff_fehlerwiederh_24, value=2.0
+INFO:root:result=SP,NR=195,ID=195,NAME=Abtau RLTmin,LEN=2,TP=0,BIT=0,VAL=12,MAX=30,MIN=10,WR=1,US=1;
+INFO:root:name=Abtau RLTmin, promname=abtau_rltmin, value=12.0
+INFO:root:result=SP,NR=196,ID=196,NAME=Abtau RLThys,LEN=2,TP=0,BIT=0,VAL=3,MAX=10,MIN=1,WR=1,US=1;
+INFO:root:name=Abtau RLThys, promname=abtau_rlthys, value=3.0
+INFO:root:result=SP,NR=197,ID=197,NAME=Abtaudiff.bei -15C (uGw),LEN=1,TP=0,BIT=0,VAL=8,MAX=15,MIN=1,WR=1,US=1;
+INFO:root:name=Abtaudiff.bei -15C (uGw), promname=abtaudiff_bei_15c_ugw, value=8.0
+INFO:root:result=SP,NR=198,ID=198,NAME=Abtaudiff.bei  7C (oGw),LEN=1,TP=0,BIT=0,VAL=9,MAX=20,MIN=5,WR=1,US=1;
+INFO:root:name=Abtaudiff.bei  7C (oGw), promname=abtaudiff_bei_7c_ogw, value=9.0
+INFO:root:result=SP,NR=199,ID=199,NAME=MKR1 Aktiviert,LEN=1,TP=0,BIT=0,VAL=1,MAX=2,MIN=0,WR=1,US=1;
+INFO:root:name=MKR1 Aktiviert, promname=mkr1_aktiviert, value=1.0
+INFO:root:result=SP,NR=200,ID=200,NAME=MKR1 Soll_Raum,LEN=4,TP=1,BIT=1,VAL=22.0,MAX=25.0,MIN=10.0,WR=1,US=1;
+INFO:root:name=MKR1 Soll_Raum, promname=mkr1_soll_raum, value=22.0
+INFO:root:result=SP,NR=201,ID=201,NAME=MKR1 Soll_ZP_Korr,LEN=4,TP=1,BIT=0,VAL=19,MAX=10,MIN=0,WR=0,US=1;
+INFO:root:name=MKR1 Soll_ZP_Korr, promname=mkr1_soll_zp_korr, value=19.0
+INFO:root:result=SP,NR=202,ID=202,NAME=MKR1 Aufheiztemp. (K),LEN=4,TP=1,BIT=0,VAL=1,MAX=10,MIN=1,WR=1,US=1;
+INFO:root:name=MKR1 Aufheiztemp. (K), promname=mkr1_aufheiztemp_k, value=1.0
+INFO:root:result=SP,NR=203,ID=203,NAME=MKR1 Absenktemp. (K),LEN=4,TP=1,BIT=0,VAL=-3,MAX=-1,MIN=-10,WR=1,US=1;
+INFO:root:name=MKR1 Absenktemp. (K), promname=mkr1_absenktemp_k, value=-3.0
+INFO:root:result=SP,NR=204,ID=204,NAME=MKR1 Soll_RaumVerst,LEN=4,TP=1,BIT=1,VAL=1.5,MAX=5.0,MIN=0.1,WR=1,US=1;
+INFO:root:name=MKR1 Soll_RaumVerst, promname=mkr1_soll_raumverst, value=1.5
+INFO:root:result=SP,NR=205,ID=205,NAME=MKR1 Heizgrenze,LEN=1,TP=0,BIT=0,VAL=18,MAX=45,MIN=0,WR=1,US=1;
+INFO:root:name=MKR1 Heizgrenze, promname=mkr1_heizgrenze, value=18.0
+INFO:root:result=SP,NR=206,ID=206,NAME=MKR1 AT_Hysterese,LEN=1,TP=0,BIT=0,VAL=1,MAX=10,MIN=1,WR=1,US=1;
+INFO:root:name=MKR1 AT_Hysterese, promname=mkr1_at_hysterese, value=1.0
+INFO:root:result=SP,NR=207,ID=207,NAME=MKR1 RLT_min,LEN=4,TP=1,BIT=0,VAL=10,MAX=20,MIN=5,WR=1,US=1;
+INFO:root:name=MKR1 RLT_min, promname=mkr1_rlt_min, value=10.0
+INFO:root:result=SP,NR=208,ID=208,NAME=MKR1 RLT_max,LEN=4,TP=1,BIT=0,VAL=48,MAX=60,MIN=10,WR=1,US=1;
+INFO:root:name=MKR1 RLT_max, promname=mkr1_rlt_max, value=48.0
+INFO:root:result=SP,NR=209,ID=209,NAME=MKR1 RLT Soll_oHG (Heizkurve),LEN=4,TP=1,BIT=1,VAL=20.0,MAX=40.0,MIN=15.0,WR=1,US=1;
+INFO:root:name=MKR1 RLT Soll_oHG (Heizkurve), promname=mkr1_rlt_soll_ohg_heizkurve, value=20.0
+INFO:root:result=SP,NR=210,ID=210,NAME=MKR1 RLT Soll_0 (Heizkurve),LEN=4,TP=1,BIT=1,VAL=26.0,MAX=50.0,MIN=20.0,WR=1,US=1;
+INFO:root:name=MKR1 RLT Soll_0 (Heizkurve), promname=mkr1_rlt_soll_0_heizkurve, value=26.0
+INFO:root:result=SP,NR=211,ID=211,NAME=MKR1 RLT Soll_uHG (Heizkurve),LEN=4,TP=1,BIT=1,VAL=31.0,MAX=60.0,MIN=25.0,WR=1,US=1;
+INFO:root:name=MKR1 RLT Soll_uHG (Heizkurve), promname=mkr1_rlt_soll_uhg_heizkurve, value=31.0
+INFO:root:result=SP,NR=212,ID=212,NAME=n_0 bei Heizanforderung(%),LEN=1,TP=0,BIT=0,VAL=20,MAX=70,MIN=0,WR=1,US=1;
+INFO:root:name=n_0 bei Heizanforderung(%), promname=n_0_bei_heizanforderung_prozent, value=20.0
+INFO:root:result=SP,NR=213,ID=213,NAME=MKR1 3PR SollHys,LEN=1,TP=0,BIT=0,VAL=1,MAX=10,MIN=0,WR=1,US=1;
+INFO:root:name=MKR1 3PR SollHys, promname=mkr1_3pr_sollhys, value=1.0
+INFO:root:result=SP,NR=214,ID=214,NAME=MKR1 3PR SchaltHys,LEN=4,TP=1,BIT=1,VAL=0.5,MAX=10.0,MIN=0.1,WR=1,US=1;
+INFO:root:name=MKR1 3PR SchaltHys, promname=mkr1_3pr_schalthys, value=0.5
+INFO:root:result=SP,NR=215,ID=215,NAME=MKR1 PID_P_Kp,LEN=2,TP=0,BIT=0,VAL=430,MAX=10000,MIN=0,WR=1,US=1;
+INFO:root:name=MKR1 PID_P_Kp, promname=mkr1_pid_p_kp, value=430.0
+INFO:root:result=SP,NR=216,ID=216,NAME=MKR1 PID_I_Tn (sec),LEN=2,TP=0,BIT=0,VAL=84,MAX=30000,MIN=0,WR=1,US=1;
+INFO:root:name=MKR1 PID_I_Tn (sec), promname=mkr1_pid_i_tn_sec, value=84.0
+INFO:root:result=SP,NR=217,ID=217,NAME=MKR1 PID_D_Tv (sec),LEN=2,TP=0,BIT=0,VAL=10,MAX=1000,MIN=0,WR=1,US=1;
+INFO:root:name=MKR1 PID_D_Tv (sec), promname=mkr1_pid_d_tv_sec, value=10.0
+INFO:root:result=SP,NR=218,ID=218,NAME=MKR1 Min(%),LEN=1,TP=0,BIT=0,VAL=0,MAX=100,MIN=0,WR=1,US=1;
+INFO:root:name=MKR1 Min(%), promname=mkr1_min_prozent, value=0.0
+INFO:root:result=SP,NR=219,ID=219,NAME=MKR1 Spreizung(K),LEN=1,TP=0,BIT=0,VAL=5,MAX=10,MIN=0,WR=1,US=1;
+INFO:root:name=MKR1 Spreizung(K), promname=mkr1_spreizung_k, value=5.0
+INFO:root:result=SP,NR=220,ID=220,NAME=MKR1 Stellzeit,LEN=2,TP=0,BIT=0,VAL=120,MAX=500,MIN=50,WR=1,US=1;
+INFO:root:name=MKR1 Stellzeit, promname=mkr1_stellzeit, value=120.0
+INFO:root:result=SP,NR=221,ID=221,NAME=MKR1 Betriebsart,LEN=1,TP=0,BIT=0,VAL=1,MAX=7,MIN=0,WR=1,US=1;
+INFO:root:name=MKR1 Betriebsart, promname=mkr1_betriebsart, value=1.0
+INFO:root:result=SP,NR=222,ID=222,NAME=MKR2 Aktiviert,LEN=1,TP=0,BIT=0,VAL=1,MAX=2,MIN=0,WR=1,US=1;
+INFO:root:name=MKR2 Aktiviert, promname=mkr2_aktiviert, value=1.0
+INFO:root:result=SP,NR=223,ID=223,NAME=MKR2 Soll_Raum,LEN=4,TP=1,BIT=1,VAL=23.5,MAX=25.0,MIN=10.0,WR=1,US=1;
+INFO:root:name=MKR2 Soll_Raum, promname=mkr2_soll_raum, value=23.5
+INFO:root:result=SP,NR=224,ID=224,NAME=MKR2 Soll_ZP_Korr,LEN=4,TP=1,BIT=0,VAL=24,MAX=10,MIN=0,WR=0,US=1;
+INFO:root:name=MKR2 Soll_ZP_Korr, promname=mkr2_soll_zp_korr, value=24.0
+INFO:root:result=SP,NR=225,ID=225,NAME=MKR2 Aufheiztemp. (K),LEN=4,TP=1,BIT=0,VAL=1,MAX=10,MIN=1,WR=1,US=1;
+INFO:root:name=MKR2 Aufheiztemp. (K), promname=mkr2_aufheiztemp_k, value=1.0
+INFO:root:result=SP,NR=226,ID=226,NAME=MKR2 Absenktemp. (K),LEN=4,TP=1,BIT=0,VAL=-1,MAX=-1,MIN=-10,WR=1,US=1;
+INFO:root:name=MKR2 Absenktemp. (K), promname=mkr2_absenktemp_k, value=-1.0
+INFO:root:result=SP,NR=227,ID=227,NAME=MKR2 Soll_RaumVerst,LEN=4,TP=1,BIT=1,VAL=1.5,MAX=5.0,MIN=0.1,WR=1,US=1;
+INFO:root:name=MKR2 Soll_RaumVerst, promname=mkr2_soll_raumverst, value=1.5
+INFO:root:result=SP,NR=228,ID=228,NAME=MKR2 Heizgrenze,LEN=1,TP=0,BIT=0,VAL=18,MAX=45,MIN=0,WR=1,US=1;
+INFO:root:name=MKR2 Heizgrenze, promname=mkr2_heizgrenze, value=18.0
+INFO:root:result=SP,NR=229,ID=229,NAME=MKR2 AT_Hysterese,LEN=1,TP=0,BIT=0,VAL=1,MAX=10,MIN=1,WR=1,US=1;
+INFO:root:name=MKR2 AT_Hysterese, promname=mkr2_at_hysterese, value=1.0
+INFO:root:result=SP,NR=230,ID=230,NAME=MKR2 RLT_min,LEN=4,TP=1,BIT=0,VAL=10,MAX=20,MIN=5,WR=1,US=1;
+INFO:root:name=MKR2 RLT_min, promname=mkr2_rlt_min, value=10.0
+INFO:root:result=SP,NR=231,ID=231,NAME=MKR2 RLT_max,LEN=4,TP=1,BIT=0,VAL=48,MAX=60,MIN=10,WR=1,US=1;
+INFO:root:name=MKR2 RLT_max, promname=mkr2_rlt_max, value=48.0
+INFO:root:result=SP,NR=232,ID=232,NAME=MKR2 RLT Soll_oHG (Heizkurve),LEN=4,TP=1,BIT=1,VAL=21.0,MAX=40.0,MIN=15.0,WR=1,US=1;
+INFO:root:name=MKR2 RLT Soll_oHG (Heizkurve), promname=mkr2_rlt_soll_ohg_heizkurve, value=21.0
+INFO:root:result=SP,NR=233,ID=233,NAME=MKR2 RLT Soll_0 (Heizkurve),LEN=4,TP=1,BIT=1,VAL=26.0,MAX=50.0,MIN=20.0,WR=1,US=1;
+INFO:root:name=MKR2 RLT Soll_0 (Heizkurve), promname=mkr2_rlt_soll_0_heizkurve, value=26.0
+INFO:root:result=SP,NR=234,ID=234,NAME=MKR2 RLT Soll_uHG (Heizkurve),LEN=4,TP=1,BIT=1,VAL=35.0,MAX=60.0,MIN=25.0,WR=1,US=1;
+INFO:root:name=MKR2 RLT Soll_uHG (Heizkurve), promname=mkr2_rlt_soll_uhg_heizkurve, value=35.0
+INFO:root:result=SP,NR=235,ID=235,NAME=Verdichter-Oelsumpftemp.GW,LEN=1,TP=0,BIT=0,VAL=5,MAX=30,MIN=0,WR=1,US=1;
+INFO:root:name=Verdichter-Oelsumpftemp.GW, promname=verdichter_oelsumpftemp_gw, value=5.0
+INFO:root:result=SP,NR=236,ID=236,NAME=MKR2 3PR SollHys,LEN=1,TP=0,BIT=0,VAL=1,MAX=10,MIN=0,WR=1,US=1;
+INFO:root:name=MKR2 3PR SollHys, promname=mkr2_3pr_sollhys, value=1.0
+INFO:root:result=SP,NR=237,ID=237,NAME=MKR2 3PR SchaltHys,LEN=4,TP=1,BIT=1,VAL=0.5,MAX=10.0,MIN=0.1,WR=1,US=1;
+INFO:root:name=MKR2 3PR SchaltHys, promname=mkr2_3pr_schalthys, value=0.5
+INFO:root:result=SP,NR=238,ID=238,NAME=MKR2 PID_P,LEN=2,TP=0,BIT=0,VAL=430,MAX=10000,MIN=0,WR=1,US=1;
+INFO:root:name=MKR2 PID_P, promname=mkr2_pid_p, value=430.0
+INFO:root:result=SP,NR=239,ID=239,NAME=MKR2 PID_I_Tn (sec),LEN=2,TP=0,BIT=0,VAL=84,MAX=30000,MIN=0,WR=1,US=1;
+INFO:root:name=MKR2 PID_I_Tn (sec), promname=mkr2_pid_i_tn_sec, value=84.0
+INFO:root:result=SP,NR=240,ID=240,NAME=MKR2 PID_D_Tv (sec),LEN=2,TP=0,BIT=0,VAL=10,MAX=1000,MIN=0,WR=1,US=1;
+INFO:root:name=MKR2 PID_D_Tv (sec), promname=mkr2_pid_d_tv_sec, value=10.0
+INFO:root:result=SP,NR=241,ID=241,NAME=MKR2 Min(%),LEN=1,TP=0,BIT=0,VAL=0,MAX=100,MIN=0,WR=1,US=1;
+INFO:root:name=MKR2 Min(%), promname=mkr2_min_prozent, value=0.0
+INFO:root:result=SP,NR=242,ID=242,NAME=MKR2 Spreizung(K),LEN=1,TP=0,BIT=0,VAL=5,MAX=10,MIN=0,WR=1,US=1;
+INFO:root:name=MKR2 Spreizung(K), promname=mkr2_spreizung_k, value=5.0
+INFO:root:result=SP,NR=243,ID=243,NAME=MKR2 Stellzeit,LEN=2,TP=0,BIT=0,VAL=120,MAX=500,MIN=50,WR=1,US=1;
+INFO:root:name=MKR2 Stellzeit, promname=mkr2_stellzeit, value=120.0
+INFO:root:result=SP,NR=244,ID=244,NAME=MKR2 Betriebsart,LEN=1,TP=0,BIT=0,VAL=1,MAX=7,MIN=0,WR=1,US=1;
+INFO:root:name=MKR2 Betriebsart, promname=mkr2_betriebsart, value=1.0
+INFO:root:result=SP,NR=245,ID=245,NAME=n_min bei Heizanforderung(%),LEN=1,TP=0,BIT=0,VAL=15,MAX=60,MIN=0,WR=1,US=1;
+INFO:root:name=n_min bei Heizanforderung(%), promname=n_min_bei_heizanforderung_prozent, value=15.0
+INFO:root:result=SP,NR=246,ID=246,NAME=n_max bei WW-Bereitung,LEN=1,TP=0,BIT=0,VAL=40,MAX=70,MIN=0,WR=1,US=1;
+INFO:root:name=n_max bei WW-Bereitung, promname=n_max_bei_ww_bereitung, value=40.0
+INFO:root:result=SP,NR=247,ID=247,NAME=n_max bei Heizanforderung(%),LEN=1,TP=0,BIT=0,VAL=35,MAX=70,MIN=0,WR=1,US=1;
+INFO:root:name=n_max bei Heizanforderung(%), promname=n_max_bei_heizanforderung_prozent, value=35.0
+INFO:root:result=SP,NR=248,ID=248,NAME=n_min bei WW-Bereitung,LEN=1,TP=0,BIT=0,VAL=23,MAX=50,MIN=0,WR=1,US=1;
+INFO:root:name=n_min bei WW-Bereitung, promname=n_min_bei_ww_bereitung, value=23.0
+INFO:root:result=SP,NR=249,ID=249,NAME=HKR Party RLT min.,LEN=1,TP=0,BIT=0,VAL=30,MAX=40,MIN=20,WR=1,US=1;
+INFO:root:name=HKR Party RLT min., promname=hkr_party_rlt_min, value=30.0
+INFO:root:result=SP,NR=250,ID=250,NAME=MKR1 Party RLT min.,LEN=1,TP=0,BIT=0,VAL=28,MAX=40,MIN=20,WR=1,US=1;
+INFO:root:name=MKR1 Party RLT min., promname=mkr1_party_rlt_min, value=28.0
+INFO:root:result=SP,NR=251,ID=251,NAME=MKR2 Party RLT min.,LEN=1,TP=0,BIT=0,VAL=30,MAX=40,MIN=20,WR=1,US=1;
+INFO:root:name=MKR2 Party RLT min., promname=mkr2_party_rlt_min, value=30.0
+INFO:root:result=SP,NR=252,ID=252,NAME=Int. Lebenszeichen (s),LEN=4,TP=0,BIT=0,VAL=3600,MAX=610000,MIN=300,WR=1,US=1;
+INFO:root:name=Int. Lebenszeichen (s), promname=int_lebenszeichen_s, value=3600.0
+INFO:root:result=SP,NR=253,ID=253,NAME=BSZ EXTP aktuelle Laufzeit,LEN=4,TP=0,BIT=0,VAL=0,MAX=100000,MIN=0,WR=0,US=0;
+INFO:root:name=BSZ EXTP aktuelle Laufzeit, promname=bsz_extp_aktuelle_laufzeit, value=0.0
+INFO:root:result=SP,NR=254,ID=254,NAME=BSZ EXTP Schaltungen,LEN=4,TP=0,BIT=0,VAL=0,MAX=100000,MIN=0,WR=0,US=0;
+INFO:root:name=BSZ EXTP Schaltungen, promname=bsz_extp_schaltungen, value=0.0
+INFO:root:result=SP,NR=255,ID=255,NAME=Abtaueinleitung,LEN=1,TP=0,BIT=1,VAL=0,MAX=1,MIN=0,WR=1,US=1;
+INFO:root:name=Abtaueinleitung, promname=abtaueinleitung, value=0.0
+INFO:root:result=SP,NR=256,ID=256,NAME=HKR Soll_Hys_uHGmin,LEN=2,TP=0,BIT=0,VAL=-15,MAX=-5,MIN=-20,WR=1,US=1;
+INFO:root:name=HKR Soll_Hys_uHGmin, promname=hkr_soll_hys_uhgmin, value=-15.0
+INFO:root:result=SP,NR=257,ID=257,NAME=n_Steigung (ppm),LEN=1,TP=0,BIT=0,VAL=3,MAX=100,MIN=1,WR=1,US=1;
+INFO:root:name=n_Steigung (ppm), promname=n_steigung_ppm, value=3.0
+INFO:root:result=SP,NR=258,ID=258,NAME=Regeldiff Grenzwert (K),LEN=4,TP=1,BIT=0,VAL=40,MAX=60,MIN=20,WR=1,US=0;
+INFO:root:name=Regeldiff Grenzwert (K), promname=regeldiff_grenzwert_k, value=40.0
+INFO:root:result=SP,NR=259,ID=259,NAME=Regeldiff Hysterese (h),LEN=4,TP=1,BIT=1,VAL=2.0,MAX=10.0,MIN=1.0,WR=1,US=0;
+INFO:root:name=Regeldiff Hysterese (h), promname=regeldiff_hysterese_h, value=2.0
+INFO:root:result=SP,NR=260,ID=260,NAME=Regeldiff Anspr.Verz.Zeit(Sec),LEN=2,TP=0,BIT=0,VAL=0,MAX=300,MIN=0,WR=1,US=0;
+INFO:root:name=Regeldiff Anspr.Verz.Zeit(Sec), promname=regeldiff_anspr_verz_zeit_sec, value=0.0
+INFO:root:result=SP,NR=261,ID=261,NAME=Regeldiff Einschaltverz.(Sec),LEN=2,TP=0,BIT=0,VAL=1800,MAX=10800,MIN=0,WR=1,US=0;
+INFO:root:name=Regeldiff Einschaltverz.(Sec), promname=regeldiff_einschaltverz_sec, value=1800.0
+INFO:root:result=SP,NR=262,ID=262,NAME=Regeldiff Fehlerwiederh.(24 h),LEN=1,TP=0,BIT=0,VAL=2,MAX=6,MIN=0,WR=1,US=0;
+INFO:root:name=Regeldiff Fehlerwiederh.(24 h), promname=regeldiff_fehlerwiederh_24_h, value=2.0
+INFO:root:result=SP,NR=263,ID=263,NAME=Energiezaehler,LEN=1,TP=0,BIT=0,VAL=0,MAX=2,MIN=0,WR=1,US=1;
+INFO:root:name=Energiezaehler, promname=energiezaehler, value=0.0
+INFO:root:result=SP,NR=264,ID=264,NAME=Kuehlen,LEN=1,TP=0,BIT=0,VAL=0,MAX=3,MIN=0,WR=1,US=1;
+INFO:root:name=Kuehlen, promname=kuehlen, value=0.0
+INFO:root:result=SP,NR=265,ID=265,NAME=Kuehlen Esd dummy,LEN=1,TP=0,BIT=0,VAL=2,MAX=5,MIN=0,WR=0,US=0;
+INFO:root:name=Kuehlen Esd dummy, promname=kuehlen_esd_dummy, value=2.0
+INFO:root:result=SP,NR=266,ID=266,NAME=Kuehlen Schalthysterese,LEN=1,TP=0,BIT=0,VAL=2,MAX=5,MIN=1,WR=1,US=0;
+INFO:root:name=Kuehlen Schalthysterese, promname=kuehlen_schalthysterese, value=2.0
+INFO:root:result=SP,NR=267,ID=267,NAME=Externe Anforderung,LEN=1,TP=0,BIT=0,VAL=0,MAX=2,MIN=0,WR=1,US=1;
+INFO:root:name=Externe Anforderung, promname=externe_anforderung, value=0.0
+INFO:root:result=SP,NR=268,ID=268,NAME=Ausheizprog Aufheiztage2,LEN=1,TP=0,BIT=0,VAL=2,MAX=10,MIN=1,WR=1,US=0;
+INFO:root:name=Ausheizprog Aufheiztage2, promname=ausheizprog_aufheiztage2, value=2.0
+INFO:root:result=SP,NR=269,ID=269,NAME=Ausheizprog AufheizCounter,LEN=1,TP=0,BIT=0,VAL=0,MAX=0,MIN=0,WR=0,US=0;
+INFO:root:name=Ausheizprog AufheizCounter, promname=ausheizprog_aufheizcounter, value=0.0
+INFO:root:result=SP,NR=270,ID=270,NAME=Heizen nach WW Bereitung,LEN=1,TP=0,BIT=0,VAL=1,MAX=2,MIN=0,WR=1,US=1;
+INFO:root:name=Heizen nach WW Bereitung, promname=heizen_nach_ww_bereitung, value=1.0
+INFO:root:result=SP,NR=271,ID=271,NAME=Solaranlage,LEN=1,TP=0,BIT=0,VAL=0,MAX=3,MIN=0,WR=1,US=1;
+INFO:root:name=Solaranlage, promname=solaranlage, value=0.0
+INFO:root:result=SP,NR=272,ID=272,NAME=Solar KTmax,LEN=1,TP=0,BIT=0,VAL=120,MAX=120,MIN=60,WR=1,US=0;
+INFO:root:name=Solar KTmax, promname=solar_ktmax, value=120.0
+INFO:root:result=SP,NR=273,ID=273,NAME=Solar KTmax Hysterese,LEN=1,TP=0,BIT=0,VAL=5,MAX=5,MIN=1,WR=1,US=0;
+INFO:root:name=Solar KTmax Hysterese, promname=solar_ktmax_hysterese, value=5.0
+INFO:root:result=SP,NR=274,ID=274,NAME=Solar Norm. Hysterese,LEN=1,TP=0,BIT=0,VAL=10,MAX=15,MIN=1,WR=1,US=0;
+INFO:root:name=Solar Norm. Hysterese, promname=solar_norm_hysterese, value=10.0
+INFO:root:result=SP,NR=275,ID=275,NAME=Solar Puls_ein (Sec),LEN=2,TP=0,BIT=0,VAL=60,MAX=600,MIN=0,WR=1,US=0;
+INFO:root:name=Solar Puls_ein (Sec), promname=solar_puls_ein_sec, value=60.0
+INFO:root:result=SP,NR=276,ID=276,NAME=Solar Puls_aus (Sec),LEN=2,TP=0,BIT=0,VAL=120,MAX=10800,MIN=0,WR=1,US=0;
+INFO:root:name=Solar Puls_aus (Sec), promname=solar_puls_aus_sec, value=120.0
+INFO:root:result=SP,NR=277,ID=277,NAME=Solar BSZ P1 Betriebsstunden,LEN=4,TP=0,BIT=0,VAL=0,MAX=100000,MIN=0,WR=0,US=0;
+INFO:root:name=Solar BSZ P1 Betriebsstunden, promname=solar_bsz_p1_betriebsstunden, value=0.0
+INFO:root:result=SP,NR=278,ID=278,NAME=Solar BSZ P1 aktuelle Laufzeit,LEN=4,TP=0,BIT=0,VAL=0,MAX=100000,MIN=0,WR=0,US=0;
+INFO:root:name=Solar BSZ P1 aktuelle Laufzeit, promname=solar_bsz_p1_aktuelle_laufzeit, value=0.0
+INFO:root:result=SP,NR=279,ID=279,NAME=Solar BSZ P1 Schaltungen,LEN=4,TP=0,BIT=0,VAL=0,MAX=100000,MIN=0,WR=0,US=0;
+INFO:root:name=Solar BSZ P1 Schaltungen, promname=solar_bsz_p1_schaltungen, value=0.0
+INFO:root:result=SP,NR=280,ID=280,NAME=Solar BSZ P2 Betriebsstunden,LEN=4,TP=0,BIT=0,VAL=0,MAX=100000,MIN=0,WR=0,US=0;
+INFO:root:name=Solar BSZ P2 Betriebsstunden, promname=solar_bsz_p2_betriebsstunden, value=0.0
+INFO:root:result=SP,NR=281,ID=281,NAME=Solar BSZ P2 aktuelle Laufzeit,LEN=4,TP=0,BIT=0,VAL=0,MAX=100000,MIN=0,WR=0,US=0;
+INFO:root:name=Solar BSZ P2 aktuelle Laufzeit, promname=solar_bsz_p2_aktuelle_laufzeit, value=0.0
+INFO:root:result=SP,NR=282,ID=282,NAME=Solar BSZ P2 Schaltungen,LEN=4,TP=0,BIT=0,VAL=0,MAX=100000,MIN=0,WR=0,US=0;
+INFO:root:name=Solar BSZ P2 Schaltungen, promname=solar_bsz_p2_schaltungen, value=0.0
+INFO:root:result=SP,NR=283,ID=283,NAME=Solar Grenzwert Puffer,LEN=1,TP=0,BIT=0,VAL=70,MAX=80,MIN=0,WR=1,US=0;
+INFO:root:name=Solar Grenzwert Puffer, promname=solar_grenzwert_puffer, value=70.0
+INFO:root:result=SP,NR=284,ID=284,NAME=Solar Grenzwert Brauchwasser,LEN=1,TP=0,BIT=0,VAL=70,MAX=80,MIN=0,WR=1,US=0;
+INFO:root:name=Solar Grenzwert Brauchwasser, promname=solar_grenzwert_brauchwasser, value=70.0
+INFO:root:result=SP,NR=285,ID=285,NAME=Solar Anforderung,LEN=1,TP=0,BIT=0,VAL=0,MAX=0,MIN=0,WR=0,US=0;
+INFO:root:name=Solar Anforderung, promname=solar_anforderung, value=0.0
+INFO:root:result=SP,NR=286,ID=286,NAME=Reset Effizienz,LEN=1,TP=0,BIT=3,VAL=0,MAX=1,MIN=0,WR=1,US=0;
+INFO:root:name=Reset Effizienz, promname=reset_effizienz, value=0.0
+INFO:root:result=SP,NR=287,ID=287,NAME=BSZ EXTP Betriebsstunden,LEN=4,TP=0,BIT=0,VAL=0,MAX=100000,MIN=0,WR=0,US=0;
+INFO:root:name=BSZ EXTP Betriebsstunden, promname=bsz_extp_betriebsstunden, value=0.0
+INFO:root:result=SP,NR=288,ID=288,NAME=BG1 Verwenden,LEN=1,TP=0,BIT=0,VAL=0,MAX=2,MIN=0,WR=1,US=1;
+INFO:root:name=BG1 Verwenden, promname=bg1_verwenden, value=0.0
+INFO:root:result=SP,NR=289,ID=289,NAME=BG2 Verwenden,LEN=1,TP=0,BIT=0,VAL=0,MAX=1,MIN=0,WR=1,US=0;
+INFO:root:name=BG2 Verwenden, promname=bg2_verwenden, value=0.0
+INFO:root:result=SP,NR=290,ID=290,NAME=BG3 Verwenden,LEN=1,TP=0,BIT=0,VAL=1,MAX=1,MIN=0,WR=1,US=1;
+INFO:root:name=BG3 Verwenden, promname=bg3_verwenden, value=1.0
+INFO:root:result=SP,NR=291,ID=291,NAME=BG4 Verwenden,LEN=1,TP=0,BIT=0,VAL=1,MAX=1,MIN=0,WR=1,US=1;
+INFO:root:name=BG4 Verwenden, promname=bg4_verwenden, value=1.0
+INFO:root:result=SP,NR=292,ID=292,NAME=Verdichter-Oelsumpf dT,LEN=1,TP=0,BIT=0,VAL=10,MAX=10,MIN=2,WR=1,US=1;
+INFO:root:name=Verdichter-Oelsumpf dT, promname=verdichter_oelsumpf_dt, value=10.0
+INFO:root:result=SP,NR=293,ID=293,NAME=Kuehlgrenze,LEN=1,TP=0,BIT=0,VAL=21,MAX=30,MIN=10,WR=1,US=0;
+INFO:root:name=Kuehlgrenze, promname=kuehlgrenze, value=21.0
+INFO:root:result=SP,NR=294,ID=294,NAME=HKP bei EVU-Sperre,LEN=1,TP=0,BIT=1,VAL=1,MAX=1,MIN=0,WR=1,US=1;
+INFO:root:name=HKP bei EVU-Sperre, promname=hkp_bei_evu_sperre, value=1.0
+INFO:root:result=SP,NR=295,ID=295,NAME=HKP Anforderungsabhaengig,LEN=1,TP=0,BIT=1,VAL=1,MAX=1,MIN=0,WR=1,US=1;
+INFO:root:name=HKP Anforderungsabhaengig, promname=hkp_anforderungsabhaengig, value=1.0
+INFO:root:result=SP,NR=296,ID=296,NAME=MKP1 bei EVU-Sperre,LEN=1,TP=0,BIT=2,VAL=0,MAX=1,MIN=0,WR=1,US=1;
+INFO:root:name=MKP1 bei EVU-Sperre, promname=mkp1_bei_evu_sperre, value=0.0
+INFO:root:result=SP,NR=297,ID=297,NAME=MKP1 Anforderungsabhaengig,LEN=1,TP=0,BIT=2,VAL=1,MAX=1,MIN=0,WR=1,US=1;
+INFO:root:name=MKP1 Anforderungsabhaengig, promname=mkp1_anforderungsabhaengig, value=1.0
+INFO:root:result=SP,NR=298,ID=298,NAME=MKP2 bei EVU-Sperre,LEN=1,TP=0,BIT=3,VAL=0,MAX=1,MIN=0,WR=1,US=1;
+INFO:root:name=MKP2 bei EVU-Sperre, promname=mkp2_bei_evu_sperre, value=0.0
+INFO:root:result=SP,NR=299,ID=299,NAME=MKP2 Anforderungsabhaengig,LEN=1,TP=0,BIT=3,VAL=1,MAX=1,MIN=0,WR=1,US=1;
+INFO:root:name=MKP2 Anforderungsabhaengig, promname=mkp2_anforderungsabhaengig, value=1.0
+INFO:root:result=SP,NR=300,ID=300,NAME=BWP bei EVU-Sperre,LEN=1,TP=0,BIT=4,VAL=0,MAX=1,MIN=0,WR=1,US=1;
+INFO:root:name=BWP bei EVU-Sperre, promname=bwp_bei_evu_sperre, value=0.0
+INFO:root:result=SP,NR=301,ID=301,NAME=PUP bei EVU-Sperre,LEN=1,TP=0,BIT=5,VAL=0,MAX=1,MIN=0,WR=1,US=1;
+INFO:root:name=PUP bei EVU-Sperre, promname=pup_bei_evu_sperre, value=0.0
+INFO:root:result=SP,NR=302,ID=302,NAME=Abtau RL_VLdT_GW_BWP,LEN=4,TP=1,BIT=1,VAL=6.0,MAX=20.0,MIN=1.0,WR=1,US=1;
+INFO:root:name=Abtau RL_VLdT_GW_BWP, promname=abtau_rl_vldt_gw_bwp, value=6.0
+INFO:root:result=SP,NR=303,ID=303,NAME=ExtP bei EVU-Sperre,LEN=1,TP=0,BIT=7,VAL=0,MAX=1,MIN=0,WR=1,US=0;
+INFO:root:name=ExtP bei EVU-Sperre, promname=extp_bei_evu_sperre, value=0.0
+INFO:root:result=SP,NR=304,ID=304,NAME=ExtP_Vorlaufzeit (Sec),LEN=2,TP=0,BIT=0,VAL=120,MAX=10800,MIN=0,WR=1,US=0;
+INFO:root:name=ExtP_Vorlaufzeit (Sec), promname=extp_vorlaufzeit_sec, value=120.0
+INFO:root:result=SP,NR=305,ID=305,NAME=ExtP_Nachlaufzeit (Sec),LEN=2,TP=0,BIT=0,VAL=0,MAX=10800,MIN=0,WR=1,US=0;
+INFO:root:name=ExtP_Nachlaufzeit (Sec), promname=extp_nachlaufzeit_sec, value=0.0
+INFO:root:result=SP,NR=306,ID=306,NAME=Ext.Anf.Verz.-zeit,LEN=4,TP=0,BIT=0,VAL=20,MAX=10800,MIN=0,WR=1,US=0;
+INFO:root:name=Ext.Anf.Verz.-zeit, promname=ext_anf_verz_zeit, value=20.0
+INFO:root:result=SP,NR=307,ID=307,NAME=Sauggas Grenzwert Kuehlen,LEN=4,TP=1,BIT=0,VAL=4,MAX=20,MIN=-20,WR=1,US=0;
+INFO:root:name=Sauggas Grenzwert Kuehlen, promname=sauggas_grenzwert_kuehlen, value=4.0
+INFO:root:result=SP,NR=308,ID=308,NAME=ND Transm. Grenzwert Kuehlen,LEN=4,TP=1,BIT=1,VAL=5.5,MAX=10.0,MIN=1.0,WR=1,US=0;
+INFO:root:name=ND Transm. Grenzwert Kuehlen, promname=nd_transm_grenzwert_kuehlen, value=5.5
+INFO:root:result=SP,NR=309,ID=309,NAME=EXV offset bei n_0% (%),LEN=2,TP=0,BIT=0,VAL=0,MAX=0,MIN=-50,WR=1,US=1;
+INFO:root:name=EXV offset bei n_0% (%), promname=exv_offset_bei_n_0_prozent_prozent, value=0.0
+INFO:root:result=SP,NR=310,ID=310,NAME=EXV offset_0 bei n (%),LEN=2,TP=0,BIT=0,VAL=20,MAX=50,MIN=0,WR=1,US=1;
+INFO:root:name=EXV offset_0 bei n (%), promname=exv_offset_0_bei_n_prozent, value=20.0
+INFO:root:result=SP,NR=311,ID=311,NAME=n bei Abtauung,LEN=1,TP=0,BIT=0,VAL=30,MAX=70,MIN=0,WR=1,US=1;
+INFO:root:name=n bei Abtauung, promname=n_bei_abtauung, value=30.0
+INFO:root:result=SP,NR=312,ID=312,NAME=AO2min bei Heizanf (%),LEN=1,TP=0,BIT=0,VAL=35,MAX=60,MIN=0,WR=1,US=1;
+INFO:root:name=AO2min bei Heizanf (%), promname=ao2min_bei_heizanf_prozent, value=35.0
+INFO:root:result=SP,NR=313,ID=313,NAME=AO2max bei WW-Bereitung,LEN=1,TP=0,BIT=0,VAL=70,MAX=100,MIN=5,WR=1,US=1;
+INFO:root:name=AO2max bei WW-Bereitung, promname=ao2max_bei_ww_bereitung, value=70.0
+INFO:root:result=SP,NR=314,ID=314,NAME=AO2max bei Heizanf (%),LEN=1,TP=0,BIT=0,VAL=65,MAX=100,MIN=5,WR=1,US=1;
+INFO:root:name=AO2max bei Heizanf (%), promname=ao2max_bei_heizanf_prozent, value=65.0
+INFO:root:result=SP,NR=315,ID=315,NAME=Verdichter modulierend,LEN=1,TP=0,BIT=0,VAL=1,MAX=1,MIN=0,WR=1,US=1;
+INFO:root:name=Verdichter modulierend, promname=verdichter_modulierend, value=1.0
+INFO:root:result=SP,NR=316,ID=316,NAME=MKP2_Puls_ein (Sec),LEN=2,TP=0,BIT=0,VAL=600,MAX=600,MIN=0,WR=1,US=1;
+INFO:root:name=MKP2_Puls_ein (Sec), promname=mkp2_puls_ein_sec, value=600.0
+INFO:root:result=SP,NR=317,ID=317,NAME=MKP2_Puls_aus (Sec),LEN=2,TP=0,BIT=0,VAL=900,MAX=10800,MIN=0,WR=1,US=1;
+INFO:root:name=MKP2_Puls_aus (Sec), promname=mkp2_puls_aus_sec, value=900.0
+INFO:root:result=SP,NR=318,ID=318,NAME=MKP2_Vorlaufzeit (Sec),LEN=2,TP=0,BIT=0,VAL=0,MAX=10800,MIN=0,WR=1,US=1;
+INFO:root:name=MKP2_Vorlaufzeit (Sec), promname=mkp2_vorlaufzeit_sec, value=0.0
+INFO:root:result=SP,NR=319,ID=319,NAME=MKP2_Nachlaufzeit (Sec),LEN=2,TP=0,BIT=0,VAL=0,MAX=10800,MIN=0,WR=1,US=1;
+INFO:root:name=MKP2_Nachlaufzeit (Sec), promname=mkp2_nachlaufzeit_sec, value=0.0
+INFO:root:result=SP,NR=320,ID=320,NAME=MKP2_Modus,LEN=1,TP=0,BIT=0,VAL=2,MAX=2,MIN=0,WR=1,US=1;
+INFO:root:name=MKP2_Modus, promname=mkp2_modus, value=2.0
+INFO:root:result=SP,NR=321,ID=321,NAME=BSZ_MKP2 Betriebsstunden,LEN=4,TP=0,BIT=0,VAL=27639,MAX=100000,MIN=0,WR=0,US=1;
+INFO:root:name=BSZ_MKP2 Betriebsstunden, promname=bsz_mkp2_betriebsstunden, value=27639.0
+INFO:root:result=SP,NR=322,ID=322,NAME=BSZ_MKP2 aktuelle Laufzeit,LEN=4,TP=0,BIT=0,VAL=0,MAX=100000,MIN=0,WR=0,US=1;
+INFO:root:name=BSZ_MKP2 aktuelle Laufzeit, promname=bsz_mkp2_aktuelle_laufzeit, value=0.0
+INFO:root:result=SP,NR=323,ID=323,NAME=BSZ_MKP2 Schaltung,LEN=4,TP=0,BIT=0,VAL=3052,MAX=100000,MIN=0,WR=0,US=1;
+INFO:root:name=BSZ_MKP2 Schaltung, promname=bsz_mkp2_schaltung, value=3052.0
+INFO:root:result=SP,NR=324,ID=324,NAME=Ausheizprog. Verz.-tage,LEN=2,TP=0,BIT=0,VAL=0,MAX=250,MIN=0,WR=1,US=0;
+INFO:root:name=Ausheizprog. Verz.-tage, promname=ausheizprog_verz_tage, value=0.0
+INFO:root:result=SP,NR=325,ID=325,NAME=Ausheizprog. Sollhys.,LEN=1,TP=0,BIT=0,VAL=2,MAX=10,MIN=1,WR=1,US=0;
+INFO:root:name=Ausheizprog. Sollhys., promname=ausheizprog_sollhys, value=2.0
+INFO:root:result=SP,NR=326,ID=326,NAME=Mindest-Abtaufreigabeverz.(Min,LEN=1,TP=0,BIT=0,VAL=15,MAX=45,MIN=1,WR=1,US=1;
+INFO:root:name=Mindest-Abtaufreigabeverz.(Min, promname=mindest_abtaufreigabeverz_min, value=15.0
+INFO:root:result=SP,NR=327,ID=327,NAME=AO2min bei WW-Bereitung,LEN=1,TP=0,BIT=0,VAL=45,MAX=70,MIN=5,WR=1,US=1;
+INFO:root:name=AO2min bei WW-Bereitung, promname=ao2min_bei_ww_bereitung, value=45.0
+INFO:root:result=SP,NR=328,ID=328,NAME=Verz.Zeit Heizen nach WW (sec),LEN=2,TP=0,BIT=0,VAL=120,MAX=180,MIN=0,WR=1,US=1;
+INFO:root:name=Verz.Zeit Heizen nach WW (sec), promname=verz_zeit_heizen_nach_ww_sec, value=120.0
+INFO:root:result=SP,NR=329,ID=329,NAME=TF22 Offset,LEN=1,TP=0,BIT=0,VAL=3,MAX=7,MIN=0,WR=1,US=0;
+INFO:root:name=TF22 Offset, promname=tf22_offset, value=3.0
+INFO:root:result=SP,NR=330,ID=330,NAME=Sollwert M1 aktiv,LEN=1,TP=0,BIT=0,VAL=1,MAX=1,MIN=0,WR=1,US=1;
+INFO:root:name=Sollwert M1 aktiv, promname=sollwert_m1_aktiv, value=1.0
+INFO:root:result=SP,NR=331,ID=331,NAME=Sollwert M2 aktiv,LEN=1,TP=0,BIT=0,VAL=1,MAX=1,MIN=0,WR=1,US=1;
+INFO:root:name=Sollwert M2 aktiv, promname=sollwert_m2_aktiv, value=1.0
+INFO:root:result=SP,NR=332,ID=332,NAME=Solar Min. Hysterese,LEN=1,TP=0,BIT=0,VAL=3,MAX=15,MIN=0,WR=1,US=0;
+INFO:root:name=Solar Min. Hysterese, promname=solar_min_hysterese, value=3.0
+INFO:root:result=SP,NR=333,ID=333,NAME=Solar Pendel Ladezeit (Min),LEN=1,TP=0,BIT=0,VAL=15,MAX=30,MIN=1,WR=1,US=0;
+INFO:root:name=Solar Pendel Ladezeit (Min), promname=solar_pendel_ladezeit_min, value=15.0
+INFO:root:result=SP,NR=334,ID=334,NAME=Solar Pendel Pausezeit (Min),LEN=1,TP=0,BIT=0,VAL=2,MAX=30,MIN=1,WR=1,US=0;
+INFO:root:name=Solar Pendel Pausezeit (Min), promname=solar_pendel_pausezeit_min, value=2.0
+INFO:root:result=SP,NR=335,ID=335,NAME=n Regelabweichung(%),LEN=1,TP=0,BIT=0,VAL=0,MAX=100,MIN=0,WR=1,US=1;
+INFO:root:name=n Regelabweichung(%), promname=n_regelabweichung_prozent, value=0.0
+INFO:root:result=SP,NR=336,ID=336,NAME=Exv_v_Rampe (ms),LEN=1,TP=0,BIT=0,VAL=25,MAX=50,MIN=7,WR=1,US=1;
+INFO:root:name=Exv_v_Rampe (ms), promname=exv_v_rampe_ms, value=25.0
+INFO:root:result=SP,NR=337,ID=337,NAME=Verd.Abtau Einschaltvz.(Sec),LEN=2,TP=0,BIT=0,VAL=0,MAX=10800,MIN=0,WR=1,US=1;
+INFO:root:name=Verd.Abtau Einschaltvz.(Sec), promname=verd_abtau_einschaltvz_sec, value=0.0
+INFO:root:result=SP,NR=338,ID=338,NAME=Luefterverz.(sec),LEN=2,TP=0,BIT=0,VAL=20,MAX=90,MIN=0,WR=1,US=1;
+INFO:root:name=Luefterverz.(sec), promname=luefterverz_sec, value=20.0
+INFO:root:result=SP,NR=339,ID=339,NAME=Grenzw.WW_2teStufe,LEN=1,TP=0,BIT=0,VAL=75,MAX=75,MIN=10,WR=1,US=1;
+INFO:root:name=Grenzw.WW_2teStufe, promname=grenzw_ww_2testufe, value=75.0
+INFO:root:result=SP,NR=340,ID=340,NAME=Kuehlgrenze_Hys(K),LEN=1,TP=0,BIT=0,VAL=4,MAX=20,MIN=1,WR=1,US=0;
+INFO:root:name=Kuehlgrenze_Hys(K), promname=kuehlgrenze_hys_k, value=4.0
+INFO:root:result=SP,NR=341,ID=341,NAME=SDS Anspr.verz.Zeit (sec),LEN=2,TP=0,BIT=0,VAL=1,MAX=300,MIN=0,WR=1,US=0;
+INFO:root:name=SDS Anspr.verz.Zeit (sec), promname=sds_anspr_verz_zeit_sec, value=1.0
+INFO:root:result=SP,NR=342,ID=342,NAME=SDS Einschaltverz. (sec),LEN=2,TP=0,BIT=0,VAL=1800,MAX=10800,MIN=0,WR=1,US=0;
+INFO:root:name=SDS Einschaltverz. (sec), promname=sds_einschaltverz_sec, value=1800.0
+INFO:root:result=SP,NR=343,ID=343,NAME=SDS Fehlerwiederh. (24 h),LEN=1,TP=0,BIT=0,VAL=2,MAX=6,MIN=0,WR=1,US=0;
+INFO:root:name=SDS Fehlerwiederh. (24 h), promname=sds_fehlerwiederh_24_h, value=2.0
+INFO:root:result=SP,NR=344,ID=344,NAME=max_Start_Differenzdruck,LEN=1,TP=0,BIT=0,VAL=6,MAX=40,MIN=1,WR=1,US=1;
+INFO:root:name=max_Start_Differenzdruck, promname=max_start_differenzdruck, value=6.0
+INFO:root:result=SP,NR=345,ID=345,NAME=n Start_Drehzahl (%),LEN=1,TP=0,BIT=0,VAL=20,MAX=50,MIN=15,WR=1,US=1;
+INFO:root:name=n Start_Drehzahl (%), promname=n_start_drehzahl_prozent, value=20.0
+INFO:root:result=SP,NR=346,ID=346,NAME=n_GW Oel_Rueckfuehrung(%),LEN=1,TP=0,BIT=0,VAL=15,MAX=30,MIN=0,WR=1,US=1;
+INFO:root:name=n_GW Oel_Rueckfuehrung(%), promname=n_gw_oel_rueckfuehrung_prozent, value=15.0
+INFO:root:result=SP,NR=347,ID=347,NAME=WW Normaltemp_Gw_max,LEN=1,TP=0,BIT=0,VAL=53,MAX=75,MIN=45,WR=1,US=1;
+INFO:root:name=WW Normaltemp_Gw_max, promname=ww_normaltemp_gw_max, value=53.0
+INFO:root:result=SP,NR=348,ID=348,NAME=MKR1 Kuehlen RLT min.,LEN=1,TP=0,BIT=0,VAL=17,MAX=25,MIN=5,WR=1,US=0;
+INFO:root:name=MKR1 Kuehlen RLT min., promname=mkr1_kuehlen_rlt_min, value=17.0
+INFO:root:result=SP,NR=349,ID=349,NAME=MKR1 Kuehlen Esd dummy,LEN=1,TP=0,BIT=0,VAL=2,MAX=5,MIN=0,WR=0,US=0;
+INFO:root:name=MKR1 Kuehlen Esd dummy, promname=mkr1_kuehlen_esd_dummy, value=2.0
+INFO:root:result=SP,NR=350,ID=350,NAME=MKR1 Kuehlen Schalthys.,LEN=1,TP=0,BIT=0,VAL=2,MAX=5,MIN=1,WR=1,US=0;
+INFO:root:name=MKR1 Kuehlen Schalthys., promname=mkr1_kuehlen_schalthys, value=2.0
+INFO:root:result=SP,NR=351,ID=351,NAME=MKR1 Sollhysterese(K),LEN=4,TP=1,BIT=0,VAL=5,MAX=10,MIN=1,WR=1,US=1;
+INFO:root:name=MKR1 Sollhysterese(K), promname=mkr1_sollhysterese_k, value=5.0
+INFO:root:result=SP,NR=352,ID=352,NAME=MKR2 Kuehlen RLT min.,LEN=1,TP=0,BIT=0,VAL=17,MAX=25,MIN=5,WR=1,US=0;
+INFO:root:name=MKR2 Kuehlen RLT min., promname=mkr2_kuehlen_rlt_min, value=17.0
+INFO:root:result=SP,NR=353,ID=353,NAME=MKR2 Kuehlen Esd dummy,LEN=1,TP=0,BIT=0,VAL=2,MAX=5,MIN=0,WR=0,US=0;
+INFO:root:name=MKR2 Kuehlen Esd dummy, promname=mkr2_kuehlen_esd_dummy, value=2.0
+INFO:root:result=SP,NR=354,ID=354,NAME=MKR2 Kuehlen Schalthys.,LEN=1,TP=0,BIT=0,VAL=2,MAX=5,MIN=1,WR=1,US=0;
+INFO:root:name=MKR2 Kuehlen Schalthys., promname=mkr2_kuehlen_schalthys, value=2.0
+INFO:root:result=SP,NR=355,ID=355,NAME=MKR2 Sollhysterese(K),LEN=4,TP=1,BIT=0,VAL=5,MAX=10,MIN=1,WR=1,US=1;
+INFO:root:name=MKR2 Sollhysterese(K), promname=mkr2_sollhysterese_k, value=5.0
+INFO:root:result=SP,NR=356,ID=356,NAME=HKP PID_P,LEN=2,TP=0,BIT=0,VAL=560,MAX=10000,MIN=0,WR=1,US=1;
+INFO:root:name=HKP PID_P, promname=hkp_pid_p, value=560.0
+INFO:root:result=SP,NR=357,ID=357,NAME=HKP PID_I_Tn (sec),LEN=2,TP=0,BIT=0,VAL=42,MAX=30000,MIN=0,WR=1,US=1;
+INFO:root:name=HKP PID_I_Tn (sec), promname=hkp_pid_i_tn_sec, value=42.0
+INFO:root:result=SP,NR=358,ID=358,NAME=HKP PID_D_Tv (sec),LEN=2,TP=0,BIT=0,VAL=8,MAX=1000,MIN=0,WR=1,US=1;
+INFO:root:name=HKP PID_D_Tv (sec), promname=hkp_pid_d_tv_sec, value=8.0
+INFO:root:result=SP,NR=359,ID=359,NAME=HKP n_min(%),LEN=1,TP=0,BIT=0,VAL=40,MAX=100,MIN=20,WR=1,US=1;
+INFO:root:name=HKP n_min(%), promname=hkp_n_min_prozent, value=40.0
+INFO:root:result=SP,NR=360,ID=360,NAME=Legionellenshutz,LEN=1,TP=0,BIT=0,VAL=0,MAX=2,MIN=0,WR=1,US=1;
+INFO:root:name=Legionellenshutz, promname=legionellenshutz, value=0.0
+INFO:root:result=SP,NR=361,ID=361,NAME=Legionellenschutz Dauer,LEN=2,TP=0,BIT=0,VAL=3600,MAX=36000,MIN=0,WR=1,US=0;
+INFO:root:name=Legionellenschutz Dauer, promname=legionellenschutz_dauer, value=3600.0
+INFO:root:result=SP,NR=362,ID=362,NAME=Legionellenschutz Tag,LEN=1,TP=0,BIT=0,VAL=0,MAX=6,MIN=0,WR=1,US=0;
+INFO:root:name=Legionellenschutz Tag, promname=legionellenschutz_tag, value=0.0
+INFO:root:result=SP,NR=363,ID=363,NAME=Legionellenschutz Zeitpunkt,LEN=1,TP=0,BIT=0,VAL=12,MAX=23,MIN=0,WR=1,US=0;
+INFO:root:name=Legionellenschutz Zeitpunkt, promname=legionellenschutz_zeitpunkt, value=12.0
+INFO:root:result=SP,NR=364,ID=364,NAME=Legionellenschutz Temp,LEN=1,TP=0,BIT=0,VAL=60,MAX=70,MIN=30,WR=1,US=0;
+INFO:root:name=Legionellenschutz Temp, promname=legionellenschutz_temp, value=60.0
+INFO:root:result=SP,NR=365,ID=365,NAME=Legionellenschutz Laufzeit,LEN=4,TP=0,BIT=0,VAL=0,MAX=100000,MIN=0,WR=0,US=0;
+INFO:root:name=Legionellenschutz Laufzeit, promname=legionellenschutz_laufzeit, value=0.0
+INFO:root:result=SP,NR=366,ID=366,NAME=Legionellenschutz WW Zirk.,LEN=1,TP=0,BIT=2,VAL=0,MAX=1,MIN=0,WR=1,US=0;
+INFO:root:name=Legionellenschutz WW Zirk., promname=legionellenschutz_ww_zirk, value=0.0
+INFO:root:result=SP,NR=367,ID=367,NAME=n_min bei Ext Anforderung,LEN=1,TP=0,BIT=0,VAL=20,MAX=50,MIN=0,WR=1,US=1;
+INFO:root:name=n_min bei Ext Anforderung, promname=n_min_bei_ext_anforderung, value=20.0
+INFO:root:result=SP,NR=368,ID=368,NAME=n_max bei Ext Anforderung,LEN=1,TP=0,BIT=0,VAL=30,MAX=70,MIN=0,WR=1,US=1;
+INFO:root:name=n_max bei Ext Anforderung, promname=n_max_bei_ext_anforderung, value=30.0
+INFO:root:result=SP,NR=369,ID=369,NAME=HKP Ziel_dT,LEN=1,TP=0,BIT=0,VAL=4,MAX=10,MIN=0,WR=1,US=1;
+INFO:root:name=HKP Ziel_dT, promname=hkp_ziel_dt, value=4.0
+INFO:root:result=SP,NR=370,ID=370,NAME=EQP PID_P,LEN=2,TP=0,BIT=0,VAL=560,MAX=10000,MIN=0,WR=1,US=1;
+INFO:root:name=EQP PID_P, promname=eqp_pid_p, value=560.0
+INFO:root:result=SP,NR=371,ID=371,NAME=EQP PID_I_Tn (sec),LEN=2,TP=0,BIT=0,VAL=42,MAX=30000,MIN=0,WR=1,US=1;
+INFO:root:name=EQP PID_I_Tn (sec), promname=eqp_pid_i_tn_sec, value=42.0
+INFO:root:result=SP,NR=372,ID=372,NAME=EQP PID_D_Tv (sec),LEN=2,TP=0,BIT=0,VAL=8,MAX=1000,MIN=0,WR=1,US=1;
+INFO:root:name=EQP PID_D_Tv (sec), promname=eqp_pid_d_tv_sec, value=8.0
+INFO:root:result=SP,NR=373,ID=373,NAME=EQP n_min(%),LEN=1,TP=0,BIT=0,VAL=40,MAX=100,MIN=5,WR=1,US=1;
+INFO:root:name=EQP n_min(%), promname=eqp_n_min_prozent, value=40.0
+INFO:root:result=SP,NR=374,ID=374,NAME=EQP Ziel_dT,LEN=1,TP=0,BIT=0,VAL=4,MAX=10,MIN=0,WR=1,US=1;
+INFO:root:name=EQP Ziel_dT, promname=eqp_ziel_dt, value=4.0
+INFO:root:result=SP,NR=375,ID=375,NAME=BSZ Verdichter Schaltung WW,LEN=4,TP=0,BIT=0,VAL=2497,MAX=100000,MIN=0,WR=0,US=1;
+INFO:root:name=BSZ Verdichter Schaltung WW, promname=bsz_verdichter_schaltung_ww, value=2497.0
+INFO:root:result=SP,NR=376,ID=376,NAME=EXV Fehler 100% (min),LEN=1,TP=0,BIT=0,VAL=2,MAX=100,MIN=0,WR=1,US=1;
+INFO:root:name=EXV Fehler 100% (min), promname=exv_fehler_100_prozent_min, value=2.0
+INFO:root:result=SP,NR=377,ID=377,NAME=FU_ERR Anspr.verz.Zeit (sec),LEN=2,TP=0,BIT=0,VAL=10,MAX=300,MIN=0,WR=1,US=1;
+INFO:root:name=FU_ERR Anspr.verz.Zeit (sec), promname=fu_err_anspr_verz_zeit_sec, value=10.0
+INFO:root:result=SP,NR=378,ID=378,NAME=FU_ERR Einschaltverz. (sec),LEN=2,TP=0,BIT=0,VAL=1800,MAX=10800,MIN=0,WR=1,US=1;
+INFO:root:name=FU_ERR Einschaltverz. (sec), promname=fu_err_einschaltverz_sec, value=1800.0
+INFO:root:result=SP,NR=379,ID=379,NAME=FU_ERR Fehlerwiederh. (24 h),LEN=1,TP=0,BIT=0,VAL=2,MAX=6,MIN=0,WR=1,US=1;
+INFO:root:name=FU_ERR Fehlerwiederh. (24 h), promname=fu_err_fehlerwiederh_24_h, value=2.0
+INFO:root:result=SP,NR=380,ID=380,NAME=n_Rampe (ppm),LEN=2,TP=0,BIT=0,VAL=60,MAX=32000,MIN=1,WR=1,US=1;
+INFO:root:name=n_Rampe (ppm), promname=n_rampe_ppm, value=60.0
+INFO:root:result=SP,NR=381,ID=381,NAME=n bei Kuehlen (%),LEN=1,TP=0,BIT=0,VAL=20,MAX=70,MIN=0,WR=1,US=1;
+INFO:root:name=n bei Kuehlen (%), promname=n_bei_kuehlen_prozent, value=20.0
+INFO:root:result=SP,NR=382,ID=382,NAME=Abtau RLTmin_WW,LEN=1,TP=0,BIT=0,VAL=22,MAX=30,MIN=10,WR=1,US=1;
+INFO:root:name=Abtau RLTmin_WW, promname=abtau_rltmin_ww, value=22.0
+INFO:root:result=SP,NR=383,ID=383,NAME=Abtau Vorlaufzeit (Sec),LEN=2,TP=0,BIT=0,VAL=60,MAX=240,MIN=1,WR=1,US=1;
+INFO:root:name=Abtau Vorlaufzeit (Sec), promname=abtau_vorlaufzeit_sec, value=60.0
+INFO:root:result=SP,NR=384,ID=384,NAME=Abtauverz.(sec),LEN=2,TP=0,BIT=0,VAL=60,MAX=120,MIN=0,WR=1,US=1;
+INFO:root:name=Abtauverz.(sec), promname=abtauverz_sec, value=60.0
+INFO:root:result=SP,NR=385,ID=385,NAME=2.Stufe bei EVU,LEN=1,TP=0,BIT=3,VAL=0,MAX=1,MIN=0,WR=1,US=1;
+INFO:root:name=2.Stufe bei EVU, promname=2_stufe_bei_evu, value=0.0
+INFO:root:result=SP,NR=386,ID=386,NAME=Sauggas Fehler.verz.(Sec),LEN=2,TP=0,BIT=0,VAL=90,MAX=120,MIN=0,WR=1,US=1;
+INFO:root:name=Sauggas Fehler.verz.(Sec), promname=sauggas_fehler_verz_sec, value=90.0
+INFO:root:result=SP,NR=387,ID=387,NAME=Abtau Exv Start_ND(bar),LEN=1,TP=0,BIT=0,VAL=8,MAX=15,MIN=5,WR=1,US=1;
+INFO:root:name=Abtau Exv Start_ND(bar), promname=abtau_exv_start_nd_bar, value=8.0
+INFO:root:result=SP,NR=388,ID=388,NAME=HKP im Kuehlbetrieb,LEN=1,TP=0,BIT=1,VAL=1,MAX=1,MIN=0,WR=1,US=0;
+INFO:root:name=HKP im Kuehlbetrieb, promname=hkp_im_kuehlbetrieb, value=1.0
+INFO:root:result=SP,NR=389,ID=389,NAME=MKP1 im Kuehlbetrieb,LEN=1,TP=0,BIT=2,VAL=0,MAX=1,MIN=0,WR=1,US=1;
+INFO:root:name=MKP1 im Kuehlbetrieb, promname=mkp1_im_kuehlbetrieb, value=0.0
+INFO:root:result=SP,NR=390,ID=390,NAME=MKP2 im Kuehlbetrieb,LEN=1,TP=0,BIT=3,VAL=0,MAX=1,MIN=0,WR=1,US=1;
+INFO:root:name=MKP2 im Kuehlbetrieb, promname=mkp2_im_kuehlbetrieb, value=0.0
+INFO:root:result=SP,NR=391,ID=391,NAME=HKP VRZ,LEN=2,TP=0,BIT=0,VAL=270,MAX=420,MIN=120,WR=1,US=1;
+INFO:root:name=HKP VRZ, promname=hkp_vrz, value=270.0
+INFO:root:result=SP,NR=392,ID=392,NAME=HKP VRW,LEN=1,TP=0,BIT=0,VAL=50,MAX=100,MIN=20,WR=1,US=1;
+INFO:root:name=HKP VRW, promname=hkp_vrw, value=50.0
+INFO:root:result=SP,NR=393,ID=393,NAME=EQP VRZ,LEN=2,TP=0,BIT=0,VAL=270,MAX=420,MIN=120,WR=1,US=1;
+INFO:root:name=EQP VRZ, promname=eqp_vrz, value=270.0
+INFO:root:result=SP,NR=394,ID=394,NAME=EQP VRW,LEN=1,TP=0,BIT=0,VAL=50,MAX=100,MIN=20,WR=1,US=1;
+INFO:root:name=EQP VRW, promname=eqp_vrw, value=50.0
+INFO:root:result=SP,NR=395,ID=395,NAME=S_BSZ Startzeit,LEN=4,TP=0,BIT=0,VAL=210205,MAX=999000,MIN=120701,WR=1,US=1;
+INFO:root:name=S_BSZ Startzeit, promname=s_bsz_startzeit, value=210205.0
+INFO:root:result=SP,NR=396,ID=396,NAME=S_BSZ seit Startzeit,LEN=4,TP=0,BIT=0,VAL=7,MAX=100000,MIN=0,WR=0,US=1;
+INFO:root:name=S_BSZ seit Startzeit, promname=s_bsz_seit_startzeit, value=7.0
+INFO:root:result=SP,NR=397,ID=397,NAME=S_BSZ Jahr1,LEN=4,TP=0,BIT=0,VAL=0,MAX=100000,MIN=0,WR=0,US=1;
+INFO:root:name=S_BSZ Jahr1, promname=s_bsz_jahr1, value=0.0
+INFO:root:result=SP,NR=398,ID=398,NAME=S_BSZ Jahr2,LEN=4,TP=0,BIT=0,VAL=0,MAX=100000,MIN=0,WR=0,US=1;
+INFO:root:name=S_BSZ Jahr2, promname=s_bsz_jahr2, value=0.0
+INFO:root:result=SP,NR=399,ID=399,NAME=ph_type,LEN=1,TP=0,BIT=0,VAL=0,MAX=13,MIN=0,WR=1,US=1;
+INFO:root:name=ph_type, promname=ph_type, value=0.0
+INFO:root:result=SP,NR=400,ID=400,NAME=WMZ kWh Offset,LEN=1,TP=0,BIT=0,VAL=0,MAX=50,MIN=-50,WR=1,US=0;
+INFO:root:name=WMZ kWh Offset, promname=wmz_kwh_offset, value=0.0
+INFO:root:result=SP,NR=401,ID=401,NAME=Mo (g/s),LEN=4,TP=1,BIT=1,VAL=0.0,MAX=1000.0,MIN=0.0,WR=1,US=0;
+INFO:root:name=Mo (g/s), promname=mo_g_pro_s, value=0.0
+INFO:root:result=SP,NR=402,ID=402,NAME=2.Stufe bei Frostanforderung,LEN=1,TP=0,BIT=1,VAL=0,MAX=1,MIN=0,WR=1,US=1;
+INFO:root:name=2.Stufe bei Frostanforderung, promname=2_stufe_bei_frostanforderung, value=0.0
+INFO:root:result=SP,NR=403,ID=403,NAME=2.Stufe bei AHZP,LEN=1,TP=0,BIT=4,VAL=0,MAX=1,MIN=0,WR=1,US=1;
+INFO:root:name=2.Stufe bei AHZP, promname=2_stufe_bei_ahzp, value=0.0
+INFO:root:result=SP,NR=404,ID=404,NAME=AO2 bei Kuehlanforderung,LEN=1,TP=0,BIT=0,VAL=40,MAX=100,MIN=0,WR=1,US=0;
+INFO:root:name=AO2 bei Kuehlanforderung, promname=ao2_bei_kuehlanforderung, value=40.0
+INFO:root:result=SP,NR=405,ID=405,NAME=Externe Anforderung RLTmax,LEN=4,TP=1,BIT=0,VAL=30,MAX=50,MIN=10,WR=1,US=0;
+INFO:root:name=Externe Anforderung RLTmax, promname=externe_anforderung_rltmax, value=30.0
+INFO:root:result=SP,NR=406,ID=406,NAME=Externe Anforderung RLThys,LEN=1,TP=0,BIT=0,VAL=1,MAX=5,MIN=1,WR=1,US=0;
+INFO:root:name=Externe Anforderung RLThys, promname=externe_anforderung_rlthys, value=1.0
+INFO:root:result=SP,NR=407,ID=407,NAME=2.Stufe EXT Betriebsart,LEN=1,TP=0,BIT=0,VAL=0,MAX=3,MIN=0,WR=1,US=1;
+INFO:root:name=2.Stufe EXT Betriebsart, promname=2_stufe_ext_betriebsart, value=0.0
+INFO:root:result=SP,NR=408,ID=408,NAME=2.Stufe EXT Paralell Gw.AT,LEN=4,TP=1,BIT=0,VAL=1,MAX=40,MIN=-15,WR=1,US=0;
+INFO:root:name=2.Stufe EXT Paralell Gw.AT, promname=2_stufe_ext_paralell_gw_at, value=1.0
+INFO:root:result=SP,NR=409,ID=409,NAME=2.Stufe EXT Zeitverz. (Sec),LEN=4,TP=0,BIT=0,VAL=3600,MAX=36000,MIN=0,WR=1,US=0;
+INFO:root:name=2.Stufe EXT Zeitverz. (Sec), promname=2_stufe_ext_zeitverz_sec, value=3600.0
+INFO:root:result=SP,NR=410,ID=410,NAME=2.Stufe EXT Schalthysterese,LEN=1,TP=0,BIT=0,VAL=4,MAX=10,MIN=1,WR=1,US=0;
+INFO:root:name=2.Stufe EXT Schalthysterese, promname=2_stufe_ext_schalthysterese, value=4.0
+INFO:root:result=SP,NR=411,ID=411,NAME=2.Stufe EXT Solldifferenz,LEN=1,TP=0,BIT=0,VAL=2,MAX=10,MIN=0,WR=1,US=0;
+INFO:root:name=2.Stufe EXT Solldifferenz, promname=2_stufe_ext_solldifferenz, value=2.0
+INFO:root:result=SP,NR=412,ID=412,NAME=2.Stufe EXT Gesamtdifferenz,LEN=1,TP=0,BIT=0,VAL=0,MAX=0,MIN=0,WR=0,US=0;
+INFO:root:name=2.Stufe EXT Gesamtdifferenz, promname=2_stufe_ext_gesamtdifferenz, value=0.0
+INFO:root:result=SP,NR=413,ID=413,NAME=2.Stufe EXT AT Hysterese,LEN=1,TP=0,BIT=0,VAL=2,MAX=10,MIN=1,WR=1,US=0;
+INFO:root:name=2.Stufe EXT AT Hysterese, promname=2_stufe_ext_at_hysterese, value=2.0
+INFO:root:result=SP,NR=414,ID=414,NAME=2.Stufe EXT Alternativ Gw.AT,LEN=4,TP=1,BIT=0,VAL=-5,MAX=40,MIN=-15,WR=1,US=0;
+INFO:root:name=2.Stufe EXT Alternativ Gw.AT, promname=2_stufe_ext_alternativ_gw_at, value=-5.0
+INFO:root:result=SP,NR=415,ID=415,NAME=Pairingcode:,LEN=4,TP=0,BIT=0,VAL=0,MAX=99999,MIN=0,WR=1,US=1;
+INFO:root:name=Pairingcode:, promname=pairingcode, value=0.0
+INFO:root:result=ERR,INVALID IDX;
+INFO:root:Error result received: ERR,INVALID IDX;
+
+
+
+
+
