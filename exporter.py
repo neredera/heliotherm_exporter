@@ -176,7 +176,7 @@ class HeliothermCollector(object):
             self.communication_errors.inc()
             logging.info(f'Unexpected prefix. Received: {packet_data[0]} Expected: {self.PREFIX[0]}  Packet:{packet_data}')
             return (None, undecoded)    # framing was ok, only prefix unexpected.
-        
+
         payload = packet_data[1:]
         if len(payload)>2 and payload[-2:]==b'\r\n':    #strip CRLF
             payload = payload[:-2]
@@ -260,7 +260,7 @@ class HeliothermCollector(object):
 
         # Interesting Values
         VALUES_TO_READ = [
-            'M0', 'M1', 'M2', 'M3', 'M4', 'M5', 'M6', 'M8', 'M9', 'M12', 'M13', 'M14', 'M15', 'M18', 'M19',
+            'M0', 'M1', 'M2', 'M3', 'M4', 'M5', 'M6', 'M7', 'M8', 'M9', 'M12', 'M13', 'M14', 'M15', 'M18', 'M19',
             'M20', 'M21', 'M22', 'M23', 'M24', 'M25', 'M29', 'M30', 'M31', 'M32', 'M33', 'M37', 'M38', 'M47', 'M48',
             'M51', 'M52', 'M54', 'M56', 'M63', 'M65', 'M66', 'M67', 'M68', 'M69', 'M71', 'M72', 'M73', 'M74',
             'S10', 'S11', 'S13', 'S14', 'S69', 'S76', 'S153', 'S155', 'S171', 'S172', 'S173', 'S200', 'S223']
@@ -303,7 +303,7 @@ class HeliothermCollector(object):
 
             # self.sendQuery(b'SP,NR=10;', port)
             # received_packets = self.sendQueryMultiResults(b'MR,0,1,2,3,4,5,6,8,9,12,13,14,15,18,19,20,21,22,23,24,25,29,30,31,32,33,37,38,47,48,51,52,54,56,63,65,66,67,68,69,71,72,73,74;', port)
-            
+
             # if not received_packets is None:
             #     logging.info(f'Received {len(received_packets)} packets.')
             #     for packet in received_packets:
@@ -410,7 +410,7 @@ class HeliothermCollector(object):
         metric_total_values_expected.add_metric(
             labels=[],
             value=len(VALUES_TO_READ))
-        metrics.append(metric_total_values_expected)            
+        metrics.append(metric_total_values_expected)
 
         metric_total_values_received = GaugeMetricFamily(
             PROMETHEUS_NAMESPACE + '_total_values_received',
@@ -418,7 +418,7 @@ class HeliothermCollector(object):
         metric_total_values_received.add_metric(
             labels=[],
             value=total_values_received)
-        metrics.append(metric_total_values_received)            
+        metrics.append(metric_total_values_received)
 
         return metrics
 
@@ -437,6 +437,7 @@ $Command{Temp_Brauchwasser}='MP,NR=2;';
 $Command{Temp_Vorlauf}='MP,NR=3;';
 $Command{Temp_Ruecklauf}='MP,NR=4;';
 $Command{Temp_EQ_Eintritt}='MP,NR=6;';
+$Command{Temp_EQ_Austritt}='MP,NR=7;';
 $Command{Temp_Frischwasser}='MP,NR=11;';
 $Command{Temp_Verdampfung}='MP,NR=12;';
 $Command{Temp_Kondensation}='MP,NR=13;';
