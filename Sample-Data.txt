@@ -33,7 +33,6 @@ INFO:root:result=MP,NR=14,ID=14,NAME=Temp. KM_Unterkuehlung,LEN=4,TP=1,BIT=1,VAL
 INFO:root:name=Temp. KM_Unterkuehlung, promname=temp_km_unterkuehlung, value=31.0
 INFO:root:result=MP,NR=15,ID=15,NAME=Temp. Heissgas,LEN=4,TP=1,BIT=1,VAL=37.3,MAX=150.0,MIN=0.0,ERF=0,ORV=0.0,ORF=0,TRF=0,TRT=0,TRHV=1.0,TRI=900,TE=31.12.99-23:59:00,OFFV=0.0,RT1=0,RTL=0,WR=1,US=1;
 INFO:root:name=Temp. Heissgas, promname=temp_heissgas, value=37.3
-INFO:root:Alternative reply commando received with CRC 0.
 INFO:root:result=MP,NR=16,ID=16,NAME=Temp. Raumfuehler1,LEN=4,TP=1,BIT=1,VAL=20.0,MAX=60.0,MIN=0.0,ERF=0,ORV=0.0,ORF=0,TRF=0,TRT=0,TRHV=0.5,TRI=900,TE=31.12.99-23:59:00,OFFV=0.0,WR=1,US=0;
 INFO:root:name=Temp. Raumfuehler1, promname=temp_raumfuehler1, value=20.0
 INFO:root:result=MP,NR=17,ID=17,NAME=Temp. Raumfuehler2,LEN=4,TP=1,BIT=1,VAL=20.0,MAX=60.0,MIN=0.0,ERF=0,ORV=0.0,ORF=0,TRF=0,TRT=0,TRHV=0.5,TRI=900,TE=31.12.99-23:59:00,OFFV=0.0,WR=1,US=0;
@@ -209,7 +208,9 @@ INFO:root:result=MP,NR=101,ID=101,NAME=h42,LEN=4,TP=1,BIT=1,VAL=0.0,MAX=100.0,MI
 INFO:root:name=h42, promname=h42, value=0.0
 INFO:root:result=MP,NR=102,ID=102,NAME=h4,LEN=4,TP=1,BIT=1,VAL=0.0,MAX=100.0,MIN=0.0,ERF=0,ORV=0.0,ORF=0,TRF=0,TRT=0,TRHV=1.0,TRI=900,TE=31.12.99-23:59:00,OFFV=0.0,RT1=0,RTL=0,WR=0,US=0;
 INFO:root:name=h4, promname=h4, value=0.0
-INFO:root:Unexpected preamble in received packet. Received: b'\x02\xfd\xe0\xd0\x02\x00' Expected: b'\x02\xfd\xe0\xd0\x00\x00'  Packet:b'02fde0d00200007e4552522c494e56414c4944204944583b0d0a75'
+
+
+
 INFO:root:result=SP,NR=0,ID=0,NAME=Language,LEN=1,TP=0,BIT=0,VAL=0,MAX=4,MIN=0,WR=1,US=1;
 INFO:root:name=Language, promname=language, value=0.0
 INFO:root:result=SP,NR=1,ID=1,NAME=TBF_BIT,LEN=1,TP=0,BIT=2,VAL=0,MAX=1,MIN=0,WR=1,US=1;
@@ -1044,8 +1045,4 @@ INFO:root:result=SP,NR=415,ID=415,NAME=Pairingcode:,LEN=4,TP=0,BIT=0,VAL=0,MAX=9
 INFO:root:name=Pairingcode:, promname=pairingcode, value=0.0
 INFO:root:result=ERR,INVALID IDX;
 INFO:root:Error result received: ERR,INVALID IDX;
-
-
-
-
 
