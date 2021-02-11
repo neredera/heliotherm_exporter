@@ -261,9 +261,12 @@ class HeliothermCollector(object):
         # Interesting Values
         VALUES_TO_READ = [
             'M0', 'M1', 'M2', 'M3', 'M4', 'M5', 'M6', 'M7', 'M8', 'M9', 'M12', 'M13', 'M14', 'M15', 'M18', 'M19',
-            'M20', 'M21', 'M22', 'M23', 'M24', 'M25', 'M29', 'M30', 'M31', 'M32', 'M33', 'M37', 'M38', 'M47', 'M48',
-            'M51', 'M52', 'M54', 'M56', 'M63', 'M65', 'M66', 'M67', 'M68', 'M69', 'M71', 'M72', 'M73', 'M74',
-            'S10', 'S11', 'S13', 'S14', 'S69', 'S76', 'S153', 'S155', 'S171', 'S172', 'S173', 'S200', 'S223']
+            'M20', 'M21', 'M22', 'M23', 'M24', 'M25', 'M29', 'M30', 'M31', 'M32', 'M33', 'M34', 'M36', 'M37',
+            'M38', 'M41', 'M47', 'M48',
+            'M51', 'M52', 'M54', 'M56', 'M57', 'M58', 'M59', 'M61', 'M62', 
+            'M63', 'M65', 'M66', 'M67', 'M68', 'M69', 'M71', 'M72', 'M73', 'M74',
+            'S3', 'S9', 'S10', 'S11', 'S13', 'S14', 'S69', 'S76', 'S83', 'S85', 
+            'S153', 'S155', 'S156', 'S158', 'S159', 'S161', 'S162', 'S164', 'S165', 'S167', 'S171', 'S172', 'S173', 'S200', 'S223']
 
         # Test Values (with first invalid values)
         #VALUES_TO_READ = ['M0', 'M16', 'M101', 'M102', 'M103', 'S0', 'S1', 'S223', 'S350', 'S401', 'S413', 'S414', 'S415', 'S416']
@@ -275,6 +278,8 @@ class HeliothermCollector(object):
         with serial.serial_for_url(f"socket://{self.lan_gateway}:{self.lan_gateway_port}", timeout=0.01) as port:
             # Protocol description based on:
             # https://knx-user-forum.de/forum/%C3%B6ffentlicher-bereich/knx-eib-forum/code-schnipsel/40472-kommunikation-mit-heliotherm-w%C3%A4rmepumpe-n
+            # and
+            # https://github.com/dstrigl/htheatpump
 
             response_success = b'OK;'
             command_login = b'LIN;'
@@ -286,7 +291,7 @@ class HeliothermCollector(object):
 
             connect_string = b'\r\nCONNECT 19200\r\n'  # Looks like we are faking a modem.
 
-            result_login = self.sendQuery(command_login, port, accept_no_response=True)
+            result_login = self.sendQuery(command_login, port, accept_no_response=True, timeout=self.RESPONSE_TIMEOUT_SEC/2)
             if result_login != response_success:
                 # if we get no response, send the connect string and try again.
                 logging.info(f'Sent connect string (second login attempt)')
