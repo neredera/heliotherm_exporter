@@ -84,6 +84,7 @@ class HeliothermCollector(object):
         REPLY_COM_2 = b'\x02\xfd\xe0\xd0\x04\x00'  # Reply Commando 2 (e.g. for MP,NR=16). With this reply the CRC is 00
         REPLY_COM_3 = b'\x02\xfd\xe0\xd0\x02\x00'  # Reply Commando 3 (for error messages?). With this reply the length is 00 (but there is data and a (invalid?) crc)
         REPLY_COM_4 = b'\x02\xfd\xe0\xd0\x01\x00'  # Reply Commando 4 (?) With this reply the length is 00.
+        REPLY_COM_5 = b'\x02\xfd\xe0\xd0\x08\x00'  # Reply Commando 5 (e.g. for SP,NR=167). With this reply the CRC is 00
 
         if timeout is None:
             timeout = self.RESPONSE_TIMEOUT_SEC
@@ -130,7 +131,7 @@ class HeliothermCollector(object):
             return (None, b'')    # flush likely corrupted data
 
         com = undecoded[:6]
-        if REPLY_COM != com and REPLY_COM_2 != com and REPLY_COM_3 != com and REPLY_COM_4 != com:
+        if REPLY_COM != com and REPLY_COM_2 != com and REPLY_COM_3 != com and REPLY_COM_4 != com and REPLY_COM_5 != com:
             self.communication_errors.inc()
             logging.info(f'Unexpected preamble in received packet. Received: {com} Expected: {REPLY_COM}  Packet:{undecoded}')
             return (None, b'')    # flush likely corrupted data
@@ -160,8 +161,8 @@ class HeliothermCollector(object):
         calc_crc = self.makeCrc(undecoded[ : 6+1+ sent_data_length ])[0]
 
         if sent_crc != calc_crc:
-            if REPLY_COM_2 == com and sent_crc == 0:
-                logging.debug(f'Alternative reply commando (2) received with CRC 0.')
+            if (REPLY_COM_2 == com or REPLY_COM_5 == com) and sent_crc == 0:
+                logging.debug(f'Alternative reply commando (2 or 5) received with CRC 0.')
             elif REPLY_COM_3 == com or REPLY_COM_4 == com:
                 logging.debug(f'Alternative reply commando (3 or 4) received with invalid CRC.')
             else:
