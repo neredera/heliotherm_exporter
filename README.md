@@ -26,15 +26,31 @@ Command line parameters:
 ```bash
 > python3 exporter.py --help
 
-usage: exporter.py [-h] [--port PORT] [--teslafi_api_token TESLAFI_API_TOKEN]
+usage: exporter.py [-h] [--port PORT] [--lan_gateway LAN_GATEWAY]
+                   [--lan_gateway_port LAN_GATEWAY_PORT]
 
 optional arguments:
   -h, --help            show this help message and exit
   --port PORT           The port where to expose the exporter (default:9997)
-  --lan_gateway         
+  --lan_gateway LAN_GATEWAY
                         Hostname or IP of the LAN to serial gateway
-  --lan_gateway_port    Port (default:4001)
-                        
+  --lan_gateway_port LAN_GATEWAY_PORT
+                        TCP port for the LAN gateway (default:4001)
+```
+
+## Usage with docker
+
+Example `docker-compose.yml`:
+```
+version: '3.4'
+
+services:
+  heliotherm-exporter:
+    image: neredera/heliotherm-exporter:latest
+    restart: always
+    command: " --lan_gateway LAN_GATEWAY"
+    ports:
+      - 9997:9997
 ```
 
 ## Prometheus metrics
